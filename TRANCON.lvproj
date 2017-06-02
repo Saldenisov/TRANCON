@@ -531,8 +531,6 @@
 			<Item Name="clean-expSD.vi" Type="VI" URL="../dependecies/clean-expSD.vi"/>
 			<Item Name="remove-dev-pointsSD.vi" Type="VI" URL="../dependecies/remove-dev-pointsSD.vi"/>
 			<Item Name="lvsound2.dll" Type="Document" URL="/&lt;resource&gt;/lvsound2.dll"/>
-			<Item Name="DAQ-init.vi" Type="VI" URL="../dependecies/DAQ-init.vi"/>
-			<Item Name="events-init.vi" Type="VI" URL="../dependecies/events-init.vi"/>
 		</Item>
 		<Item Name="Spécifications de construction" Type="Build"/>
 	</Item>
