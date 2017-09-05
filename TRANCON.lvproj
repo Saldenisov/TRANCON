@@ -533,6 +533,7 @@
 			<Item Name="lvsound2.dll" Type="Document" URL="/&lt;resource&gt;/lvsound2.dll"/>
 			<Item Name="DAQ-init.vi" Type="VI" URL="../dependecies/DAQ-init.vi"/>
 			<Item Name="events-init.vi" Type="VI" URL="../dependecies/events-init.vi"/>
+			<Item Name="roundSD.vi" Type="VI" URL="../dependecies/roundSD.vi"/>
 		</Item>
 		<Item Name="Spécifications de construction" Type="Build"/>
 	</Item>
