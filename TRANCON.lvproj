@@ -150,6 +150,8 @@
 		<Item Name="Experiments_group.lvclass" Type="LVClass" URL="../Classes/Experiments_group.lvclass"/>
 		<Item Name="average_with_corrections_expSD.vi" Type="VI" URL="../dependecies/average_with_corrections_expSD.vi"/>
 		<Item Name="Nan_Inf_replaced.vi" Type="VI" URL="../dependecies/Nan_Inf_replaced.vi"/>
+		<Item Name="ReadDataUV-visSD_test.vi" Type="VI" URL="../ReadDataUV-visSD_test.vi"/>
+		<Item Name="test_SC.vi" Type="VI" URL="../test_SC.vi"/>
 		<Item Name="Dépendances" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="GetHelpDir.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/GetHelpDir.vi"/>
@@ -527,7 +529,6 @@
 			<Item Name="Initialize-uv-visSD.vi" Type="VI" URL="../dependecies/CameraUV-vis/Initialize-uv-visSD.vi"/>
 			<Item Name="InitMain-UV-visSD.vi" Type="VI" URL="../dependecies/CameraUV-vis/InitMain-UV-visSD.vi"/>
 			<Item Name="U32 To Error Code EnumsdSD.vi" Type="VI" URL="../dependecies/CameraUV-vis/U32 To Error Code EnumsdSD.vi"/>
-			<Item Name="ReadDataUV-visSD.vi" Type="VI" URL="../dependecies/CameraUV-vis/ReadDataUV-visSD.vi"/>
 			<Item Name="Error Code Handler.vi" Type="VI" URL="../dependecies/Error Code Handler.vi"/>
 			<Item Name="CoolerOFFSD.vi" Type="VI" URL="../dependecies/CameraUV-vis/CoolerOFFSD.vi"/>
 			<Item Name="GetTemperatureSD.vi" Type="VI" URL="../dependecies/CameraUV-vis/GetTemperatureSD.vi"/>
@@ -558,6 +559,11 @@
 			<Item Name="events-init.vi" Type="VI" URL="../dependecies/events-init.vi"/>
 			<Item Name="roundSD.vi" Type="VI" URL="../dependecies/roundSD.vi"/>
 			<Item Name="def_DAQmxtasks.ctl" Type="VI" URL="../dependecies/def_DAQmxtasks.ctl"/>
+			<Item Name="ReadDataUV-visSD_test.vi" Type="VI" URL="../../../Users/Sergey Denisov/Desktop/ReadDataUV-visSD_test.vi"/>
+			<Item Name="InitMain-UV-visSD.vi" Type="VI" URL="/REPS/TRANCON/dependecies/CameraUV-vis/InitMain-UV-visSD.vi"/>
+			<Item Name="Cooldetector-uv-visSD.vi" Type="VI" URL="/REPS/TRANCON/dependecies/CameraUV-vis/Cooldetector-uv-visSD.vi"/>
+			<Item Name="-log bis_SD.vi" Type="VI" URL="/REPS/TRANCON/dependecies/-log bis_SD.vi"/>
+			<Item Name="average-2Darray-SD.vi" Type="VI" URL="/REPS/TRANCON/dependecies/average-2Darray-SD.vi"/>
 		</Item>
 		<Item Name="Spécifications de construction" Type="Build"/>
 	</Item>
