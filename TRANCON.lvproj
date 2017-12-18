@@ -560,10 +560,6 @@
 			<Item Name="roundSD.vi" Type="VI" URL="../dependecies/roundSD.vi"/>
 			<Item Name="def_DAQmxtasks.ctl" Type="VI" URL="../dependecies/def_DAQmxtasks.ctl"/>
 			<Item Name="ReadDataUV-visSD_test.vi" Type="VI" URL="../../../Users/Sergey Denisov/Desktop/ReadDataUV-visSD_test.vi"/>
-			<Item Name="InitMain-UV-visSD.vi" Type="VI" URL="/REPS/TRANCON/dependecies/CameraUV-vis/InitMain-UV-visSD.vi"/>
-			<Item Name="Cooldetector-uv-visSD.vi" Type="VI" URL="/REPS/TRANCON/dependecies/CameraUV-vis/Cooldetector-uv-visSD.vi"/>
-			<Item Name="-log bis_SD.vi" Type="VI" URL="/REPS/TRANCON/dependecies/-log bis_SD.vi"/>
-			<Item Name="average-2Darray-SD.vi" Type="VI" URL="/REPS/TRANCON/dependecies/average-2Darray-SD.vi"/>
 		</Item>
 		<Item Name="Spécifications de construction" Type="Build"/>
 	</Item>
