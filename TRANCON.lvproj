@@ -559,7 +559,6 @@
 			<Item Name="events-init.vi" Type="VI" URL="../dependecies/events-init.vi"/>
 			<Item Name="roundSD.vi" Type="VI" URL="../dependecies/roundSD.vi"/>
 			<Item Name="def_DAQmxtasks.ctl" Type="VI" URL="../dependecies/def_DAQmxtasks.ctl"/>
-			<Item Name="ReadDataUV-visSD_test.vi" Type="VI" URL="../../../Users/Sergey Denisov/Desktop/ReadDataUV-visSD_test.vi"/>
 		</Item>
 		<Item Name="Spécifications de construction" Type="Build"/>
 	</Item>
