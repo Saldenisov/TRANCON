@@ -1,14 +1,6 @@
 [ProjectWindow_Data]
-ProjectExplorer.ClassicPosition[String] = "33,55,821,689"
+ProjectExplorer.ClassicPosition[String] = "39,66,827,700"
 
 [FenêtreProjet_Données]
-ProjectExplorer.ClassicPosition[String] = "36,349,854,817"
-
-[AB_Cache_{3EF1B0D2-943D-45C5-AC6E-43A424682197}]
-Cache_Path[Path] Line0001 = "/C/Users/Sergey Denisov/AppData/Local/Temp/AB_Cach"
-Cache_Path[Path] Line0002 = "e_{3EF1B0D2-943D-45C5-AC6E-43A424682197}.txt"
-
-[AB_Cache_{C873FCBB-1EB6-42CC-B60A-C61927074D75}]
-Cache_Path[Path] Line0001 = "/C/Users/Sergey Denisov/AppData/Local/Temp/AB_Cach"
-Cache_Path[Path] Line0002 = "e_{C873FCBB-1EB6-42CC-B60A-C61927074D75}.txt"
+ProjectExplorer.ClassicPosition[String] = "88,300,1030,768"
 

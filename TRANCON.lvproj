@@ -582,11 +582,11 @@
 		<Item Name="Spécifications de construction" Type="Build">
 			<Item Name="TRANCON-Client" Type="EXE">
 				<Property Name="App_copyErrors" Type="Bool">true</Property>
-				<Property Name="App_INI_aliasGUID" Type="Str">{89D5D812-0A86-45A8-A750-670D6C9C8AFA}</Property>
-				<Property Name="App_INI_GUID" Type="Str">{3866C301-9345-4BF9-BE28-BC14734421AC}</Property>
+				<Property Name="App_INI_aliasGUID" Type="Str">{37A5F33C-AC71-4C58-A259-5A28946A39C3}</Property>
+				<Property Name="App_INI_GUID" Type="Str">{F2F6479A-909E-4375-B8E9-7602D6D81D35}</Property>
 				<Property Name="App_serverConfig.httpPort" Type="Int">8002</Property>
 				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
-				<Property Name="Bld_buildCacheID" Type="Str">{3EF1B0D2-943D-45C5-AC6E-43A424682197}</Property>
+				<Property Name="Bld_buildCacheID" Type="Str">{64D36CE8-A944-45D0-B304-147F0993920A}</Property>
 				<Property Name="Bld_buildSpecName" Type="Str">TRANCON-Client</Property>
 				<Property Name="Bld_excludeInlineSubVIs" Type="Bool">true</Property>
 				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
@@ -594,30 +594,28 @@
 				<Property Name="Bld_localDestDir" Type="Path">../builds/NI_AB_PROJECTNAME/TRANCON-Client</Property>
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
-				<Property Name="Bld_previewCacheID" Type="Str">{C873FCBB-1EB6-42CC-B60A-C61927074D75}</Property>
-				<Property Name="Bld_version.build" Type="Int">1</Property>
+				<Property Name="Bld_previewCacheID" Type="Str">{5E5AD374-EB49-4E1B-AB23-4A6CAAE01AF4}</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
-				<Property Name="Destination[0].destName" Type="Str">Application.exe</Property>
-				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/TRANCON-Client/Application.exe</Property>
+				<Property Name="Destination[0].destName" Type="Str">Client.exe</Property>
+				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/TRANCON-Client/Client.exe</Property>
 				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
 				<Property Name="Destination[0].type" Type="Str">App</Property>
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
 				<Property Name="Destination[1].path" Type="Path">../builds/NI_AB_PROJECTNAME/TRANCON-Client/data</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{F8A4626E-0A4C-4837-9B58-C4D17F33C6AB}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{CC58D0F4-F8BE-4C57-965F-ADEE86B03690}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/Poste de travail/TRANCON-Client.vi</Property>
 				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[1].type" Type="Str">VI</Property>
 				<Property Name="SourceCount" Type="Int">2</Property>
-				<Property Name="TgtF_enableDebugging" Type="Bool">true</Property>
 				<Property Name="TgtF_fileDescription" Type="Str">TRANCON-Client</Property>
 				<Property Name="TgtF_internalName" Type="Str">TRANCON-Client</Property>
 				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2018 </Property>
 				<Property Name="TgtF_productName" Type="Str">TRANCON-Client</Property>
-				<Property Name="TgtF_targetfileGUID" Type="Str">{53E37D97-DFF1-4ED8-B01D-00A905C9C435}</Property>
-				<Property Name="TgtF_targetfileName" Type="Str">Application.exe</Property>
+				<Property Name="TgtF_targetfileGUID" Type="Str">{292048C3-5864-4EEB-9E41-F90D8CD9816F}</Property>
+				<Property Name="TgtF_targetfileName" Type="Str">Client.exe</Property>
 			</Item>
 		</Item>
 	</Item>
