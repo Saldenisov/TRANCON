@@ -141,6 +141,7 @@
 				<Item Name="DelayLine.lvclass" Type="LVClass" URL="../Classes/Delay Line/DelayLine.lvclass"/>
 				<Item Name="DelayLineLS4.lvclass" Type="LVClass" URL="../Classes/Delay Line/DelayLineLS4/DelayLineLS4.lvclass"/>
 				<Item Name="DelayLineOwis.lvclass" Type="LVClass" URL="../Classes/Delay Line/DelayLineOwis/DelayLineOwis.lvclass"/>
+				<Item Name="DelayLineEmulate.lvclass" Type="LVClass" URL="../Classes/Delay Line/DelayLineSimulation/DelayLineEmulate.lvclass"/>
 			</Item>
 			<Item Name="Oscilloscope" Type="Folder">
 				<Item Name="Oscilloscope.lvclass" Type="LVClass" URL="../Classes/Oscilloscope/Oscilloscope.lvclass"/>
@@ -539,6 +540,7 @@
 			<Item Name="Error Code Handler.vi" Type="VI" URL="../dependecies/Error Code Handler.vi"/>
 			<Item Name="Error to Warning (STM Multi-Client).vi" Type="VI" URL="/Desktop/diff/Multi Client Server/subVIs/Error to Warning (STM Multi-Client).vi"/>
 			<Item Name="Find-str-in-string-array.vi" Type="VI" URL="../dependecies/Utilities/Arrays/Find-str-in-string-array.vi"/>
+			<Item Name="Get Limits.vi" Type="VI" URL="../Classes/Delay Line/Get Limits.vi"/>
 			<Item Name="globalVarSD.vi" Type="VI" URL="../dependecies/globalVarSD.vi"/>
 			<Item Name="Graph_cursors_minmaxSD.vi" Type="VI" URL="../dependecies/Graph_cursors_minmaxSD.vi"/>
 			<Item Name="HSSpeed_type typedef.ctl" Type="VI" URL="../Classes/Detector/UV-VIS/methods/atmcd32d.llb/HSSpeed_type typedef.ctl"/>
@@ -577,6 +579,7 @@
 			<Item Name="update-graphlegendOD.vi" Type="VI" URL="../dependecies/update-graphlegendOD.vi"/>
 			<Item Name="UserEvent.ctl" Type="VI" URL="../dependecies/ControlsVIs/Clusters-def/UserEvent.ctl"/>
 			<Item Name="verify-selected-wavesSD.vi" Type="VI" URL="../dependecies/verify-selected-wavesSD.vi"/>
+			<Item Name="write wait.vi" Type="VI" URL="../Classes/Delay Line/DelayLineLS4/write wait.vi"/>
 			<Item Name="xxx.ctl" Type="VI" URL="../controls/xxx.ctl"/>
 		</Item>
 		<Item Name="Spécifications de construction" Type="Build">
