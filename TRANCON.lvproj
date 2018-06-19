@@ -100,6 +100,7 @@
 			<Item Name="reduce_size_waveform.vi" Type="VI" URL="../dependecies/reduce_size_waveform.vi"/>
 			<Item Name="Data_raw-save.vi" Type="VI" URL="../dependecies/Data_raw-save.vi"/>
 			<Item Name="Connect to python.vi" Type="VI" URL="../dependecies/Connect to python.vi"/>
+			<Item Name="Update name of exp.vi" Type="VI" URL="../Classes/Control/Control-Client/Update name of exp.vi"/>
 		</Item>
 		<Item Name="Classes" Type="Folder">
 			<Item Name="GeneralFunctionality" Type="Folder">
@@ -123,8 +124,10 @@
 				<Item Name="DAQmxTaskAICurrent.lvclass" Type="LVClass" URL="../Classes/DAQmxTasks/DAQmxTaskAICurrent.lvclass"/>
 				<Item Name="DAQmxTaskDOutput.lvclass" Type="LVClass" URL="../Classes/DAQmxTasks/DAQmxTaskDOutput/DAQmxTaskDOutput.lvclass"/>
 				<Item Name="DAQmxTaskDInput.lvclass" Type="LVClass" URL="../Classes/DAQmxTasks/DAQmxTasklDInput/DAQmxTaskDInput.lvclass"/>
-				<Item Name="DAQmxTaskContainer.lvclass" Type="LVClass" URL="../Classes/DAQmxTasks/DAQmxTaskContainer/DAQmxTaskContainer.lvclass"/>
 				<Item Name="DAQmxTaskCounterDigital.lvclass" Type="LVClass" URL="../Classes/DAQmxTasks/DAQmxTaksCounterDigital/DAQmxTaskCounterDigital.lvclass"/>
+				<Item Name="DAQmxTaksContainer_General.lvclass" Type="LVClass" URL="../Classes/DAQmxTasks/DAQmxTaskContainer_General/DAQmxTaksContainer_General.lvclass"/>
+				<Item Name="DAQmxTaskContainer.lvclass" Type="LVClass" URL="../Classes/DAQmxTasks/DAQmxTaskContainer/DAQmxTaskContainer.lvclass"/>
+				<Item Name="DAQmxTaksContainer_Emulate.lvclass" Type="LVClass" URL="../Classes/DAQmxTasks/DAQmxTaskContainer_Emulate/DAQmxTaksContainer_Emulate.lvclass"/>
 			</Item>
 			<Item Name="DB" Type="Folder">
 				<Item Name="DB.lvclass" Type="LVClass" URL="../Classes/DB/DB.lvclass"/>
@@ -135,13 +138,13 @@
 				<Item Name="Detector.lvclass" Type="LVClass" URL="../Classes/Detector/Detector.lvclass"/>
 				<Item Name="UV-VIS.lvclass" Type="LVClass" URL="../Classes/Detector/UV-VIS/UV-VIS.lvclass"/>
 				<Item Name="VIS-NIR.lvclass" Type="LVClass" URL="../Classes/Detector/VIS-IR/VIS-NIR.lvclass"/>
-				<Item Name="Update name of exp.vi" Type="VI" URL="../Classes/Control/Control-Client/Update name of exp.vi"/>
+				<Item Name="Emulate.lvclass" Type="LVClass" URL="../Classes/Detector/Emulate/Emulate.lvclass"/>
 			</Item>
 			<Item Name="DelayLine" Type="Folder">
 				<Item Name="DelayLine.lvclass" Type="LVClass" URL="../Classes/Delay Line/DelayLine.lvclass"/>
-				<Item Name="DelayLineLS4.lvclass" Type="LVClass" URL="../Classes/Delay Line/DelayLineLS4/DelayLineLS4.lvclass"/>
-				<Item Name="DelayLineOwis.lvclass" Type="LVClass" URL="../Classes/Delay Line/DelayLineOwis/DelayLineOwis.lvclass"/>
-				<Item Name="DelayLineEmulate.lvclass" Type="LVClass" URL="../Classes/Delay Line/DelayLineSimulation/DelayLineEmulate.lvclass"/>
+				<Item Name="DLLS4.lvclass" Type="LVClass" URL="../Classes/Delay Line/DelayLineLS4/DLLS4.lvclass"/>
+				<Item Name="DLOwis.lvclass" Type="LVClass" URL="../Classes/Delay Line/DelayLineOwis/DLOwis.lvclass"/>
+				<Item Name="DLEmulate.lvclass" Type="LVClass" URL="../Classes/Delay Line/DelayLineSimulation/DLEmulate.lvclass"/>
 			</Item>
 			<Item Name="Oscilloscope" Type="Folder">
 				<Item Name="Oscilloscope.lvclass" Type="LVClass" URL="../Classes/Oscilloscope/Oscilloscope.lvclass"/>
@@ -540,7 +543,6 @@
 			<Item Name="Error Code Handler.vi" Type="VI" URL="../dependecies/Error Code Handler.vi"/>
 			<Item Name="Error to Warning (STM Multi-Client).vi" Type="VI" URL="/Desktop/diff/Multi Client Server/subVIs/Error to Warning (STM Multi-Client).vi"/>
 			<Item Name="Find-str-in-string-array.vi" Type="VI" URL="../dependecies/Utilities/Arrays/Find-str-in-string-array.vi"/>
-			<Item Name="Get Limits.vi" Type="VI" URL="../Classes/Delay Line/Get Limits.vi"/>
 			<Item Name="globalVarSD.vi" Type="VI" URL="../dependecies/globalVarSD.vi"/>
 			<Item Name="Graph_cursors_minmaxSD.vi" Type="VI" URL="../dependecies/Graph_cursors_minmaxSD.vi"/>
 			<Item Name="HSSpeed_type typedef.ctl" Type="VI" URL="../Classes/Detector/UV-VIS/methods/atmcd32d.llb/HSSpeed_type typedef.ctl"/>
@@ -570,6 +572,7 @@
 			<Item Name="remove-dev-pointsSD.vi" Type="VI" URL="../dependecies/remove-dev-pointsSD.vi"/>
 			<Item Name="replace_in_stringSD.vi" Type="VI" URL="../dependecies/replace_in_stringSD.vi"/>
 			<Item Name="Reposition Legend.vi" Type="VI" URL="../dependecies/Reposition Legend.vi"/>
+			<Item Name="Set DAQmxTask.vi" Type="VI" URL="../Classes/DAQmxTasks/DAQmxTaskContainer/Set DAQmxTask.vi"/>
 			<Item Name="time-stringSD.vi" Type="VI" URL="../dependecies/time-stringSD.vi"/>
 			<Item Name="TriggerMode_mode typedef.ctl" Type="VI" URL="../Classes/Detector/UV-VIS/methods/atmcd32d.llb/TriggerMode_mode typedef.ctl"/>
 			<Item Name="Update GraphChart Legend.vi" Type="VI" URL="../dependecies/Update GraphChart Legend.vi"/>
