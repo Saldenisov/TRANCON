@@ -120,14 +120,35 @@
 				<Item Name="Camera.lvclass" Type="LVClass" URL="../Classes/Camera/Camera.lvclass"/>
 			</Item>
 			<Item Name="DAQmxTask classes" Type="Folder">
-				<Item Name="DAQmxTask.lvclass" Type="LVClass" URL="../Classes/DAQmxTasks/DAQmxTask.lvclass"/>
-				<Item Name="DAQmxTaskAICurrent.lvclass" Type="LVClass" URL="../Classes/DAQmxTasks/DAQmxTaskAICurrent.lvclass"/>
-				<Item Name="DAQmxTaskDOutput.lvclass" Type="LVClass" URL="../Classes/DAQmxTasks/DAQmxTaskDOutput/DAQmxTaskDOutput.lvclass"/>
-				<Item Name="DAQmxTaskDInput.lvclass" Type="LVClass" URL="../Classes/DAQmxTasks/DAQmxTasklDInput/DAQmxTaskDInput.lvclass"/>
-				<Item Name="DAQmxTaskCounterDigital.lvclass" Type="LVClass" URL="../Classes/DAQmxTasks/DAQmxTaksCounterDigital/DAQmxTaskCounterDigital.lvclass"/>
-				<Item Name="DAQmxTaksContainer_General.lvclass" Type="LVClass" URL="../Classes/DAQmxTasks/DAQmxTaskContainer_General/DAQmxTaksContainer_General.lvclass"/>
-				<Item Name="DAQmxTaskContainer.lvclass" Type="LVClass" URL="../Classes/DAQmxTasks/DAQmxTaskContainer/DAQmxTaskContainer.lvclass"/>
-				<Item Name="DAQmxTaksContainer_Emulate.lvclass" Type="LVClass" URL="../Classes/DAQmxTasks/DAQmxTaskContainer_Emulate/DAQmxTaksContainer_Emulate.lvclass"/>
+				<Item Name="DAQmxTask" Type="Folder">
+					<Item Name="DAQmxTask.lvclass" Type="LVClass" URL="../Classes/DAQmxTasks/DAQmxTask.lvclass"/>
+				</Item>
+				<Item Name="DAQmxTaskAICurrent" Type="Folder">
+					<Item Name="DAQmxTaskAICurrent_General.lvclass" Type="LVClass" URL="../Classes/DAQmxTasks/DAQmxTaskAICurrent_General/DAQmxTaskAICurrent_General.lvclass"/>
+					<Item Name="DAQmxTaskAICurrent.lvclass" Type="LVClass" URL="../Classes/DAQmxTasks/DAQmxTaskAICurrent.lvclass"/>
+					<Item Name="DAQmxTaskAICurrent_Emulate.lvclass" Type="LVClass" URL="../Classes/DAQmxTasks/DAQmxTaskAICurrent_Emulate/DAQmxTaskAICurrent_Emulate.lvclass"/>
+				</Item>
+				<Item Name="DAQmxTaskDOutput" Type="Folder">
+					<Item Name="DAQmxTaksDOutput_General.lvclass" Type="LVClass" URL="../Classes/DAQmxTasks/DAQmxTaksDOutput_General/DAQmxTaksDOutput_General.lvclass"/>
+					<Item Name="DAQmxTaskDOutput.lvclass" Type="LVClass" URL="../Classes/DAQmxTasks/DAQmxTaskDOutput/DAQmxTaskDOutput.lvclass"/>
+					<Item Name="DAQmxTaskDOutput_Emulate.lvclass" Type="LVClass" URL="../Classes/DAQmxTasks/DAQmxTaskDOutput_Emulate/DAQmxTaskDOutput_Emulate.lvclass"/>
+				</Item>
+				<Item Name="DAQmxTaskDInput" Type="Folder">
+					<Item Name="DAQmxTaskDInput_General.lvclass" Type="LVClass" URL="../Classes/DAQmxTasks/DAQmxTaskDInput_General/DAQmxTaskDInput_General.lvclass"/>
+					<Item Name="DAQmxTaskDInput.lvclass" Type="LVClass" URL="../Classes/DAQmxTasks/DAQmxTasklDInput/DAQmxTaskDInput.lvclass"/>
+					<Item Name="DAQmxTaskDInput_Emulate.lvclass" Type="LVClass" URL="../Classes/DAQmxTasks/DAQmxTaskDInput_Emulate/DAQmxTaskDInput_Emulate.lvclass"/>
+				</Item>
+				<Item Name="DAQmxTaskCounterDigital" Type="Folder">
+					<Item Name="DAQmxTaskCounterDigital_General.lvclass" Type="LVClass" URL="../Classes/DAQmxTasks/DAQmxTaskCounterDigital_General/DAQmxTaskCounterDigital_General.lvclass"/>
+					<Item Name="DAQmxTaskCounterDigital.lvclass" Type="LVClass" URL="../Classes/DAQmxTasks/DAQmxTaksCounterDigital/DAQmxTaskCounterDigital.lvclass"/>
+					<Item Name="DAQmxTaskCounterDigital_Emulate.lvclass" Type="LVClass" URL="../Classes/DAQmxTasks/DAQmxTaskCounterDigital_Emulate/DAQmxTaskCounterDigital_Emulate.lvclass"/>
+				</Item>
+				<Item Name="DAQmxTaskContainer" Type="Folder">
+					<Item Name="Emulate_ELYSE_Clock.vi" Type="VI" URL="../Classes/DAQmxTasks/DAQmxTaskContainer_General/Emulate_ELYSE_Clock.vi"/>
+					<Item Name="DAQmxTaksContainer_General.lvclass" Type="LVClass" URL="../Classes/DAQmxTasks/DAQmxTaskContainer_General/DAQmxTaksContainer_General.lvclass"/>
+					<Item Name="DAQmxTaskContainer.lvclass" Type="LVClass" URL="../Classes/DAQmxTasks/DAQmxTaskContainer/DAQmxTaskContainer.lvclass"/>
+					<Item Name="DAQmxTaksContainer_Emulate.lvclass" Type="LVClass" URL="../Classes/DAQmxTasks/DAQmxTaskContainer_Emulate/DAQmxTaksContainer_Emulate.lvclass"/>
+				</Item>
 			</Item>
 			<Item Name="DB" Type="Folder">
 				<Item Name="DB.lvclass" Type="LVClass" URL="../Classes/DB/DB.lvclass"/>
@@ -566,13 +587,13 @@
 			<Item Name="Open_abscisseSD.vi" Type="VI" URL="../dependecies/Open_abscisseSD.vi"/>
 			<Item Name="Parse Location Path.vi" Type="VI" URL="../dependecies/Multiple File Selection-multiple/multfile.llb/Parse Location Path.vi"/>
 			<Item Name="plot-nameSD.vi" Type="VI" URL="../dependecies/plot-nameSD.vi"/>
+			<Item Name="PowerStatus.vi" Type="VI" URL="../Classes/DAQmxTasks/DAQmxTaskContainer_General/PowerStatus.vi"/>
 			<Item Name="ProtypeCommand-DAQmxReply.ctl" Type="VI" URL="../dependecies/ControlsVIs/Clusters-def/ProtypeCommand-DAQmxReply.ctl"/>
 			<Item Name="Read Status Active_NonActive_.vi" Type="VI" URL="../Classes/Oscilloscope/Read Status Active_NonActive_.vi"/>
 			<Item Name="ReadMode_mode typedef.ctl" Type="VI" URL="../Classes/Detector/UV-VIS/methods/atmcd32d.llb/ReadMode_mode typedef.ctl"/>
 			<Item Name="remove-dev-pointsSD.vi" Type="VI" URL="../dependecies/remove-dev-pointsSD.vi"/>
 			<Item Name="replace_in_stringSD.vi" Type="VI" URL="../dependecies/replace_in_stringSD.vi"/>
 			<Item Name="Reposition Legend.vi" Type="VI" URL="../dependecies/Reposition Legend.vi"/>
-			<Item Name="Set DAQmxTask.vi" Type="VI" URL="../Classes/DAQmxTasks/DAQmxTaskContainer/Set DAQmxTask.vi"/>
 			<Item Name="time-stringSD.vi" Type="VI" URL="../dependecies/time-stringSD.vi"/>
 			<Item Name="TriggerMode_mode typedef.ctl" Type="VI" URL="../Classes/Detector/UV-VIS/methods/atmcd32d.llb/TriggerMode_mode typedef.ctl"/>
 			<Item Name="Update GraphChart Legend.vi" Type="VI" URL="../dependecies/Update GraphChart Legend.vi"/>
