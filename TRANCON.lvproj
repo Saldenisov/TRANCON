@@ -92,6 +92,7 @@
 				<Item Name="Update.ctl" Type="VI" URL="../controls/Update.ctl"/>
 				<Item Name="Camera.ctl" Type="VI" URL="../controls/Camera.ctl"/>
 				<Item Name="table.ctl" Type="VI" URL="../controls/table.ctl"/>
+				<Item Name="Visibility.ctl" Type="VI" URL="../controls/Visibility.ctl"/>
 			</Item>
 			<Item Name="verify_Commands.vi" Type="VI" URL="../dependecies/verify_Commands.vi"/>
 			<Item Name="Commands.vi" Type="VI" URL="../dependecies/Commands.vi"/>
@@ -182,10 +183,10 @@
 			<Item Name="test_memory_leak.vi" Type="VI" URL="../dependecies/tests/test_memory_leak.vi"/>
 			<Item Name="test_blank.vi" Type="VI" URL="../dependecies/tests/test_blank.vi"/>
 			<Item Name="test_memory_leak_parr_VI.vi" Type="VI" URL="../dependecies/tests/test_memory_leak_parr_VI.vi"/>
+			<Item Name="test_leak2.vi" Type="VI" URL="../dependecies/tests/test_leak2.vi"/>
 		</Item>
 		<Item Name="TRANCON-HARDWARE-SERVER.vi" Type="VI" URL="../TRANCON-HARDWARE-SERVER.vi"/>
 		<Item Name="TRANCON-Client.vi" Type="VI" URL="../TRANCON-Client.vi"/>
-		<Item Name="Vizulize_exp.vi" Type="VI" URL="../Classes/Control/Control-Client/Vizulize_exp.vi"/>
 		<Item Name="Dépendances" Type="Dependencies">
 			<Property Name="NI.SortType" Type="Int">0</Property>
 			<Item Name="instr.lib" Type="Folder">
