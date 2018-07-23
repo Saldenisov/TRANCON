@@ -129,6 +129,11 @@
 					<Item Name="DAQmxTaskAICurrent.lvclass" Type="LVClass" URL="../Classes/DAQmxTasks/DAQmxTaskAICurrent.lvclass"/>
 					<Item Name="DAQmxTaskAICurrent_Emulate.lvclass" Type="LVClass" URL="../Classes/DAQmxTasks/DAQmxTaskAICurrent_Emulate/DAQmxTaskAICurrent_Emulate.lvclass"/>
 				</Item>
+				<Item Name="DAQmxTaskAIVoltage" Type="Folder">
+					<Item Name="DAQmxTaskAIVoltage_General.lvclass" Type="LVClass" URL="../Classes/DAQmxTasks/DAQmxTaskAITension_General/DAQmxTaskAIVoltage_General.lvclass"/>
+					<Item Name="DAQmxTaskAIVoltage.lvclass" Type="LVClass" URL="../Classes/DAQmxTasks/DAQmxTaskAITension/DAQmxTaskAIVoltage.lvclass"/>
+					<Item Name="DAQmxTaskAIVoltage_Emulate.lvclass" Type="LVClass" URL="../Classes/DAQmxTasks/DAQmxTaskAITension_Emulate/DAQmxTaskAIVoltage_Emulate.lvclass"/>
+				</Item>
 				<Item Name="DAQmxTaskDOutput" Type="Folder">
 					<Item Name="DAQmxTaksDOutput_General.lvclass" Type="LVClass" URL="../Classes/DAQmxTasks/DAQmxTaksDOutput_General/DAQmxTaksDOutput_General.lvclass"/>
 					<Item Name="DAQmxTaskDOutput.lvclass" Type="LVClass" URL="../Classes/DAQmxTasks/DAQmxTaskDOutput/DAQmxTaskDOutput.lvclass"/>
