@@ -192,8 +192,6 @@
 		</Item>
 		<Item Name="TRANCON-HARDWARE-SERVER.vi" Type="VI" URL="../TRANCON-HARDWARE-SERVER.vi"/>
 		<Item Name="TRANCON-Client.vi" Type="VI" URL="../TRANCON-Client.vi"/>
-		<Item Name="IRkHzInit131202_SD.vi" Type="VI" URL="/C/Users/Radiolyse/Desktop/IR°init/IRkHzInit131202_SD.vi"/>
-		<Item Name="test.vi" Type="VI" URL="/C/Users/Radiolyse/Desktop/IR°init/test.vi"/>
 		<Item Name="Dépendances" Type="Dependencies">
 			<Property Name="NI.SortType" Type="Int">0</Property>
 			<Item Name="instr.lib" Type="Folder">
@@ -572,18 +570,11 @@
 			<Item Name="Error Code Enum typedef.ctl" Type="VI" URL="../dependecies/Error Code Enum typedef.ctl"/>
 			<Item Name="Error Code Handler.vi" Type="VI" URL="../dependecies/Error Code Handler.vi"/>
 			<Item Name="Error to Warning (STM Multi-Client).vi" Type="VI" URL="/Desktop/diff/Multi Client Server/subVIs/Error to Warning (STM Multi-Client).vi"/>
-			<Item Name="ESLSCDLL.dll" Type="Document" URL="/C/Users/Radiolyse/Desktop/TRANCON-v1_0/DLL/ESLSCDLL.dll"/>
-			<Item Name="Exit_SD.vi" Type="VI" URL="/C/Users/Radiolyse/Desktop/IR°init/Dossier IR Cam Exit_SD/Exit_SD.vi"/>
-			<Item Name="FFRS_SD.vi" Type="VI" URL="/C/Users/Radiolyse/Desktop/IR°init/FFRS_SD.vi"/>
-			<Item Name="FFStopTimer_SD.vi" Type="VI" URL="/C/Users/Radiolyse/Desktop/IR°init/Dossier IR Cam Exit_SD/FFStopTimer_SD.vi"/>
 			<Item Name="Find-str-in-string-array.vi" Type="VI" URL="../dependecies/Utilities/Arrays/Find-str-in-string-array.vi"/>
 			<Item Name="globalVarSD.vi" Type="VI" URL="../dependecies/globalVarSD.vi"/>
 			<Item Name="Graph_cursors_minmaxSD.vi" Type="VI" URL="../dependecies/Graph_cursors_minmaxSD.vi"/>
 			<Item Name="HSSpeed_type typedef.ctl" Type="VI" URL="../Classes/Detector/UV-VIS/methods/atmcd32d.llb/HSSpeed_type typedef.ctl"/>
-			<Item Name="Initbrd_SD.vi" Type="VI" URL="/C/Users/Radiolyse/Desktop/IR°init/Initbrd_SD.vi"/>
-			<Item Name="Initdrv_SD.vi" Type="VI" URL="/C/Users/Radiolyse/Desktop/IR°init/Initdrv_SD.vi"/>
-			<Item Name="IR Cam Exit_SD.vi" Type="VI" URL="/C/Users/Radiolyse/Desktop/IR°init/Dossier IR Cam Exit_SD/IR Cam Exit_SD.vi"/>
-			<Item Name="IsPDA_SD.vi" Type="VI" URL="/C/Users/Radiolyse/Desktop/IR°init/IsPDA_SD.vi"/>
+			<Item Name="IRkHzInit131202_SD.vi" Type="VI" URL="../../../../../Radiolyse/Desktop/IR°init/IRkHzInit131202_SD.vi"/>
 			<Item Name="Join StringsSD.vi" Type="VI" URL="../Classes/Detector/UV-VIS/methods/Join StringsSD.vi"/>
 			<Item Name="kernel32.dll" Type="Document" URL="kernel32.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
@@ -611,14 +602,6 @@
 			<Item Name="remove-dev-pointsSD.vi" Type="VI" URL="../dependecies/remove-dev-pointsSD.vi"/>
 			<Item Name="replace_in_stringSD.vi" Type="VI" URL="../dependecies/replace_in_stringSD.vi"/>
 			<Item Name="Reposition Legend.vi" Type="VI" URL="../dependecies/Reposition Legend.vi"/>
-			<Item Name="RS_TOREG_SD.vi" Type="VI" URL="/C/Users/Radiolyse/Desktop/IR°init/RS_TOREG_SD.vi"/>
-			<Item Name="SetExtTrigSD.vi" Type="VI" URL="/C/Users/Radiolyse/Desktop/IR°init/SetExtTrigSD.vi"/>
-			<Item Name="SetIntTrig_SD.vi" Type="VI" URL="/C/Users/Radiolyse/Desktop/IR°init/Dossier IR Cam Exit_SD/SetIntTrig_SD.vi"/>
-			<Item Name="SetTOREG_SD.vi" Type="VI" URL="/C/Users/Radiolyse/Desktop/IR°init/SetTOREG_SD.vi"/>
-			<Item Name="SetVCLKReg_SD.vi" Type="VI" URL="/C/Users/Radiolyse/Desktop/IR°init/SetVCLKReg_SD.vi"/>
-			<Item Name="SRingStartThreadSD.vi" Type="VI" URL="/C/Users/Radiolyse/Desktop/IR°init/SRingStartThreadSD.vi"/>
-			<Item Name="SRingStopThread_SD.vi" Type="VI" URL="/C/Users/Radiolyse/Desktop/IR°init/Dossier IR Cam Exit_SD/SRingStopThread_SD.vi"/>
-			<Item Name="SRingThreadIsOFF_SD.vi" Type="VI" URL="/C/Users/Radiolyse/Desktop/IR°init/Dossier IR Cam Exit_SD/SRingThreadIsOFF_SD.vi"/>
 			<Item Name="time-stringSD.vi" Type="VI" URL="../dependecies/time-stringSD.vi"/>
 			<Item Name="TriggerMode_mode typedef.ctl" Type="VI" URL="../Classes/Detector/UV-VIS/methods/atmcd32d.llb/TriggerMode_mode typedef.ctl"/>
 			<Item Name="Update GraphChart Legend.vi" Type="VI" URL="../dependecies/Update GraphChart Legend.vi"/>
@@ -627,10 +610,8 @@
 			<Item Name="update-Expgroup.vi" Type="VI" URL="../dependecies/update-Expgroup.vi"/>
 			<Item Name="update-graphlegendOD.vi" Type="VI" URL="../dependecies/update-graphlegendOD.vi"/>
 			<Item Name="UserEvent.ctl" Type="VI" URL="../dependecies/ControlsVIs/Clusters-def/UserEvent.ctl"/>
-			<Item Name="V_off_SD.vi" Type="VI" URL="/C/Users/Radiolyse/Desktop/IR°init/V_off_SD.vi"/>
 			<Item Name="verify-selected-wavesSD.vi" Type="VI" URL="../dependecies/verify-selected-wavesSD.vi"/>
 			<Item Name="write wait.vi" Type="VI" URL="../Classes/Delay Line/DelayLineLS4/write wait.vi"/>
-			<Item Name="WriteL_SD.vi" Type="VI" URL="/C/Users/Radiolyse/Desktop/IR°init/WriteL_SD.vi"/>
 			<Item Name="xxx.ctl" Type="VI" URL="../controls/xxx.ctl"/>
 		</Item>
 		<Item Name="Spécifications de construction" Type="Build">
