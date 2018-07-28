@@ -27,13 +27,13 @@
 	</Item>
 	<Item Name="override_methods" Type="Folder">
 		<Item Name="Init Task.vi" Type="VI" URL="../DAQmxTaskAICurrent/Init Task.vi">
-			<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">&amp;1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!'O!!!!$1!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!"!!!!$Z!=!!?!!!='E2"57VY6'&amp;T;U&amp;*1X6S=G6O&gt;#ZM&gt;G.M98.T!!!72%&amp;2&lt;8B598.L15F$&gt;8*S:7ZU)'^V&gt;!!!%U!$!!VM;7ZF)'&gt;S&lt;X6Q;7ZH!#:!.`````]!$B5!A!!!!!!"!!1!!!!"!!!!!!!!"W.P&gt;7ZU:8)!)%"1!!-!!!!"!!)4:8*S&lt;X)A;7YA+'ZP)'6S=G^S+1!/1$$`````"'ZB&lt;75!!$"!.`````]!$B5!A!!!!!!"!!1!!!!"!!!!!!!!%8"I?8.J9W&amp;M)'.I97ZO:7RT!$R!=!!?!!!='E2"57VY6'&amp;T;U&amp;*1X6S=G6O&gt;#ZM&gt;G.M98.T!!!62%&amp;2&lt;8B598.L15F$&gt;8*S:7ZU)'FO!&amp;1!]!!-!!-!"!!%!!5!"!!%!!9!"Q!)!!E!#A!,!Q!!?!!!$1A!!!!!!!!!!!!!D1M!!!!!!!!!!!!!#!!!!A!!!!!+!!!"#A!!!1I!!!#3!!!!!!%!$!!!!!!</Property>
+			<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">&amp;1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!([!!!!$A!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!"!!!!$Z!=!!?!!!='E2"57VY6'&amp;T;U&amp;*1X6S=G6O&gt;#ZM&gt;G.M98.T!!!72%&amp;2&lt;8B598.L15F$&gt;8*S:7ZU)'^V&gt;!!!*E!X`````Q!/&amp;1#!!!!!!!%!"!!!!!%!!!!!!!!(9W^V&lt;H2F=A!41!-!$7RJ&lt;G5A:X*P&gt;8"J&lt;G=!-%!X`````Q!/&amp;1#!!!!!!!%!"!!!!!%!!!!!!!!2='BZ=WFD97QA9WBB&lt;GZF&lt;(-!)%"1!!-!!!!"!!)4:8*S&lt;X)A;7YA+'ZP)'6S=G^S+1!/1$$`````"'ZB&lt;75!!%R!=!!?!!!E)E2"57VY6'&amp;L=U.P&lt;H2B;7ZF=F^(:7ZF=G&amp;M,GRW9WRB=X-!!"V%16&amp;N?&amp;2B;X.$&lt;WZU97FO:8*@2W6O:8*B&lt;#"*4A!]1(!!(A!!("J%16&amp;N?&amp;2B=WN"35.V=H*F&lt;H1O&lt;(:D&lt;'&amp;T=Q!!&amp;52"57VY6'&amp;T;U&amp;*1X6S=G6O&gt;#"J&lt;A"5!0!!$!!$!!1!"!!&amp;!!9!"!!(!!A!#1!+!!M!$!-!!(A!!!U)!!!!!!!!!!!!!)U,!!))!!!!!!!!!!A!!!%3!!!!#A!!!2)!!!!+!!!!EA!!!!!"!!U!!!!!</Property>
 			<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
-			<Property Name="NI.ClassItem.Flags" Type="Int">0</Property>
+			<Property Name="NI.ClassItem.Flags" Type="Int">1073741824</Property>
 			<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">false</Property>
 			<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
 			<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
-			<Property Name="NI.ClassItem.State" Type="Int">1342710288</Property>
+			<Property Name="NI.ClassItem.State" Type="Int">1107825168</Property>
 		</Item>
 		<Item Name="Read Value.vi" Type="VI" URL="../DAQmxTaskAICurrent/Read Value.vi">
 			<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">&amp;1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!&amp;D!!!!#Q!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!#E!B"%2B&gt;'%!!"2!-0````],2'&amp;U93"T&gt;(*J&lt;G=!2%"Q!"Y!!"Q;2%&amp;2&lt;8B598.L15F$&gt;8*S:7ZU,GRW9WRB=X-!!"R%16&amp;N?&amp;2B=WN"35.V=H*F&lt;H1A:7YA=W^S&gt;'FF!!!%!!!!)%"1!!-!!!!"!!)4:8*S&lt;X)A;7YA+'ZP)'6S=G^S+1"%1(!!(A!!("J%16&amp;N?&amp;2B=WN"35.V=H*F&lt;H1O&lt;(:D&lt;'&amp;T=Q!!(%2"57VY6'&amp;T;U&amp;*1X6S=G6O&gt;#"F&lt;C"F&lt;H2S[75!!&amp;1!]!!-!!-!"!!&amp;!!9!"Q!(!!=!"Q!)!!=!"Q!*!Q!!?!!!$1A!!!E!!!!*!!!!D1M!!!!!!!!!!!!!!!!!!!!!!!!+!!!!!!!!!!!!!!#1!!!!!!%!#A!!!!!</Property>

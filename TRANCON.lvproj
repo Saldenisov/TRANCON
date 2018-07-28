@@ -150,7 +150,6 @@
 					<Item Name="DAQmxTaskCounterDigital_Emulate.lvclass" Type="LVClass" URL="../Classes/DAQmxTasks/DAQmxTaskCounterDigital_Emulate/DAQmxTaskCounterDigital_Emulate.lvclass"/>
 				</Item>
 				<Item Name="DAQmxTaskContainer" Type="Folder">
-					<Item Name="Emulate_ELYSE_Clock.vi" Type="VI" URL="../Classes/DAQmxTasks/DAQmxTaskContainer_General/Emulate_ELYSE_Clock.vi"/>
 					<Item Name="DAQmxTaksContainer_General.lvclass" Type="LVClass" URL="../Classes/DAQmxTasks/DAQmxTaskContainer_General/DAQmxTaksContainer_General.lvclass"/>
 					<Item Name="DAQmxTaskContainer.lvclass" Type="LVClass" URL="../Classes/DAQmxTasks/DAQmxTaskContainer/DAQmxTaskContainer.lvclass"/>
 					<Item Name="DAQmxTaksContainer_Emulate.lvclass" Type="LVClass" URL="../Classes/DAQmxTasks/DAQmxTaskContainer_Emulate/DAQmxTaksContainer_Emulate.lvclass"/>
