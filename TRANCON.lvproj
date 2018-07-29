@@ -573,7 +573,7 @@
 			<Item Name="globalVarSD.vi" Type="VI" URL="../dependecies/globalVarSD.vi"/>
 			<Item Name="Graph_cursors_minmaxSD.vi" Type="VI" URL="../dependecies/Graph_cursors_minmaxSD.vi"/>
 			<Item Name="HSSpeed_type typedef.ctl" Type="VI" URL="../Classes/Detector/UV-VIS/methods/atmcd32d.llb/HSSpeed_type typedef.ctl"/>
-			<Item Name="IRkHzInit131202_SD.vi" Type="VI" URL="../../../../../Radiolyse/Desktop/IR°init/IRkHzInit131202_SD.vi"/>
+			<Item Name="IRkHzInit131202_SD.vi" Type="VI" URL="/../Radiolyse/Desktop/IR°init/IRkHzInit131202_SD.vi"/>
 			<Item Name="Join StringsSD.vi" Type="VI" URL="../Classes/Detector/UV-VIS/methods/Join StringsSD.vi"/>
 			<Item Name="kernel32.dll" Type="Document" URL="kernel32.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
