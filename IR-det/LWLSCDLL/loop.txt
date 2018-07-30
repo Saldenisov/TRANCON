@@ -1,0 +1,19 @@
+//Clear Camera
+if (clrcnt>0) {ClrRead(drv, fftlines, zadr, clrcnt);};
+
+// ********   Thread
+if (_MOUSEOFF) DeactMouse(drv);
+//Thread on
+SetPriority(threadp);
+
+RSFifo(drv);
+if (ExTrig==TRUE) {SetExtFFTrig(drv);}
+else	{SetIntFFTrig(drv);
+		StartFFTimer( drv, exptus);}
+
+
+
+lcnt = 0; //loop count for nos samples
+
+// **********  Loop		
+do  

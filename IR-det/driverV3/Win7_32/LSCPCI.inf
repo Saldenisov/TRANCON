@@ -1,0 +1,101 @@
+; lscpci.inf
+;
+; Installation file (.inf) for the LSCPCI device.
+;
+; (c) Copyright 2004-2013 Entwicklungsbuero Stresing 
+;
+
+[Version]
+Signature="$WINDOWS NT$"
+Class=System
+ClassGuid={BBE0123D-FCB0-4745-BE98-755ECD10BE25} 
+Provider=%EBST%
+CatalogFile=LSCPCI.cat
+DriverVer=05/12/2013,6.2.9200.16384
+
+[DestinationDirs]
+DefaultDestDir = 12
+
+; ================= Class section =====================
+
+[ClassInstall32]
+Addreg=LscClassReg     
+
+[LscClassReg]
+HKR,,,0,%ClassName%
+HKR,,Icon,,-9
+HKR,,DeviceCharacteristics,0x10001,0x100     ;Use same security checks on relative opens
+HKR,,Security,,"D:P(A;;GA;;;SY)(A;;GA;;;BA)(A;;GA;;;BU)" ;Allow generic access to system and built-in Admin and buildin user
+
+; ================= Device Install section =====================
+
+[Manufacturer]
+%EBST%=EBST, NTx86
+
+[SourceDisksFiles]
+lscpci.sys=1
+
+[SourceDisksNames]
+1=%DISK_NAME%,
+
+;for w2k
+[EBST]
+; DisplayName            Section           DeviceId
+; -----------       	 -------           --------
+%LSCPCIIO.DRVDESC1%=LSCPCI_Inst,PCI\VEN_10b5&DEV_9080&SUBSYS_74014553
+%LSCPCIIO.DRVDESC2%=LSCPCI_Inst,PCI\VEN_10b5&DEV_9056&SUBSYS_74014553
+
+;for xp
+[EBST.NTx86]
+; DisplayName            Section           DeviceId
+; -----------       	 -------           --------
+%LSCPCIIO.DRVDESC1%=LSCPCI_Inst,PCI\VEN_10b5&DEV_9080&SUBSYS_74014553
+%LSCPCIIO.DRVDESC2%=LSCPCI_Inst,PCI\VEN_10b5&DEV_9056&SUBSYS_74014553
+
+[LSCPCI_Inst.NT]
+CopyFiles=LSCPCI.CopyFiles
+
+
+[LSCPCI.CopyFiles]
+lscpci.sys
+
+
+[LSCPCI_Inst.NT.Services]
+AddService=lscpci,0x00000002,LSCPCI_Service 
+
+
+
+[LSCPCI_Service]
+DisplayName    = %LSCPCIIO.SVCDESC%                            
+ServiceType    = 1                  ; SERVICE_KERNEL_DRIVER
+StartType      = 3                  ; SERVICE_DEMAND_START
+ErrorControl   = 1                  ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\lscpci.sys                            
+AddReg	       = LSC_parameters
+
+
+[LSC_parameters]
+HKR, "Parameters", "MaxDMABufLength", %REG_DWORD%, 0x7fff
+HKR, "Parameters", "SubVenDevID", %REG_DWORD%, 0x45537401
+HKR, "Parameters", "VenDevID", %REG_DWORD%, 0x10b59080
+
+
+[Strings]
+
+;
+; Non-Localizable Strings
+;
+
+REG_SZ         = 0x00000000
+REG_MULTI_SZ   = 0x00010000
+REG_EXPAND_SZ  = 0x00020000
+REG_BINARY     = 0x00000001
+REG_DWORD      = 0x00010001
+SERVICEROOT    = "System\CurrentControlSet\Services"
+
+EBST = "Entwicklungsbuero Stresing"
+ClassName = "LSCPCI Boards"
+LSCPCIIO.SVCDESC = "LSCPCI Board Service"
+LSCPCIIO.DRVDESC1 = "LSCPCI Board Chip9080"
+LSCPCIIO.DRVDESC2 = "LSCPCI Board Chip9056"
+DISK_NAME = "LSCPCI Install Disk"

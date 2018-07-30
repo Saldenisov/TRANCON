@@ -1,0 +1,59 @@
+FIFO examples
+these examples shows how to read 2 cameras parallel.
+here a special flag for compiling the DLL is needed:
+_HWCH2  TRUE  (in LwLSC.h)
+use this special compiled DLL for the example 
+-> is saved here in the board.vis subfolder
+
+
+GETFF2Cam
+starts PCI board timer and looks in a loop for data in the fifo.
+if so it starts reading this to main ram. 
+Simple version for not time critical apps.
+
+
+
+GETRing2cam
+shows how to read 2 cameras parallel with a background thread.
+The main read thread reads the FIFO data to main Ram. This part is executed in higher priority.
+The display thread runs with normal priority and displays one of the last scans, 
+which was copied by the main thread to an additional display buffer if it was requested by Flag FetchActLine
+This Flag must be set once by calling DLLStartFetchRingBuf to start the cycle. 
+With a 2nd Flag: DispBufValid both threads are syncronized. These Flags are global in the DLL (BOARD.C).
+
+In the call of SRingStartThread the priority is set to 15 - thats standard max. priority.
+For high speed cameras and heavy computing systems this value could be set to a max. val. of 31(timecritical).
+In that case one core is exclusively used.
+
+this example uses just one memory array for both lines(length=1 line) with data sorted as: 
+word array CHA
+word array CHB
+resort of hardware data is done in BOARD.C -> CallIORead
+resort of arrays is done in the read loop of labview. 
+
+also implemented is a ring buffer of size RingBufDepth=20
+Could be used much bigger if needed. Here it is used for demonstration only.
+
+
+
+LoopselFF
+implements a very constant measure loop outside labview
+reads a complete block of nos scans
+during block read, the thread is highest 
+only for single core systems -> should run modal and disable mouse
+if needed: set _PS2KEYBOARD TRUE and recompile
+
+after read the slider can select the scan which is displayed
+first hit run, then hit arm/clear and then read.
+For a new block of scans press stop then arm and then read again.
+
+
+
+all other examples are set to use the one camera DLL (_HWCH2 FALSE)
+therefore they are saved to another folder: examples.
+These are for demonstration only, they are not adopted to the 2 cam system and can only
+display the CHA signal.
+
+
+
+for more infos and comments, please have a look to the DLL sources LWLSCDLL
