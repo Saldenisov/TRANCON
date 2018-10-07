@@ -101,7 +101,16 @@
 			<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
 			<Property Name="NI.ClassItem.State" Type="Int">1082143232</Property>
 		</Item>
-		<Item Name="OSc-Reply-Connect-Client.ctl" Type="VI" URL="../../../dependecies/ControlsVIs/Clusters-def/OSc-Reply-Connect-Client.ctl">
+		<Item Name="OSc-Diodes.ctl" Type="VI" URL="../../../dependecies/ControlsVIs/Clusters-def/OSc-Diodes.ctl">
+			<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">&amp;1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!"&gt;!!!!!A!41!I!$6&gt;$46^N98B@&gt;G&amp;M&gt;75!1A$R!!!!!!!!!!)54X.D;7RM&lt;X.D&lt;X"F,GRW9WRB=X-/4V.D,52J&lt;W2F=SZD&gt;'Q!&amp;E"1!!%!!!F845-A&gt;G&amp;M&gt;75!!1!"!!!!!!</Property>
+			<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
+			<Property Name="NI.ClassItem.Flags" Type="Int">1048576</Property>
+			<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">true</Property>
+			<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
+			<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
+			<Property Name="NI.ClassItem.State" Type="Int">1074278912</Property>
+		</Item>
+		<Item Name="OSc-Reply-Connect-client.ctl" Type="VI" URL="../../../dependecies/ControlsVIs/Clusters-def/OSc-Reply-Connect-client.ctl">
 			<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">&amp;1#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!#V!!!!"Q!-1#%'&lt;WYP&lt;W:G!!!/1#%*6U..8X.U982F!!R!)1:T&gt;'&amp;U&gt;8-!!!N!!Q!%9W^E:1!!%%!Q`````Q:T&lt;X6S9W5!!"*!5!!$!!)!!Q!%"76S=G^S!&amp;I!]1!!!!!!!!!#&amp;%^T9WFM&lt;'^T9W^Q:3ZM&gt;G.M98.T(%^49SV3:8"M?3V$&lt;WZO:7.U,5.M;76O&gt;#ZD&gt;'Q!)%"1!!-!!!!"!!5/&lt;X6U=(6U)'.M&gt;8.U:8)!!!%!"A!!!!!</Property>
 			<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
 			<Property Name="NI.ClassItem.Flags" Type="Int">1048576</Property>
