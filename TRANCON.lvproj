@@ -104,6 +104,7 @@
 			<Item Name="Update name of exp.vi" Type="VI" URL="../Classes/Control/Control-Client/Update name of exp.vi"/>
 			<Item Name="Data_raw-open.vi" Type="VI" URL="../dependecies/Data_raw-open.vi"/>
 			<Item Name="Raw_data_to_data.vi" Type="VI" URL="../dependecies/Raw_data_to_data.vi"/>
+			<Item Name="Raw_BG_corrSD.vi" Type="VI" URL="../dependecies/Raw_BG_corrSD.vi"/>
 		</Item>
 		<Item Name="Classes" Type="Folder">
 			<Item Name="GeneralFunctionality" Type="Folder">
@@ -193,7 +194,6 @@
 		</Item>
 		<Item Name="TRANCON-HARDWARE-SERVER.vi" Type="VI" URL="../TRANCON-HARDWARE-SERVER.vi"/>
 		<Item Name="TRANCON-Client.vi" Type="VI" URL="../TRANCON-Client.vi"/>
-		<Item Name="Raw_BG_corrSD.vi" Type="VI" URL="../dependecies/Raw_BG_corrSD.vi"/>
 		<Item Name="Dépendances" Type="Dependencies">
 			<Property Name="NI.SortType" Type="Int">0</Property>
 			<Item Name="instr.lib" Type="Folder">
@@ -627,6 +627,46 @@
 			<Item Name="write wait.vi" Type="VI" URL="../Classes/Delay Line/DelayLineLS4/write wait.vi"/>
 			<Item Name="xxx.ctl" Type="VI" URL="../controls/xxx.ctl"/>
 		</Item>
-		<Item Name="Spécifications de construction" Type="Build"/>
+		<Item Name="Spécifications de construction" Type="Build">
+			<Item Name="TRANCON-Client5" Type="EXE">
+				<Property Name="App_copyErrors" Type="Bool">true</Property>
+				<Property Name="App_INI_aliasGUID" Type="Str">{BA020B1A-59B3-4436-A038-49D83591D7CB}</Property>
+				<Property Name="App_INI_GUID" Type="Str">{1747FB0D-50A7-4E68-90E2-2A70DF469D42}</Property>
+				<Property Name="App_serverConfig.httpPort" Type="Int">8002</Property>
+				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
+				<Property Name="Bld_buildCacheID" Type="Str">{6152336E-93D7-4C9B-89DF-C04313049939}</Property>
+				<Property Name="Bld_buildSpecName" Type="Str">TRANCON-Client5</Property>
+				<Property Name="Bld_excludeInlineSubVIs" Type="Bool">true</Property>
+				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
+				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../builds/NI_AB_PROJECTNAME/TRANCON-Client5</Property>
+				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
+				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
+				<Property Name="Bld_previewCacheID" Type="Str">{9B8FA1E8-A5F2-48CF-A9FC-F200964B79EC}</Property>
+				<Property Name="Bld_version.build" Type="Int">1</Property>
+				<Property Name="Bld_version.major" Type="Int">1</Property>
+				<Property Name="Destination[0].destName" Type="Str">Client.exe</Property>
+				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/TRANCON-Client5/Client.exe</Property>
+				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
+				<Property Name="Destination[0].type" Type="Str">App</Property>
+				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
+				<Property Name="Destination[1].path" Type="Path">../builds/NI_AB_PROJECTNAME/TRANCON-Client5/data</Property>
+				<Property Name="DestinationCount" Type="Int">2</Property>
+				<Property Name="Source[0].itemID" Type="Str">{4C9479D2-3191-4266-9F6C-9E6257D611B0}</Property>
+				<Property Name="Source[0].type" Type="Str">Container</Property>
+				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/Poste de travail/TRANCON-Client.vi</Property>
+				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
+				<Property Name="Source[1].type" Type="Str">VI</Property>
+				<Property Name="SourceCount" Type="Int">2</Property>
+				<Property Name="TgtF_enableDebugging" Type="Bool">true</Property>
+				<Property Name="TgtF_fileDescription" Type="Str">TRANCON-Client5</Property>
+				<Property Name="TgtF_internalName" Type="Str">TRANCON-Client5</Property>
+				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2018 </Property>
+				<Property Name="TgtF_productName" Type="Str">TRANCON-Client5</Property>
+				<Property Name="TgtF_targetfileGUID" Type="Str">{6531E241-3C5E-4146-BF3C-49A5EF9A6BEF}</Property>
+				<Property Name="TgtF_targetfileName" Type="Str">Client.exe</Property>
+			</Item>
+		</Item>
 	</Item>
 </Project>
