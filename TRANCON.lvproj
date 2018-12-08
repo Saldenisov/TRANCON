@@ -105,6 +105,9 @@
 			<Item Name="Data_raw-open.vi" Type="VI" URL="../dependecies/Data_raw-open.vi"/>
 			<Item Name="Raw_data_to_data.vi" Type="VI" URL="../dependecies/Raw_data_to_data.vi"/>
 			<Item Name="Raw_BG_corrSD.vi" Type="VI" URL="../dependecies/Raw_BG_corrSD.vi"/>
+			<Item Name="Open_IMG_file.vi" Type="VI" URL="../dependecies/Open_IMG_file.vi"/>
+			<Item Name="Get_XY_vectors_IMG.vi" Type="VI" URL="../dependecies/Get_XY_vectors_IMG.vi"/>
+			<Item Name="HIS_to_DAT.vi" Type="VI" URL="../Classes/Control/Control-Client/HIS_to_DAT.vi"/>
 		</Item>
 		<Item Name="Classes" Type="Folder">
 			<Item Name="GeneralFunctionality" Type="Folder">
@@ -168,6 +171,7 @@
 				<Item Name="UV-VIS.lvclass" Type="LVClass" URL="../Classes/Detector/UV-VIS/UV-VIS.lvclass"/>
 				<Item Name="VIS-NIR.lvclass" Type="LVClass" URL="../Classes/Detector/VIS-IR/VIS-NIR.lvclass"/>
 				<Item Name="Emulate.lvclass" Type="LVClass" URL="../Classes/Detector/Emulate/Emulate.lvclass"/>
+				<Item Name="UV-VIS-Avantes.lvclass" Type="LVClass" URL="../Classes/Detector/UV-VIS-Avantes/UV-VIS-Avantes.lvclass"/>
 			</Item>
 			<Item Name="DelayLine" Type="Folder">
 				<Item Name="DelayLine.lvclass" Type="LVClass" URL="../Classes/Delay Line/DelayLine.lvclass"/>
@@ -178,10 +182,17 @@
 			<Item Name="Oscilloscope" Type="Folder">
 				<Item Name="Oscilloscope.lvclass" Type="LVClass" URL="../Classes/Oscilloscope/Oscilloscope.lvclass"/>
 				<Item Name="TELEDINE_LECROY.lvclass" Type="LVClass" URL="../Classes/Oscilloscope/TELEDINE_LECROY/TELEDINE_LECROY.lvclass"/>
+				<Item Name="OSc-Read_Diodes.ctl" Type="VI" URL="../dependecies/ControlsVIs/Clusters-def/OSc-Read_Diodes.ctl"/>
 			</Item>
 			<Item Name="Experiment classes" Type="Folder">
 				<Item Name="Experiment.lvclass" Type="LVClass" URL="../Classes/Experiments/Experiment.lvclass"/>
 				<Item Name="Experiments_group.lvclass" Type="LVClass" URL="../Classes/Experiments/Experiments_group.lvclass"/>
+			</Item>
+			<Item Name="DATA" Type="Folder">
+				<Item Name="DATA.lvclass" Type="LVClass" URL="../Classes/DATA/DATA.lvclass"/>
+				<Item Name="HIS.lvclass" Type="LVClass" URL="../Classes/DATA/HIS/HIS.lvclass"/>
+				<Item Name="DAT.lvclass" Type="LVClass" URL="../Classes/DATA/DAT/DAT.lvclass"/>
+				<Item Name="IMG.lvclass" Type="LVClass" URL="../Classes/DATA/IMG/IMG.lvclass"/>
 			</Item>
 		</Item>
 		<Item Name="TestVIs" Type="Folder">
@@ -194,7 +205,6 @@
 		</Item>
 		<Item Name="TRANCON-HARDWARE-SERVER.vi" Type="VI" URL="../TRANCON-HARDWARE-SERVER.vi"/>
 		<Item Name="TRANCON-Client.vi" Type="VI" URL="../TRANCON-Client.vi"/>
-		<Item Name="OSc-Read_Diodes.ctl" Type="VI" URL="../dependecies/ControlsVIs/Clusters-def/OSc-Read_Diodes.ctl"/>
 		<Item Name="Dépendances" Type="Dependencies">
 			<Property Name="NI.SortType" Type="Int">0</Property>
 			<Item Name="instr.lib" Type="Folder">
