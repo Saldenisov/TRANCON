@@ -103,7 +103,7 @@
 				<Item Name="update_dict_HIS_open.vi" Type="VI" URL="../dependecies/HIS_to_DAT_to_TRABS/update_dict_HIS_open.vi"/>
 				<Item Name="adjust_filename.vi" Type="VI" URL="../dependecies/HIS_to_DAT_to_TRABS/adjust_filename.vi"/>
 				<Item Name="cluster_template.ctl" Type="VI" URL="../dependecies/HIS_to_DAT_to_TRABS/cluster_template.ctl"/>
-				<Item Name="redraw_graphs.vi" Type="VI" URL="../../DATA/StreakVD2/redraw_graphs.vi"/>
+				<Item Name="redraw_graphs.vi" Type="VI" URL="../dependecies/HIS_to_DAT_to_TRABS/redraw_graphs.vi"/>
 				<Item Name="update_dict_HIS_DAT_update.vi" Type="VI" URL="../dependecies/HIS_to_DAT_to_TRABS/update_dict_HIS_DAT_update.vi"/>
 				<Item Name="update_DAT_graphs.vi" Type="VI" URL="../dependecies/HIS_to_DAT_to_TRABS/update_DAT_graphs.vi"/>
 				<Item Name="save_dat.vi" Type="VI" URL="../dependecies/HIS_to_DAT_to_TRABS/save_dat.vi"/>
