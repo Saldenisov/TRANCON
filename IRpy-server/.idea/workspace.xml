@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="85f6c95c-b565-403a-9329-176ee3df6341" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../Classes/Control/Control-Server/Check All Hardware Status.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Control/Control-Server/Check All Hardware Status.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/Control/Control-Server/ConnectDetector_vi.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Control/Control-Server/ConnectDetector_vi.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/Control/Control-Server/Control-Server.lvclass" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Control/Control-Server/Control-Server.lvclass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/Control/Control-Server/ExecuteCommands.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Control/Control-Server/ExecuteCommands.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/Control/Control-Server/Read Detector.lvclass.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Control/Control-Server/Read Detector.lvclass.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/Control/Control-Server/Set_DAQmx.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Control/Control-Server/Set_DAQmx.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/Control/Control-Server/Set_Det.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Control/Control-Server/Set_Det.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/Control/Control-Server/Set_Oscilloscope.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Control/Control-Server/Set_Oscilloscope.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/Control/Control-Server/SettingsUpdate.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Control/Control-Server/SettingsUpdate.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/Control/Control-Server/Write Detector.lvclass.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Control/Control-Server/Write Detector.lvclass.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/DATA/HIS/Read_header.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/DATA/HIS/Read_header.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/Detector/Build Signals.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/Build Signals.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/Detector/Convert RAWDATA.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/Convert RAWDATA.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/Detector/DETRead-Com-Exec.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/DETRead-Com-Exec.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/Detector/DETStatus-Com-Exec.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/DETStatus-Com-Exec.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/Detector/DETUpdate-Com-exec.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/DETUpdate-Com-exec.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/Detector/DET_get_Data_corrected.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/DET_get_Data_corrected.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/Detector/DetConnect-com-exec.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/DetConnect-com-exec.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/Detector/Detector.lvclass" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/Detector.lvclass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/Detector/DetectorVI.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/DetectorVI.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/Detector/Get Cooler Status.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/Get Cooler Status.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/Detector/Get Temperature.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/Get Temperature.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/Detector/ON-OFF cooler.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/ON-OFF cooler.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/Detector/RAWDATA clean_up.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/RAWDATA clean_up.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/Detector/Read BG_level.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/Read BG_level.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/Detector/Read Calibration path.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/Read Calibration path.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/Detector/Read Controls refs.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/Read Controls refs.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/Detector/Read DLL path.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/Read DLL path.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/Detector/Read RawData.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/Read RawData.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/Detector/Read SC sum values ref.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/Read SC sum values ref.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/Detector/Read Xscale.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/Read Xscale.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/Detector/Read vi reference.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/Read vi reference.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/Detector/Send_DET_CLIENT_READ.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/Send_DET_CLIENT_READ.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/Detector/Set Temperature.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/Set Temperature.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/Detector/Set XScale.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/Set XScale.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/Detector/ShowErrorDETVI.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/ShowErrorDETVI.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/Detector/UV-VIS-Avantes/INIT.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/UV-VIS-Avantes/INIT.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/Detector/UV-VIS-Avantes/Read RawData.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/UV-VIS-Avantes/Read RawData.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/Detector/UV-VIS-Avantes/STOP.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/UV-VIS-Avantes/STOP.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/Detector/VIS-IR/Get Temperature.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/VIS-IR/Get Temperature.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/Detector/VIS-IR/INIT.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/VIS-IR/INIT.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/Detector/VIS-IR/ON-OFF cooler.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/VIS-IR/ON-OFF cooler.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/Detector/VIS-IR/Read RawData.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/VIS-IR/Read RawData.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/Detector/VIS-IR/STOP.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/VIS-IR/STOP.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/Detector/VIS-IR/Set Temperature.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/VIS-IR/Set Temperature.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/Detector/Write BG_level.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/Write BG_level.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/Detector/Write Calibration path.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/Write Calibration path.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/Detector/Write Controls refs.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/Write Controls refs.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/Detector/Write DLL path.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/Write DLL path.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/Detector/Write SC sum values ref.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/Write SC sum values ref.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/Detector/Write Xscale.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/Write Xscale.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/Detector/Write vi reference.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/Write vi reference.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TRANCON.lvproj" beforeDir="false" afterPath="$PROJECT_DIR$/../TRANCON.lvproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dependecies/ControlsVIs/Clusters-def/Def_signals_from_DET.ctl" beforeDir="false" afterPath="$PROJECT_DIR$/../dependecies/ControlsVIs/Clusters-def/Def_signals_from_DET.ctl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dependecies/ControlsVIs/Clusters-def/Det-Read.ctl" beforeDir="false" afterPath="$PROJECT_DIR$/../dependecies/ControlsVIs/Clusters-def/Det-Read.ctl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dependecies/ControlsVIs/Clusters-def/Det-Reply-to-Connect-client.ctl" beforeDir="false" afterPath="$PROJECT_DIR$/../dependecies/ControlsVIs/Clusters-def/Det-Reply-to-Connect-client.ctl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dependecies/ControlsVIs/Clusters-def/Det-Reply-to-Connect.ctl" beforeDir="false" afterPath="$PROJECT_DIR$/../dependecies/ControlsVIs/Clusters-def/Det-Reply-to-Connect.ctl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dependecies/ControlsVIs/Clusters-def/Det-Reply-to-Read.ctl" beforeDir="false" afterPath="$PROJECT_DIR$/../dependecies/ControlsVIs/Clusters-def/Det-Reply-to-Read.ctl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dependecies/ControlsVIs/Server Status.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../dependecies/ControlsVIs/Server Status.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dependecies/ControlsVIs/StartDetectorControlVI.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../dependecies/ControlsVIs/StartDetectorControlVI.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../settings/settingsDetector.ini" beforeDir="false" afterPath="$PROJECT_DIR$/../settings/settingsDetector.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../settings/settingsServer.ini" beforeDir="false" afterPath="$PROJECT_DIR$/../settings/settingsServer.ini" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-1998426416">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="py" value="667" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Python" value="667" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/IRpy.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="458">
+              <caret line="51" column="20" selection-start-line="51" selection-start-column="20" selection-end-line="51" selection-end-column="20" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+                <element signature="e#1083#1204#0" />
+                <element signature="e#1293#1423#0" />
+                <element signature="e#1291#1403#0" />
+                <element signature="e#1472#1602#0" />
+                <marker date="1545299871070" expanded="true" signature="672:808" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/utils/IRdet.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="6176">
+              <caret line="356" column="4" selection-start-line="356" selection-start-column="4" selection-end-line="356" selection-end-column="62" />
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/errors/myexceptions.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="9" column="46" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/errors/__init__.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>DLLRingBlockTrig</find>
+      <find>ou</find>
+      <find>_read</find>
+      <find>zeros</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/utils/errors.py" />
+        <option value="$PROJECT_DIR$/errors/myexceptions.py" />
+        <option value="$PROJECT_DIR$/utils/IRdet.py" />
+        <option value="$PROJECT_DIR$/IRpy.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="896" />
+    <option name="width" value="1513" />
+    <option name="height" value="1298" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="IRpy-server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="IRpy-server" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="IRpy-server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="IRpy-server" type="462c0819:PsiDirectoryNode" />
+              <item name="errors" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="IRpy-server" type="b2602c69:ProjectViewProjectNode" />
+              <item name="IRpy-server" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Sergey Denisov\Documents\REPS\IRpy-server" />
+      <recent name="C:\Users\Sergey Denisov\Documents\REPS\IRpy-server\utils\errors" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.IRpy">
+    <configuration name="IRdet" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="IRpy-server" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/utils" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/utils/IRdet.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="IRpy" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="IRpy-server" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/IRpy.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.IRdet" />
+      <item itemvalue="Python.IRpy" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.IRpy" />
+        <item itemvalue="Python.IRdet" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="85f6c95c-b565-403a-9329-176ee3df6341" name="Default Changelist" comment="" />
+      <created>1544775829491</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1544775829491</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.36301368" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32885906" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39976957" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="10" weight="0.32949308" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" visible="true" weight="0.25" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/utils/IRdet.py</url>
+          <line>333</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/errors/myexceptions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="9" column="46" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/errors/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/IRdet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6176">
+          <caret line="356" column="4" selection-start-line="356" selection-start-column="4" selection-end-line="356" selection-end-column="62" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IRpy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="458">
+          <caret line="51" column="20" selection-start-line="51" selection-start-column="20" selection-end-line="51" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+            <element signature="e#1083#1204#0" />
+            <element signature="e#1293#1423#0" />
+            <element signature="e#1291#1403#0" />
+            <element signature="e#1472#1602#0" />
+            <marker date="1545299871070" expanded="true" signature="672:808" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

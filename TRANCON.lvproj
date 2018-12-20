@@ -219,6 +219,35 @@
 			<Item Name="test_memory_leak_parr_VI.vi" Type="VI" URL="../dependecies/tests/test_memory_leak_parr_VI.vi"/>
 			<Item Name="test_leak2.vi" Type="VI" URL="../dependecies/tests/test_leak2.vi"/>
 		</Item>
+		<Item Name="IRpy-server" Type="Folder">
+			<Item Name=".idea" Type="Folder">
+				<Item Name="encodings.xml" Type="Document" URL="../IRpy-server/.idea/encodings.xml"/>
+				<Item Name="IRpy-server.iml" Type="Document" URL="../IRpy-server/.idea/IRpy-server.iml"/>
+				<Item Name="misc.xml" Type="Document" URL="../IRpy-server/.idea/misc.xml"/>
+				<Item Name="modules.xml" Type="Document" URL="../IRpy-server/.idea/modules.xml"/>
+				<Item Name="workspace.xml" Type="Document" URL="../IRpy-server/.idea/workspace.xml"/>
+			</Item>
+			<Item Name="errors" Type="Folder">
+				<Item Name="__pycache__" Type="Folder">
+					<Item Name="__init__.cpython-36.pyc" Type="Document" URL="../IRpy-server/errors/__pycache__/__init__.cpython-36.pyc"/>
+					<Item Name="__init__.cpython-37.pyc" Type="Document" URL="../IRpy-server/errors/__pycache__/__init__.cpython-37.pyc"/>
+					<Item Name="myexceptions.cpython-36.pyc" Type="Document" URL="../IRpy-server/errors/__pycache__/myexceptions.cpython-36.pyc"/>
+					<Item Name="myexceptions.cpython-37.pyc" Type="Document" URL="../IRpy-server/errors/__pycache__/myexceptions.cpython-37.pyc"/>
+				</Item>
+				<Item Name="__init__.py" Type="Document" URL="../IRpy-server/errors/__init__.py"/>
+				<Item Name="myexceptions.py" Type="Document" URL="../IRpy-server/errors/myexceptions.py"/>
+			</Item>
+			<Item Name="utils" Type="Folder">
+				<Item Name="__pycache__" Type="Folder">
+					<Item Name="__init__.cpython-36.pyc" Type="Document" URL="../IRpy-server/utils/__pycache__/__init__.cpython-36.pyc"/>
+				</Item>
+				<Item Name="__init__.py" Type="Document" URL="../IRpy-server/utils/__init__.py"/>
+				<Item Name="IRdet.py" Type="Document" URL="../IRpy-server/utils/IRdet.py"/>
+			</Item>
+			<Item Name="__init__.py" Type="Document" URL="../IRpy-server/__init__.py"/>
+			<Item Name="ESLSCDLL.dll" Type="Document" URL="../IRpy-server/ESLSCDLL.dll"/>
+			<Item Name="IRpy.py" Type="Document" URL="../IRpy-server/IRpy.py"/>
+		</Item>
 		<Item Name="TRANCON-HARDWARE-SERVER.vi" Type="VI" URL="../TRANCON-HARDWARE-SERVER.vi"/>
 		<Item Name="TRANCON-Client.vi" Type="VI" URL="../TRANCON-Client.vi"/>
 		<Item Name="Dépendances" Type="Dependencies">
