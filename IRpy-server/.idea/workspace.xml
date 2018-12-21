@@ -2,68 +2,94 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="85f6c95c-b565-403a-9329-176ee3df6341" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../Classes/Control/Control-Server/Check All Hardware Status.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Control/Control-Server/Check All Hardware Status.vi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Classes/Control/Control-Server/ConnectDetector_vi.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Control/Control-Server/ConnectDetector_vi.vi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Classes/Control/Control-Server/Control-Server.lvclass" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Control/Control-Server/Control-Server.lvclass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Classes/Control/Control-Server/ExecuteCommands.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Control/Control-Server/ExecuteCommands.vi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Classes/Control/Control-Server/Read Detector.lvclass.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Control/Control-Server/Read Detector.lvclass.vi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Classes/Control/Control-Server/Set_DAQmx.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Control/Control-Server/Set_DAQmx.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/Control/Control-Client/meas_start_stop.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Control/Control-Client/meas_start_stop.vi" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Classes/Control/Control-Server/Set_Det.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Control/Control-Server/Set_Det.vi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Classes/Control/Control-Server/Set_Oscilloscope.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Control/Control-Server/Set_Oscilloscope.vi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Classes/Control/Control-Server/SettingsUpdate.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Control/Control-Server/SettingsUpdate.vi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Classes/Control/Control-Server/Write Detector.lvclass.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Control/Control-Server/Write Detector.lvclass.vi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Classes/DATA/HIS/Read_header.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/DATA/HIS/Read_header.vi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Classes/Detector/Build Signals.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/Build Signals.vi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Classes/Detector/Convert RAWDATA.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/Convert RAWDATA.vi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Classes/Detector/DETRead-Com-Exec.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/DETRead-Com-Exec.vi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Classes/Detector/DETStatus-Com-Exec.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/DETStatus-Com-Exec.vi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Classes/Detector/DETUpdate-Com-exec.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/DETUpdate-Com-exec.vi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Classes/Detector/DET_get_Data_corrected.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/DET_get_Data_corrected.vi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Classes/Detector/DetConnect-com-exec.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/DetConnect-com-exec.vi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Classes/Detector/Detector.lvclass" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/Detector.lvclass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Classes/Detector/DetectorVI.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/DetectorVI.vi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Classes/Detector/Get Cooler Status.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/Get Cooler Status.vi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Classes/Detector/Get Temperature.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/Get Temperature.vi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Classes/Detector/ON-OFF cooler.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/ON-OFF cooler.vi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Classes/Detector/RAWDATA clean_up.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/RAWDATA clean_up.vi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Classes/Detector/Read BG_level.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/Read BG_level.vi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Classes/Detector/Read Calibration path.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/Read Calibration path.vi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Classes/Detector/Read Controls refs.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/Read Controls refs.vi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Classes/Detector/Read DLL path.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/Read DLL path.vi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Classes/Detector/Read RawData.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/Read RawData.vi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Classes/Detector/Read SC sum values ref.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/Read SC sum values ref.vi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Classes/Detector/Read Xscale.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/Read Xscale.vi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Classes/Detector/Read vi reference.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/Read vi reference.vi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Classes/Detector/Send_DET_CLIENT_READ.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/Send_DET_CLIENT_READ.vi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Classes/Detector/Set Temperature.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/Set Temperature.vi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Classes/Detector/Set XScale.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/Set XScale.vi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Classes/Detector/ShowErrorDETVI.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/ShowErrorDETVI.vi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Classes/Detector/UV-VIS-Avantes/INIT.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/UV-VIS-Avantes/INIT.vi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Classes/Detector/UV-VIS-Avantes/Read RawData.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/UV-VIS-Avantes/Read RawData.vi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Classes/Detector/UV-VIS-Avantes/STOP.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/UV-VIS-Avantes/STOP.vi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Classes/Detector/VIS-IR/Get Temperature.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/VIS-IR/Get Temperature.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/DAQmxTasks/DAQmxTaksCounterDigital/Read Value.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/DAQmxTasks/DAQmxTaksCounterDigital/Read Value.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/DATA/HIS/Read_data.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/DATA/HIS/Read_data.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/DB/AddProject.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/DB/AddProject.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/DB/DB_SQLite/Date_request.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/DB/DB_SQLite/Date_request.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/DB/DB_SQLite/Open_connection.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/DB/DB_SQLite/Open_connection.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/DB/DB_SQLite/StringS_request.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/DB/DB_SQLite/StringS_request.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/DB/DB_SQLite/String_request.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/DB/DB_SQLite/String_request.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/DB/DB_SQLite/UpdateExperiment.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/DB/DB_SQLite/UpdateExperiment.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/DB/DB_SQLite/UpdateProject.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/DB/DB_SQLite/UpdateProject.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/DB/DB_SQLite/UpdateSample.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/DB/DB_SQLite/UpdateSample.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/DB/DB_SQLite/Void_request.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/DB/DB_SQLite/Void_request.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/Delay Line/DelayLineLS4/ConnectSimple.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Delay Line/DelayLineLS4/ConnectSimple.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/Delay Line/DelayLineLS4/Disconnect.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Delay Line/DelayLineLS4/Disconnect.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/Delay Line/DelayLineLS4/GetPosSingleAxis.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Delay Line/DelayLineLS4/GetPosSingleAxis.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/Delay Line/DelayLineLS4/LS4 SetLimits.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Delay Line/DelayLineLS4/LS4 SetLimits.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/Delay Line/DelayLineLS4/LS4 SetMotorCurrents.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Delay Line/DelayLineLS4/LS4 SetMotorCurrents.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/Delay Line/DelayLineLS4/LS4 SetPitches.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Delay Line/DelayLineLS4/LS4 SetPitches.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/Delay Line/DelayLineLS4/LoadConfig.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Delay Line/DelayLineLS4/LoadConfig.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/Delay Line/DelayLineLS4/MoveAbsSingleAxis.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Delay Line/DelayLineLS4/MoveAbsSingleAxis.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/Delay Line/DelayLineLS4/SetAccel.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Delay Line/DelayLineLS4/SetAccel.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/Delay Line/DelayLineLS4/SetControlPars.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Delay Line/DelayLineLS4/SetControlPars.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/Delay Line/DelayLineLS4/SetDimensions.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Delay Line/DelayLineLS4/SetDimensions.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/Delay Line/DelayLineLS4/SetVel.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Delay Line/DelayLineLS4/SetVel.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/Detector/Emulate/Generate_SC.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/Emulate/Generate_SC.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/Detector/UV-VIS/Get Temperature.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/UV-VIS/Get Temperature.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/Detector/UV-VIS/INIT.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/UV-VIS/INIT.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/Detector/UV-VIS/ON-OFF cooler.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/UV-VIS/ON-OFF cooler.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/Detector/UV-VIS/Set Temperature.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/UV-VIS/Set Temperature.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/Detector/UV-VIS/methods/UV-VIS CoolerOFF.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/UV-VIS/methods/UV-VIS CoolerOFF.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/Detector/UV-VIS/methods/UV-VIS CoolerON.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/UV-VIS/methods/UV-VIS CoolerON.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/Detector/UV-VIS/methods/UV-VIS GetAcquiredData.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/UV-VIS/methods/UV-VIS GetAcquiredData.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/Detector/UV-VIS/methods/UV-VIS GetAcquisitionTimings.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/UV-VIS/methods/UV-VIS GetAcquisitionTimings.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/Detector/UV-VIS/methods/UV-VIS GetDetector.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/UV-VIS/methods/UV-VIS GetDetector.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/Detector/UV-VIS/methods/UV-VIS GetHSSpeedSD.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/UV-VIS/methods/UV-VIS GetHSSpeedSD.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/Detector/UV-VIS/methods/UV-VIS GetNumberADChannelsSD.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/UV-VIS/methods/UV-VIS GetNumberADChannelsSD.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/Detector/UV-VIS/methods/UV-VIS GetNumberHSSpeedsSD.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/UV-VIS/methods/UV-VIS GetNumberHSSpeedsSD.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/Detector/UV-VIS/methods/UV-VIS GetNumberPreAmpGainsSD.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/UV-VIS/methods/UV-VIS GetNumberPreAmpGainsSD.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/Detector/UV-VIS/methods/UV-VIS GetNumberVSSpeedsSD.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/UV-VIS/methods/UV-VIS GetNumberVSSpeedsSD.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/Detector/UV-VIS/methods/UV-VIS GetPreAmpGainSD.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/UV-VIS/methods/UV-VIS GetPreAmpGainSD.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/Detector/UV-VIS/methods/UV-VIS GetStatus.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/UV-VIS/methods/UV-VIS GetStatus.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/Detector/UV-VIS/methods/UV-VIS GetTemperature.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/UV-VIS/methods/UV-VIS GetTemperature.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/Detector/UV-VIS/methods/UV-VIS GetVSSpeed.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/UV-VIS/methods/UV-VIS GetVSSpeed.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/Detector/UV-VIS/methods/UV-VIS Initialize.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/UV-VIS/methods/UV-VIS Initialize.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/Detector/UV-VIS/methods/UV-VIS PrepareAcquisition.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/UV-VIS/methods/UV-VIS PrepareAcquisition.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/Detector/UV-VIS/methods/UV-VIS SetAcquisitionMode.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/UV-VIS/methods/UV-VIS SetAcquisitionMode.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/Detector/UV-VIS/methods/UV-VIS SetBaselineClamp.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/UV-VIS/methods/UV-VIS SetBaselineClamp.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/Detector/UV-VIS/methods/UV-VIS SetExposureTime.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/UV-VIS/methods/UV-VIS SetExposureTime.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/Detector/UV-VIS/methods/UV-VIS SetFastExtTriggerSD.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/UV-VIS/methods/UV-VIS SetFastExtTriggerSD.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/Detector/UV-VIS/methods/UV-VIS SetHSSpeedSD.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/UV-VIS/methods/UV-VIS SetHSSpeedSD.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/Detector/UV-VIS/methods/UV-VIS SetMultiTrack.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/UV-VIS/methods/UV-VIS SetMultiTrack.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/Detector/UV-VIS/methods/UV-VIS SetNumberKinetics.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/UV-VIS/methods/UV-VIS SetNumberKinetics.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/Detector/UV-VIS/methods/UV-VIS SetPreAmpGain.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/UV-VIS/methods/UV-VIS SetPreAmpGain.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/Detector/UV-VIS/methods/UV-VIS SetReadModeSD.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/UV-VIS/methods/UV-VIS SetReadModeSD.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/Detector/UV-VIS/methods/UV-VIS SetTemperature.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/UV-VIS/methods/UV-VIS SetTemperature.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/Detector/UV-VIS/methods/UV-VIS SetTriggerModeSD.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/UV-VIS/methods/UV-VIS SetTriggerModeSD.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/Detector/UV-VIS/methods/UV-VIS SetVSSpeed.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/UV-VIS/methods/UV-VIS SetVSSpeed.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/Detector/UV-VIS/methods/UV-VIS ShutDown.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/UV-VIS/methods/UV-VIS ShutDown.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/Detector/UV-VIS/methods/UV-VIS StartAcquisition.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/UV-VIS/methods/UV-VIS StartAcquisition.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/Detector/UV-VIS/methods/UV-VIs SetADChannelSD.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/UV-VIS/methods/UV-VIs SetADChannelSD.vi" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Classes/Detector/VIS-IR/INIT.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/VIS-IR/INIT.vi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Classes/Detector/VIS-IR/ON-OFF cooler.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/VIS-IR/ON-OFF cooler.vi" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Classes/Detector/VIS-IR/Read RawData.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/VIS-IR/Read RawData.vi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Classes/Detector/VIS-IR/STOP.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/VIS-IR/STOP.vi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Classes/Detector/VIS-IR/Set Temperature.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/VIS-IR/Set Temperature.vi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Classes/Detector/Write BG_level.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/Write BG_level.vi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Classes/Detector/Write Calibration path.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/Write Calibration path.vi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Classes/Detector/Write Controls refs.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/Write Controls refs.vi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Classes/Detector/Write DLL path.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/Write DLL path.vi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Classes/Detector/Write SC sum values ref.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/Write SC sum values ref.vi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Classes/Detector/Write Xscale.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/Write Xscale.vi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Classes/Detector/Write vi reference.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/Write vi reference.vi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../TRANCON.lvproj" beforeDir="false" afterPath="$PROJECT_DIR$/../TRANCON.lvproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dependecies/ControlsVIs/Clusters-def/Def_signals_from_DET.ctl" beforeDir="false" afterPath="$PROJECT_DIR$/../dependecies/ControlsVIs/Clusters-def/Def_signals_from_DET.ctl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dependecies/ControlsVIs/Clusters-def/Det-Read.ctl" beforeDir="false" afterPath="$PROJECT_DIR$/../dependecies/ControlsVIs/Clusters-def/Det-Read.ctl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dependecies/ControlsVIs/Clusters-def/Det-Reply-to-Connect-client.ctl" beforeDir="false" afterPath="$PROJECT_DIR$/../dependecies/ControlsVIs/Clusters-def/Det-Reply-to-Connect-client.ctl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dependecies/ControlsVIs/Clusters-def/Det-Reply-to-Connect.ctl" beforeDir="false" afterPath="$PROJECT_DIR$/../dependecies/ControlsVIs/Clusters-def/Det-Reply-to-Connect.ctl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dependecies/ControlsVIs/Clusters-def/Det-Reply-to-Read.ctl" beforeDir="false" afterPath="$PROJECT_DIR$/../dependecies/ControlsVIs/Clusters-def/Det-Reply-to-Read.ctl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dependecies/ControlsVIs/Server Status.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../dependecies/ControlsVIs/Server Status.vi" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../dependecies/ControlsVIs/StartDetectorControlVI.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../dependecies/ControlsVIs/StartDetectorControlVI.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/Detector/VIS-IR/VIS-IR_Exit.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/VIS-IR/VIS-IR_Exit.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/Detector/VIS-IR/VIS-IR_FFRS.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/VIS-IR/VIS-IR_FFRS.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/Detector/VIS-IR/VIS-IR_INIT-drv.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/VIS-IR/VIS-IR_INIT-drv.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/Detector/VIS-IR/VIS-IR_INIT_brd.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/VIS-IR/VIS-IR_INIT_brd.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/Detector/VIS-IR/VIS-IR_RS_TOREG.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/VIS-IR/VIS-IR_RS_TOREG.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/Detector/VIS-IR/VIS-IR_ReadringBlock.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/VIS-IR/VIS-IR_ReadringBlock.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/Detector/VIS-IR/VIS-IR_SET_TOREG.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/VIS-IR/VIS-IR_SET_TOREG.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/Detector/VIS-IR/VIS-IR_SRingStartFetch.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/VIS-IR/VIS-IR_SRingStartFetch.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/Detector/VIS-IR/VIS-IR_SRingStartThread.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/VIS-IR/VIS-IR_SRingStartThread.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/Detector/VIS-IR/VIS-IR_SRingThreadIsOFF.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/VIS-IR/VIS-IR_SRingThreadIsOFF.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/Detector/VIS-IR/VIS-IR_SetExitTrig.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/VIS-IR/VIS-IR_SetExitTrig.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/Detector/VIS-IR/VIS-IR_SetIntTrig.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/VIS-IR/VIS-IR_SetIntTrig.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/Detector/VIS-IR/VIS-IR_SetVCLKReg.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/VIS-IR/VIS-IR_SetVCLKReg.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/Detector/VIS-IR/VIS-IR_SringBlockTrig.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/VIS-IR/VIS-IR_SringBlockTrig.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/Detector/VIS-IR/VIS-IR_Stop_FFtimer.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/VIS-IR/VIS-IR_Stop_FFtimer.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/Detector/VIS-IR/VIS-IR_Stop_ring.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/VIS-IR/VIS-IR_Stop_ring.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/Detector/VIS-IR/VIS-IR_Vs_off.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/VIS-IR/VIS-IR_Vs_off.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/Detector/VIS-IR/VIS-IR_WRITE_L.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/VIS-IR/VIS-IR_WRITE_L.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/Detector/VIS-IR/VIS-IR_ls_PDA.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/VIS-IR/VIS-IR_ls_PDA.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Classes/Detector/VIS-IR/VIS-NIR.lvclass" beforeDir="false" afterPath="$PROJECT_DIR$/../Classes/Detector/VIS-IR/VIS-NIR.lvclass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/IRdet.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/IRdet.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TRANCON-HARDWARE-SERVER.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../TRANCON-HARDWARE-SERVER.vi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dependecies/verify_Commands.vi" beforeDir="false" afterPath="$PROJECT_DIR$/../dependecies/verify_Commands.vi" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../settings/settingsDetector.ini" beforeDir="false" afterPath="$PROJECT_DIR$/../settings/settingsDetector.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../settings/settingsServer.ini" beforeDir="false" afterPath="$PROJECT_DIR$/../settings/settingsServer.ini" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -90,21 +116,26 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="924181526">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/IRpy.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="458">
+            <state relative-caret-position="550">
               <caret line="51" column="20" selection-start-line="51" selection-start-column="20" selection-end-line="51" selection-end-column="20" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
-                <element signature="e#1083#1204#0" />
                 <element signature="e#1293#1423#0" />
-                <element signature="e#1291#1403#0" />
-                <element signature="e#1472#1602#0" />
-                <marker date="1545299871070" expanded="true" signature="672:808" ph="..." />
               </folding>
             </state>
           </provider>
@@ -113,8 +144,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/utils/IRdet.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6176">
-              <caret line="356" column="4" selection-start-line="356" selection-start-column="4" selection-end-line="356" selection-end-column="62" />
+            <state relative-caret-position="351">
+              <caret line="332" column="68" selection-start-line="332" selection-start-column="68" selection-end-line="332" selection-end-column="68" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -125,7 +156,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
+            <state relative-caret-position="289">
               <caret line="17" selection-start-line="17" selection-end-line="17" />
             </state>
           </provider>
@@ -134,7 +165,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/errors/myexceptions.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
+            <state relative-caret-position="153">
               <caret line="9" column="46" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
             </state>
           </provider>
@@ -170,8 +201,8 @@
       <list>
         <option value="$PROJECT_DIR$/utils/errors.py" />
         <option value="$PROJECT_DIR$/errors/myexceptions.py" />
-        <option value="$PROJECT_DIR$/utils/IRdet.py" />
         <option value="$PROJECT_DIR$/IRpy.py" />
+        <option value="$PROJECT_DIR$/utils/IRdet.py" />
       </list>
     </option>
   </component>
@@ -186,7 +217,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -208,6 +238,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -300,10 +331,9 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1176" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1668" height="976" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.36301368" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.4226994" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -325,28 +355,17 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/utils/IRdet.py</url>
-          <line>333</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
   <component name="editorHistoryManager">
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
+        <state relative-caret-position="289">
           <caret line="17" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/errors/myexceptions.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
+        <state relative-caret-position="153">
           <caret line="9" column="46" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
         </state>
       </provider>
@@ -356,8 +375,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/utils/IRdet.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6176">
-          <caret line="356" column="4" selection-start-line="356" selection-start-column="4" selection-end-line="356" selection-end-column="62" />
+        <state relative-caret-position="351">
+          <caret line="332" column="68" selection-start-line="332" selection-start-column="68" selection-end-line="332" selection-end-column="68" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
@@ -366,15 +385,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/IRpy.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="458">
+        <state relative-caret-position="550">
           <caret line="51" column="20" selection-start-line="51" selection-start-column="20" selection-end-line="51" selection-end-column="20" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
-            <element signature="e#1083#1204#0" />
             <element signature="e#1293#1423#0" />
-            <element signature="e#1291#1403#0" />
-            <element signature="e#1472#1602#0" />
-            <marker date="1545299871070" expanded="true" signature="672:808" ph="..." />
           </folding>
         </state>
       </provider>

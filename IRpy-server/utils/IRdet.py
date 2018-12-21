@@ -331,16 +331,8 @@ class IRdet():
             return True if out != 0 else False
 
     def __DLLReadRingBlock(self, pixel: int, start: int, stop: int):
-        INT = ct.c_int32
-        PINT = ct.POINTER(INT)
         num_lines = stop - start + 1
         num_columns = pixel
-        ptr = (INT * num_columns * num_lines)()
-
-        for i in range(num_lines):
-            for j in range(num_columns):
-                ptr[i][j] = 1
-
         ar = np.zeros(num_lines * num_columns, dtype=np.int32)
         ptr = ar.ctypes.data_as(ct.POINTER(ct.c_int32))
         start_ct = ct.c_int32(start)
