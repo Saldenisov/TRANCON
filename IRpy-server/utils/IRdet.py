@@ -77,19 +77,13 @@ class IRdet():
             return self.connected
 
     def _readraw(self, number_of_scans):
-
-        rawdata = np.array([np.zeros(shape=(10, 600)), np.zeros(shape=(10, 600))])
         try:
             status = 1
             while status == 1:
-                print("waiting low")
                 status = self.__DLLRingBlockTrig(1)
             while status != 1:
-                print("waiting high")
                 status = self.__DLLRingBlockTrig(1)
-            data = self.__DLLReadRingBlock(600, 0, number_of_scans * 9)
-            print(data)
-            print('out')
+            rawdata = self.__DLLReadRingBlock(600, 0, number_of_scans * 9)
         except myexc.MyException as e:
             print(e)
             raise
@@ -334,12 +328,8 @@ class IRdet():
         INT = ct.c_int32
         PINT = ct.POINTER(INT)
         num_lines = stop - start + 1
+        print(num_lines)
         num_columns = pixel
-        ptr = (INT * num_columns * num_lines)()
-
-        for i in range(num_lines):
-            for j in range(num_columns):
-                ptr[i][j] = 1
 
         ar = np.zeros(num_lines * num_columns, dtype=np.int32)
         ptr = ar.ctypes.data_as(ct.POINTER(ct.c_int32))
@@ -353,7 +343,7 @@ class IRdet():
             return ar
 
 if __name__ == "__main__":
-    p = r"C:\Users\Schmidhammer\Desktop\IRpy-server\ESLSCDLL.dll"
+    p = r"D:\SD\TRANCON\IRpy-server\ESLSCDLL.dll"
     irdet = IRdet(dllpath = os.path.normpath(p), dev = False )
     irdet.connect()
     try:
