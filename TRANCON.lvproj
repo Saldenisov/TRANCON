@@ -124,6 +124,7 @@
 			<Item Name="Raw_BG_corrSD.vi" Type="VI" URL="../dependecies/Raw_BG_corrSD.vi"/>
 			<Item Name="Open_IMG_file.vi" Type="VI" URL="../dependecies/Open_IMG_file.vi"/>
 			<Item Name="Get_XY_vectors_IMG.vi" Type="VI" URL="../dependecies/Get_XY_vectors_IMG.vi"/>
+			<Item Name="check for up_down.vi" Type="VI" URL="../dependecies/check for up_down.vi"/>
 		</Item>
 		<Item Name="Classes" Type="Folder">
 			<Item Name="GeneralFunctionality" Type="Folder">
@@ -184,10 +185,12 @@
 			</Item>
 			<Item Name="Detector" Type="Folder">
 				<Item Name="Detector.lvclass" Type="LVClass" URL="../Classes/Detector/Detector.lvclass"/>
+				<Item Name="DetectorVI.vi" Type="VI" URL="../Classes/Detector/DetectorVI.vi"/>
 				<Item Name="UV-VIS.lvclass" Type="LVClass" URL="../Classes/Detector/UV-VIS/UV-VIS.lvclass"/>
 				<Item Name="VIS-NIR.lvclass" Type="LVClass" URL="../Classes/Detector/VIS-IR/VIS-NIR.lvclass"/>
 				<Item Name="Emulate.lvclass" Type="LVClass" URL="../Classes/Detector/Emulate/Emulate.lvclass"/>
-				<Item Name="UV-VIS-Avantes.lvclass" Type="LVClass" URL="../Classes/Detector/UV-VIS-Avantes/UV-VIS-Avantes.lvclass"/>
+				<Item Name="UV-VIS_AVANTES.lvclass" Type="LVClass" URL="../Classes/Detector/UV-VIS_AVANTES/UV-VIS_AVANTES.lvclass"/>
+				<Item Name="DET_BUNCH.lvclass" Type="LVClass" URL="../Classes/Detector/DET_BUNCH/DET_BUNCH.lvclass"/>
 			</Item>
 			<Item Name="DelayLine" Type="Folder">
 				<Item Name="DelayLine.lvclass" Type="LVClass" URL="../Classes/Delay Line/DelayLine.lvclass"/>
@@ -250,6 +253,8 @@
 		</Item>
 		<Item Name="TRANCON-HARDWARE-SERVER.vi" Type="VI" URL="../TRANCON-HARDWARE-SERVER.vi"/>
 		<Item Name="TRANCON-Client.vi" Type="VI" URL="../TRANCON-Client.vi"/>
+		<Item Name="Treatment.vi" Type="VI" URL="../Treatment.vi"/>
+		<Item Name="test.vi" Type="VI" URL="../../DATA/test/test.vi"/>
 		<Item Name="Dépendances" Type="Dependencies">
 			<Property Name="NI.SortType" Type="Int">0</Property>
 			<Item Name="instr.lib" Type="Folder">
@@ -903,6 +908,45 @@
 				<Property Name="TgtF_productName" Type="Str">TRANCON-Client5</Property>
 				<Property Name="TgtF_targetfileGUID" Type="Str">{6531E241-3C5E-4146-BF3C-49A5EF9A6BEF}</Property>
 				<Property Name="TgtF_targetfileName" Type="Str">Client.exe</Property>
+			</Item>
+			<Item Name="Treatment" Type="EXE">
+				<Property Name="App_copyErrors" Type="Bool">true</Property>
+				<Property Name="App_INI_aliasGUID" Type="Str">{C5446F0B-D6D7-4EF0-99D4-C84037241344}</Property>
+				<Property Name="App_INI_GUID" Type="Str">{1CE1C177-91C8-4BDA-BF34-68C99223C14B}</Property>
+				<Property Name="App_serverConfig.httpPort" Type="Int">8002</Property>
+				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
+				<Property Name="Bld_buildCacheID" Type="Str">{712FE62D-6C2B-4DC5-93A4-AF34D5B80FE2}</Property>
+				<Property Name="Bld_buildSpecName" Type="Str">Treatment</Property>
+				<Property Name="Bld_excludeInlineSubVIs" Type="Bool">true</Property>
+				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
+				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../builds/NI_AB_PROJECTNAME/Treatment</Property>
+				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
+				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
+				<Property Name="Bld_previewCacheID" Type="Str">{27735084-101F-4A2F-BE64-ECB0137D2A79}</Property>
+				<Property Name="Bld_version.build" Type="Int">1</Property>
+				<Property Name="Bld_version.major" Type="Int">1</Property>
+				<Property Name="Destination[0].destName" Type="Str">ELYSE_treat.exe</Property>
+				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/Treatment/ELYSE_treat.exe</Property>
+				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
+				<Property Name="Destination[0].type" Type="Str">App</Property>
+				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
+				<Property Name="Destination[1].path" Type="Path">../builds/NI_AB_PROJECTNAME/Treatment/data</Property>
+				<Property Name="DestinationCount" Type="Int">2</Property>
+				<Property Name="Source[0].itemID" Type="Str">{905082F4-0377-4A9F-8A1C-57907CC2F156}</Property>
+				<Property Name="Source[0].type" Type="Str">Container</Property>
+				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/Poste de travail/Treatment.vi</Property>
+				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
+				<Property Name="Source[1].type" Type="Str">VI</Property>
+				<Property Name="SourceCount" Type="Int">2</Property>
+				<Property Name="TgtF_enableDebugging" Type="Bool">true</Property>
+				<Property Name="TgtF_fileDescription" Type="Str">Treatment</Property>
+				<Property Name="TgtF_internalName" Type="Str">Treatment</Property>
+				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2018 </Property>
+				<Property Name="TgtF_productName" Type="Str">Treatment</Property>
+				<Property Name="TgtF_targetfileGUID" Type="Str">{0C177EA0-1AAE-44C6-956C-52FE340D9104}</Property>
+				<Property Name="TgtF_targetfileName" Type="Str">ELYSE_treat.exe</Property>
 			</Item>
 		</Item>
 	</Item>

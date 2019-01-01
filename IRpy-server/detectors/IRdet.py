@@ -15,7 +15,7 @@ class DLLerror(MyException):
         MyException.__init__(self, "DLL error:" + text)
 
 
-class IRdet():
+class IRdet:
     def __init__(self, dllpath, parameters = {}, dev = True):
         self.__dllpath = dllpath
         self.connected = False
