@@ -5,9 +5,6 @@ import os
 from time import sleep
 from errors import myexceptions as myexc
 
-
-
-
 class MyException(Exception):
     def __init__(self, text):
         super().__init__(text)
@@ -19,7 +16,6 @@ class DLLerror(MyException):
 
 
 class IRdet():
-
     def __init__(self, dllpath, parameters = {}, dev = True):
         self.__dllpath = dllpath
         self.connected = False
@@ -51,7 +47,6 @@ class IRdet():
         return datacleaned
 
     def _init(self, parameters):
-        
         try:
             self.__IRdet = ct.WinDLL(self.__dllpath)
             self.__DLLCCDDrvInit(1)
@@ -88,8 +83,6 @@ class IRdet():
                 print("waiting high")
                 status = self.__DLLRingBlockTrig(1)
             data = self.__DLLReadRingBlock(600, 0, number_of_scans * 9)
-            print(data)
-            print('out')
         except myexc.MyException as e:
             print(e)
             raise
