@@ -29,7 +29,7 @@
 					<Item Name="CreateEvents_SERVER.vi" Type="VI" URL="../dependecies/SubVIs/CreateEvents_SERVER.vi"/>
 				</Item>
 				<Item Name="CLIENT" Type="Folder">
-					<Item Name="INIT.vi" Type="VI" URL="../dependecies/ControlsVIs/INIT.vi"/>
+					<Item Name="Init.vi" Type="VI" URL="../../../../../../AvaSpecX64-DLL_9.4/examples/LabView/LabViewSingleChan/LabViewSingleChan.llb/Init.vi"/>
 				</Item>
 				<Item Name="ScaleUp_corrSD.vi" Type="VI" URL="../dependecies/ScaleUp_corrSD.vi"/>
 				<Item Name="Read_data_from_saved_exp.vi" Type="VI" URL="../dependecies/SubVIs/Read_data_from_saved_exp.vi"/>
@@ -185,11 +185,12 @@
 			</Item>
 			<Item Name="Detector" Type="Folder">
 				<Item Name="Detector.lvclass" Type="LVClass" URL="../Classes/Detector/Detector.lvclass"/>
-				<Item Name="DetectorVI.vi" Type="VI" URL="../Classes/Detector/DetectorVI.vi"/>
-				<Item Name="UV-VIS.lvclass" Type="LVClass" URL="../Classes/Detector/UV-VIS/UV-VIS.lvclass"/>
+				<Item Name="CCD_camera.lvclass" Type="LVClass" URL="../Classes/Detector/UV-VIS/CCD_camera.lvclass"/>
 				<Item Name="VIS-NIR.lvclass" Type="LVClass" URL="../Classes/Detector/VIS-IR/VIS-NIR.lvclass"/>
 				<Item Name="Emulate.lvclass" Type="LVClass" URL="../Classes/Detector/Emulate/Emulate.lvclass"/>
 				<Item Name="UV-VIS_AVANTES.lvclass" Type="LVClass" URL="../Classes/Detector/UV-VIS_AVANTES/UV-VIS_AVANTES.lvclass"/>
+				<Item Name="def_measure_parameters.ctl" Type="VI" URL="../Classes/Detector/UV-VIS_AVANTES/def_measure_parameters.ctl"/>
+				<Item Name="def_parameters.ctl" Type="VI" URL="../Classes/Detector/UV-VIS_AVANTES/def_parameters.ctl"/>
 				<Item Name="DET_BUNCH.lvclass" Type="LVClass" URL="../Classes/Detector/DET_BUNCH/DET_BUNCH.lvclass"/>
 			</Item>
 			<Item Name="DelayLine" Type="Folder">
@@ -221,6 +222,10 @@
 			<Item Name="test_blank.vi" Type="VI" URL="../dependecies/tests/test_blank.vi"/>
 			<Item Name="test_memory_leak_parr_VI.vi" Type="VI" URL="../dependecies/tests/test_memory_leak_parr_VI.vi"/>
 			<Item Name="test_leak2.vi" Type="VI" URL="../dependecies/tests/test_leak2.vi"/>
+			<Item Name="server.vi" Type="VI" URL="../test/server.vi"/>
+			<Item Name="hardware1.vi" Type="VI" URL="../test/hardware1.vi"/>
+			<Item Name="hardware2.vi" Type="VI" URL="../test/hardware2.vi"/>
+			<Item Name="test_det.vi" Type="VI" URL="../DLL/test_det.vi"/>
 		</Item>
 		<Item Name="IRpy-server" Type="Folder">
 			<Item Name=".idea" Type="Folder">
@@ -254,7 +259,6 @@
 		<Item Name="TRANCON-HARDWARE-SERVER.vi" Type="VI" URL="../TRANCON-HARDWARE-SERVER.vi"/>
 		<Item Name="TRANCON-Client.vi" Type="VI" URL="../TRANCON-Client.vi"/>
 		<Item Name="Treatment.vi" Type="VI" URL="../Treatment.vi"/>
-		<Item Name="test.vi" Type="VI" URL="../../DATA/test/test.vi"/>
 		<Item Name="Dépendances" Type="Dependencies">
 			<Property Name="NI.SortType" Type="Int">0</Property>
 			<Item Name="instr.lib" Type="Folder">
@@ -806,9 +810,15 @@
 			<Item Name="add_group.vi" Type="VI" URL="../dependecies/add_group.vi"/>
 			<Item Name="add_name_explistSD.vi" Type="VI" URL="../dependecies/add_name_explistSD.vi"/>
 			<Item Name="atmcd32d.dll" Type="Document" URL="../DLL/atmcd32d.dll"/>
+			<Item Name="avaspec.dll" Type="Document" URL="../../../../../../AvaSpecX64-DLL_9.4/examples/LabView/LabViewSingleChan/avaspec.dll"/>
 			<Item Name="average-1Darray-SD.vi" Type="VI" URL="../dependecies/average-1Darray-SD.vi"/>
 			<Item Name="average-2Darray-SD_double.vi" Type="VI" URL="../dependecies/average-2Darray-SD_double.vi"/>
 			<Item Name="average_with_corrections_expSD.vi" Type="VI" URL="../dependecies/average_with_corrections_expSD.vi"/>
+			<Item Name="AVS_Activate.vi" Type="VI" URL="../../../../../../AvaSpecX64-DLL_9.4/examples/LabView/LabViewSingleChan/LabViewSingleChan.llb/AVS_Activate.vi"/>
+			<Item Name="AVS_Done.vi" Type="VI" URL="../../../../../../AvaSpecX64-DLL_9.4/examples/LabView/LabViewSingleChan/LabViewSingleChan.llb/AVS_Done.vi"/>
+			<Item Name="AVS_GetList.vi" Type="VI" URL="../../../../../../AvaSpecX64-DLL_9.4/examples/LabView/LabViewSingleChan/LabViewSingleChan.llb/AVS_GetList.vi"/>
+			<Item Name="AVS_GetNrOfDevices.vi" Type="VI" URL="../../../../../../AvaSpecX64-DLL_9.4/examples/LabView/LabViewSingleChan/LabViewSingleChan.llb/AVS_GetNrOfDevices.vi"/>
+			<Item Name="AVS_Init.vi" Type="VI" URL="../../../../../../AvaSpecX64-DLL_9.4/examples/LabView/LabViewSingleChan/LabViewSingleChan.llb/AVS_Init.vi"/>
 			<Item Name="BG_corrSD.vi" Type="VI" URL="../dependecies/BG_corrSD.vi"/>
 			<Item Name="clean-kinetics-SD.vi" Type="VI" URL="../dependecies/clean-kinetics-SD.vi"/>
 			<Item Name="closest-1ArraySD.vi" Type="VI" URL="../dependecies/closest-1ArraySD.vi"/>
@@ -826,6 +836,7 @@
 			<Item Name="Error Code Handler.vi" Type="VI" URL="../dependecies/Error Code Handler.vi"/>
 			<Item Name="Error to Warning (STM Multi-Client).vi" Type="VI" URL="/Desktop/diff/Multi Client Server/subVIs/Error to Warning (STM Multi-Client).vi"/>
 			<Item Name="Find-str-in-string-array.vi" Type="VI" URL="../dependecies/Utilities/Arrays/Find-str-in-string-array.vi"/>
+			<Item Name="Find_Spectrometer.vi" Type="VI" URL="../../../../../../AvaSpecX64-DLL_9.4/examples/LabView/LabViewSingleChan/LabViewSingleChan.llb/Find_Spectrometer.vi"/>
 			<Item Name="globalVarSD.vi" Type="VI" URL="../dependecies/globalVarSD.vi"/>
 			<Item Name="Graph_cursors_minmaxSD.vi" Type="VI" URL="../dependecies/Graph_cursors_minmaxSD.vi"/>
 			<Item Name="HSSpeed_type typedef.ctl" Type="VI" URL="../Classes/Detector/UV-VIS/methods/atmcd32d.llb/HSSpeed_type typedef.ctl"/>
