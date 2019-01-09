@@ -189,8 +189,6 @@
 				<Item Name="VIS-NIR.lvclass" Type="LVClass" URL="../Classes/Detector/VIS-IR/VIS-NIR.lvclass"/>
 				<Item Name="Emulate.lvclass" Type="LVClass" URL="../Classes/Detector/Emulate/Emulate.lvclass"/>
 				<Item Name="UV-VIS_AVANTES.lvclass" Type="LVClass" URL="../Classes/Detector/UV-VIS_AVANTES/UV-VIS_AVANTES.lvclass"/>
-				<Item Name="def_measure_parameters.ctl" Type="VI" URL="../Classes/Detector/UV-VIS_AVANTES/def_measure_parameters.ctl"/>
-				<Item Name="def_parameters.ctl" Type="VI" URL="../Classes/Detector/UV-VIS_AVANTES/def_parameters.ctl"/>
 				<Item Name="DET_BUNCH.lvclass" Type="LVClass" URL="../Classes/Detector/DET_BUNCH/DET_BUNCH.lvclass"/>
 			</Item>
 			<Item Name="DelayLine" Type="Folder">
