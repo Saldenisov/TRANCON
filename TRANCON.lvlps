@@ -1,5 +1,5 @@
 [ProjectWindow_Data]
-ProjectExplorer.ClassicPosition[String] = "61,927,849,1563"
+ProjectExplorer.ClassicPosition[String] = "52,-1228,840,-592"
 
 [FenêtreProjet_Données]
 ProjectExplorer.ClassicPosition[String] = "197,1403,1015,1871"
@@ -11,4 +11,12 @@ Cache_Path[Path] Line0002 = "e_{6152336E-93D7-4C9B-89DF-C04313049939}.txt"
 [AB_Cache_{9B8FA1E8-A5F2-48CF-A9FC-F200964B79EC}]
 Cache_Path[Path] Line0001 = "/C/Users/Sergey Denisov/AppData/Local/Temp/AB_Cach"
 Cache_Path[Path] Line0002 = "e_{9B8FA1E8-A5F2-48CF-A9FC-F200964B79EC}.txt"
+
+[AB_Cache_{B65A6E20-CAC7-4EF6-B78B-2374E58CBCB7}]
+Cache_Path[Path] Line0001 = "/C/Users/Sergey Denisov/AppData/Local/Temp/AB_Cach"
+Cache_Path[Path] Line0002 = "e_{B65A6E20-CAC7-4EF6-B78B-2374E58CBCB7}.txt"
+
+[AB_Cache_{E97219D2-0735-4B50-87CA-467B013BAE3E}]
+Cache_Path[Path] Line0001 = "/C/Users/Sergey Denisov/AppData/Local/Temp/AB_Cach"
+Cache_Path[Path] Line0002 = "e_{E97219D2-0735-4B50-87CA-467B013BAE3E}.txt"
 

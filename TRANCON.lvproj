@@ -257,6 +257,8 @@
 		<Item Name="TRANCON-HARDWARE-SERVER.vi" Type="VI" URL="../TRANCON-HARDWARE-SERVER.vi"/>
 		<Item Name="TRANCON-Client.vi" Type="VI" URL="../TRANCON-Client.vi"/>
 		<Item Name="Treatment.vi" Type="VI" URL="../Treatment.vi"/>
+		<Item Name="follow.vi" Type="VI" URL="../follow.vi"/>
+		<Item Name="elyse-treat.ico" Type="Document" URL="../../../../Dropbox/elyse-treat.ico"/>
 		<Item Name="Dépendances" Type="Dependencies">
 			<Property Name="NI.SortType" Type="Int">0</Property>
 			<Item Name="instr.lib" Type="Folder">
@@ -953,6 +955,87 @@
 				<Property Name="TgtF_productName" Type="Str">Treatment</Property>
 				<Property Name="TgtF_targetfileGUID" Type="Str">{0C177EA0-1AAE-44C6-956C-52FE340D9104}</Property>
 				<Property Name="TgtF_targetfileName" Type="Str">ELYSE_treat.exe</Property>
+			</Item>
+			<Item Name="Treatment2" Type="EXE">
+				<Property Name="App_copyErrors" Type="Bool">true</Property>
+				<Property Name="App_INI_aliasGUID" Type="Str">{8FFDF56F-0090-4BFF-AFA8-92CD64109A89}</Property>
+				<Property Name="App_INI_GUID" Type="Str">{70E87309-A99E-47B0-8019-E1E3AC9676B3}</Property>
+				<Property Name="App_serverConfig.httpPort" Type="Int">8002</Property>
+				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
+				<Property Name="Bld_buildCacheID" Type="Str">{634BC28E-3D9F-4BC4-A797-82CE41D215A2}</Property>
+				<Property Name="Bld_buildSpecName" Type="Str">Treatment2</Property>
+				<Property Name="Bld_excludeInlineSubVIs" Type="Bool">true</Property>
+				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
+				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../builds/NI_AB_PROJECTNAME/Treatment2</Property>
+				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
+				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
+				<Property Name="Bld_previewCacheID" Type="Str">{6C2CCE46-CDF6-40DF-A7A9-392AB9D5167A}</Property>
+				<Property Name="Bld_version.major" Type="Int">1</Property>
+				<Property Name="Destination[0].destName" Type="Str">Application.exe</Property>
+				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/Treatment2/Application.exe</Property>
+				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
+				<Property Name="Destination[0].type" Type="Str">App</Property>
+				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
+				<Property Name="Destination[1].path" Type="Path">../builds/NI_AB_PROJECTNAME/Treatment2/data</Property>
+				<Property Name="DestinationCount" Type="Int">2</Property>
+				<Property Name="Source[0].itemID" Type="Str">{31A7DAA9-6A51-46D9-ABDA-6D526D6570EE}</Property>
+				<Property Name="Source[0].type" Type="Str">Container</Property>
+				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/Poste de travail/Treatment.vi</Property>
+				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
+				<Property Name="Source[1].type" Type="Str">VI</Property>
+				<Property Name="SourceCount" Type="Int">2</Property>
+				<Property Name="TgtF_companyName" Type="Str">CNRS LCP</Property>
+				<Property Name="TgtF_fileDescription" Type="Str">Treatment2</Property>
+				<Property Name="TgtF_internalName" Type="Str">Treatment2</Property>
+				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2019 CNRS LCP</Property>
+				<Property Name="TgtF_productName" Type="Str">Treatment2</Property>
+				<Property Name="TgtF_targetfileGUID" Type="Str">{45AFF23C-1834-45BE-99C8-3461491F98EC}</Property>
+				<Property Name="TgtF_targetfileName" Type="Str">Application.exe</Property>
+				<Property Name="TgtF_versionIndependent" Type="Bool">true</Property>
+			</Item>
+			<Item Name="Treatment3" Type="EXE">
+				<Property Name="App_copyErrors" Type="Bool">true</Property>
+				<Property Name="App_INI_aliasGUID" Type="Str">{9E4237C6-3775-42F4-93E4-F9ECDC802BC9}</Property>
+				<Property Name="App_INI_GUID" Type="Str">{A0B4897D-4A9F-46A8-98B8-ADCBFC03FAFE}</Property>
+				<Property Name="App_serverConfig.httpPort" Type="Int">8002</Property>
+				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
+				<Property Name="Bld_buildCacheID" Type="Str">{B65A6E20-CAC7-4EF6-B78B-2374E58CBCB7}</Property>
+				<Property Name="Bld_buildSpecName" Type="Str">Treatment3</Property>
+				<Property Name="Bld_excludeInlineSubVIs" Type="Bool">true</Property>
+				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
+				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../builds/NI_AB_PROJECTNAME/Treatment3</Property>
+				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
+				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
+				<Property Name="Bld_previewCacheID" Type="Str">{E97219D2-0735-4B50-87CA-467B013BAE3E}</Property>
+				<Property Name="Bld_version.build" Type="Int">1</Property>
+				<Property Name="Bld_version.major" Type="Int">1</Property>
+				<Property Name="Destination[0].destName" Type="Str">ELYSE-treatment.exe</Property>
+				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/Treatment3/ELYSE-treatment.exe</Property>
+				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
+				<Property Name="Destination[0].type" Type="Str">App</Property>
+				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
+				<Property Name="Destination[1].path" Type="Path">../builds/NI_AB_PROJECTNAME/Treatment3/data</Property>
+				<Property Name="DestinationCount" Type="Int">2</Property>
+				<Property Name="Exe_iconItemID" Type="Ref">/Poste de travail/elyse-treat.ico</Property>
+				<Property Name="Source[0].itemID" Type="Str">{31A7DAA9-6A51-46D9-ABDA-6D526D6570EE}</Property>
+				<Property Name="Source[0].type" Type="Str">Container</Property>
+				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/Poste de travail/Treatment.vi</Property>
+				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
+				<Property Name="Source[1].type" Type="Str">VI</Property>
+				<Property Name="SourceCount" Type="Int">2</Property>
+				<Property Name="TgtF_companyName" Type="Str">CNRS LCP</Property>
+				<Property Name="TgtF_enableDebugging" Type="Bool">true</Property>
+				<Property Name="TgtF_fileDescription" Type="Str">Treatment3</Property>
+				<Property Name="TgtF_internalName" Type="Str">Treatment3</Property>
+				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2019 CNRS LCP</Property>
+				<Property Name="TgtF_productName" Type="Str">Treatment3</Property>
+				<Property Name="TgtF_targetfileGUID" Type="Str">{32DAB440-62D6-4790-8F45-553F2F080DE4}</Property>
+				<Property Name="TgtF_targetfileName" Type="Str">ELYSE-treatment.exe</Property>
+				<Property Name="TgtF_versionIndependent" Type="Bool">true</Property>
 			</Item>
 		</Item>
 	</Item>
