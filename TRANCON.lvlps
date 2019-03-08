@@ -20,3 +20,11 @@ Cache_Path[Path] Line0002 = "e_{B65A6E20-CAC7-4EF6-B78B-2374E58CBCB7}.txt"
 Cache_Path[Path] Line0001 = "/C/Users/Sergey Denisov/AppData/Local/Temp/AB_Cach"
 Cache_Path[Path] Line0002 = "e_{E97219D2-0735-4B50-87CA-467B013BAE3E}.txt"
 
+[AB_Cache_{E337AFEF-5FA6-4AF8-BDC3-DC9F00392F33}]
+Cache_Path[Path] Line0001 = "/C/Users/Radiolyse/AppData/Local/Temp/AB_Cache_{E3"
+Cache_Path[Path] Line0002 = "37AFEF-5FA6-4AF8-BDC3-DC9F00392F33}.txt"
+
+[AB_Cache_{267B4DFE-82B2-40DD-BF4D-E91A09F23623}]
+Cache_Path[Path] Line0001 = "/C/Users/Radiolyse/AppData/Local/Temp/AB_Cache_{26"
+Cache_Path[Path] Line0002 = "7B4DFE-82B2-40DD-BF4D-E91A09F23623}.txt"
+
