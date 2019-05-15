@@ -205,6 +205,7 @@
 			<Item Name="Experiment classes" Type="Folder">
 				<Item Name="Experiment.lvclass" Type="LVClass" URL="../Classes/Experiments/Experiment.lvclass"/>
 				<Item Name="Experiments_group.lvclass" Type="LVClass" URL="../Classes/Experiments/Experiments_group.lvclass"/>
+				<Item Name="Experiment_merged.lvclass" Type="LVClass" URL="../Classes/Experiments/Experiment_merged/Experiment_merged.lvclass"/>
 			</Item>
 			<Item Name="DATA" Type="Folder">
 				<Item Name="DATA.lvclass" Type="LVClass" URL="../Classes/DATA/DATA.lvclass"/>
@@ -258,6 +259,7 @@
 		<Item Name="TRANCON-Client.vi" Type="VI" URL="../TRANCON-Client.vi"/>
 		<Item Name="Treatment.vi" Type="VI" URL="../Treatment.vi"/>
 		<Item Name="follow.vi" Type="VI" URL="../follow.vi"/>
+		<Item Name="merge_two_exp.vi" Type="VI" URL="../dependecies/merge_two_exp.vi"/>
 		<Item Name="Dépendances" Type="Dependencies">
 			<Property Name="NI.SortType" Type="Int">0</Property>
 			<Item Name="instr.lib" Type="Folder">
