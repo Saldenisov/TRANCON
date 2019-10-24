@@ -856,6 +856,8 @@
 			<Item Name="ProtypeCommand-DAQmxReply.ctl" Type="VI" URL="../dependecies/ControlsVIs/Clusters-def/ProtypeCommand-DAQmxReply.ctl"/>
 			<Item Name="ps90.dll" Type="Document" URL="../DLL/ps90.dll"/>
 			<Item Name="PS90_GetReadError.vi" Type="VI" URL="../Classes/Delay Line/DelayLineOwis/functions/PS90_GetReadError.vi"/>
+			<Item Name="PS90_LogFile.vi" Type="VI" URL="../Classes/Delay Line/DelayLineOwis/functions/PS90_LogFile.vi"/>
+			<Item Name="PS90_SimpleConnect.vi" Type="VI" URL="../Classes/Delay Line/DelayLineOwis/functions/PS90_SimpleConnect.vi"/>
 			<Item Name="Read Status Active_NonActive_.vi" Type="VI" URL="../Classes/Oscilloscope/Read Status Active_NonActive_.vi"/>
 			<Item Name="ReadMode_mode typedef.ctl" Type="VI" URL="../Classes/Detector/UV-VIS/methods/atmcd32d.llb/ReadMode_mode typedef.ctl"/>
 			<Item Name="remove-dev-pointsSD.vi" Type="VI" URL="../dependecies/remove-dev-pointsSD.vi"/>
