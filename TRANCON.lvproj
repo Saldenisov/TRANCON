@@ -190,6 +190,7 @@
 				<Item Name="Emulate.lvclass" Type="LVClass" URL="../Classes/Detector/Emulate/Emulate.lvclass"/>
 				<Item Name="UV-VIS_AVANTES.lvclass" Type="LVClass" URL="../Classes/Detector/UV-VIS_AVANTES/UV-VIS_AVANTES.lvclass"/>
 				<Item Name="DET_BUNCH.lvclass" Type="LVClass" URL="../Classes/Detector/DET_BUNCH/DET_BUNCH.lvclass"/>
+				<Item Name="STREAK_camera.lvclass" Type="LVClass" URL="../Classes/Detector/STREAK_camera/STREAK_camera.lvclass"/>
 			</Item>
 			<Item Name="DelayLine" Type="Folder">
 				<Item Name="DelayLine.lvclass" Type="LVClass" URL="../Classes/Delay Line/DelayLine.lvclass"/>
