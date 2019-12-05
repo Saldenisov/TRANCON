@@ -61,7 +61,7 @@
 				<Item Name="SliderSDII.ctl" Type="VI" URL="../controls/SliderSDII.ctl"/>
 				<Item Name="Clean.ctl" Type="VI" URL="../controls/Clean.ctl"/>
 				<Item Name="Cells.ctl" Type="VI" URL="../controls/Cells.ctl"/>
-				<Item Name="CellsSD.ctl" Type="VI" URL="../controls/CellsSD.ctl"/>
+				<Item Name="CellsSDIII.ctl" Type="VI" URL="../controls/CellsSDIII.ctl"/>
 				<Item Name="CellBoolean.ctl" Type="VI" URL="../controls/CellBoolean.ctl"/>
 				<Item Name="Save.ctl" Type="VI" URL="../controls/Save.ctl"/>
 				<Item Name="Load.ctl" Type="VI" URL="../controls/Load.ctl"/>
@@ -261,6 +261,7 @@
 		<Item Name="Treatment.vi" Type="VI" URL="../Treatment.vi"/>
 		<Item Name="follow.vi" Type="VI" URL="../follow.vi"/>
 		<Item Name="merge_two_exp.vi" Type="VI" URL="../dependecies/merge_two_exp.vi"/>
+		<Item Name="CellsSDI.ctl" Type="VI" URL="../controls/CellsSDI.ctl"/>
 		<Item Name="Dépendances" Type="Dependencies">
 			<Property Name="NI.SortType" Type="Int">0</Property>
 			<Item Name="instr.lib" Type="Folder">
