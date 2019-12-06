@@ -61,7 +61,6 @@
 				<Item Name="SliderSDII.ctl" Type="VI" URL="../controls/SliderSDII.ctl"/>
 				<Item Name="Clean.ctl" Type="VI" URL="../controls/Clean.ctl"/>
 				<Item Name="Cells.ctl" Type="VI" URL="../controls/Cells.ctl"/>
-				<Item Name="CellsSDIII.ctl" Type="VI" URL="../controls/CellsSDIII.ctl"/>
 				<Item Name="CellBoolean.ctl" Type="VI" URL="../controls/CellBoolean.ctl"/>
 				<Item Name="Save.ctl" Type="VI" URL="../controls/Save.ctl"/>
 				<Item Name="Load.ctl" Type="VI" URL="../controls/Load.ctl"/>
@@ -93,7 +92,6 @@
 				<Item Name="Camera.ctl" Type="VI" URL="../controls/Camera.ctl"/>
 				<Item Name="table.ctl" Type="VI" URL="../controls/table.ctl"/>
 				<Item Name="Visibility.ctl" Type="VI" URL="../controls/Visibility.ctl"/>
-				<Item Name="CellsSDI.ctl" Type="VI" URL="../controls/CellsSDI.ctl"/>
 			</Item>
 			<Item Name="HIS_to_Dat_to_TRABS" Type="Folder">
 				<Item Name="HIS_to_DAT_to_TRABS.vi" Type="VI" URL="../Classes/Control/Control-Client/HIS_to_DAT_to_TRABS.vi"/>
@@ -110,10 +108,6 @@
 				<Item Name="save_dat.vi" Type="VI" URL="../dependecies/HIS_to_DAT_to_TRABS/save_dat.vi"/>
 				<Item Name="save_one_dat.vi" Type="VI" URL="../dependecies/HIS_to_DAT_to_TRABS/save_one_dat.vi"/>
 				<Item Name="save_TRABS.vi" Type="VI" URL="../dependecies/HIS_to_DAT_to_TRABS/save_TRABS.vi"/>
-			</Item>
-			<Item Name="extra" Type="Folder">
-				<Item Name="follow.vi" Type="VI" URL="../follow.vi"/>
-				<Item Name="Treatment.vi" Type="VI" URL="../Treatment.vi"/>
 			</Item>
 			<Item Name="verify_Commands.vi" Type="VI" URL="../dependecies/verify_Commands.vi"/>
 			<Item Name="Commands.vi" Type="VI" URL="../dependecies/Commands.vi"/>
@@ -195,7 +189,6 @@
 				<Item Name="Emulate.lvclass" Type="LVClass" URL="../Classes/Detector/Emulate/Emulate.lvclass"/>
 				<Item Name="UV-VIS_AVANTES.lvclass" Type="LVClass" URL="../Classes/Detector/UV-VIS_AVANTES/UV-VIS_AVANTES.lvclass"/>
 				<Item Name="DET_BUNCH.lvclass" Type="LVClass" URL="../Classes/Detector/DET_BUNCH/DET_BUNCH.lvclass"/>
-				<Item Name="STREAK_camera.lvclass" Type="LVClass" URL="../Classes/Detector/STREAK_camera/STREAK_camera.lvclass"/>
 			</Item>
 			<Item Name="DelayLine" Type="Folder">
 				<Item Name="DelayLine.lvclass" Type="LVClass" URL="../Classes/Delay Line/DelayLine.lvclass"/>
@@ -263,6 +256,8 @@
 		</Item>
 		<Item Name="TRANCON-HARDWARE-SERVER.vi" Type="VI" URL="../TRANCON-HARDWARE-SERVER.vi"/>
 		<Item Name="TRANCON-Client.vi" Type="VI" URL="../TRANCON-Client.vi"/>
+		<Item Name="Treatment.vi" Type="VI" URL="../Treatment.vi"/>
+		<Item Name="follow.vi" Type="VI" URL="../follow.vi"/>
 		<Item Name="Dépendances" Type="Dependencies">
 			<Property Name="NI.SortType" Type="Int">0</Property>
 			<Item Name="instr.lib" Type="Folder">
@@ -844,6 +839,8 @@
 			<Item Name="average-2Darray-SD_double.vi" Type="VI" URL="../dependecies/average-2Darray-SD_double.vi"/>
 			<Item Name="average_with_corrections_expSD.vi" Type="VI" URL="../dependecies/average_with_corrections_expSD.vi"/>
 			<Item Name="BG_corrSD.vi" Type="VI" URL="../dependecies/BG_corrSD.vi"/>
+			<Item Name="CellsSDI.ctl" Type="VI" URL="../controls/CellsSDI.ctl"/>
+			<Item Name="CellsSDIII.ctl" Type="VI" URL="../controls/CellsSDIII.ctl"/>
 			<Item Name="clean-kinetics-SD.vi" Type="VI" URL="../dependecies/clean-kinetics-SD.vi"/>
 			<Item Name="closest-1ArraySD.vi" Type="VI" URL="../dependecies/closest-1ArraySD.vi"/>
 			<Item Name="convertmm-to-ps.vi" Type="VI" URL="../dependecies/ControlsVIs/additional/convertmm-to-ps.vi"/>
@@ -974,7 +971,7 @@
 				<Property Name="Source[0].itemID" Type="Str">{905082F4-0377-4A9F-8A1C-57907CC2F156}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[1].itemID" Type="Ref">/Poste de travail/Dependencies/extra/Treatment.vi</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/Poste de travail/Treatment.vi</Property>
 				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[1].type" Type="Str">VI</Property>
 				<Property Name="SourceCount" Type="Int">2</Property>
@@ -1012,7 +1009,7 @@
 				<Property Name="Source[0].itemID" Type="Str">{31A7DAA9-6A51-46D9-ABDA-6D526D6570EE}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[1].itemID" Type="Ref">/Poste de travail/Dependencies/extra/Treatment.vi</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/Poste de travail/Treatment.vi</Property>
 				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[1].type" Type="Str">VI</Property>
 				<Property Name="SourceCount" Type="Int">2</Property>
@@ -1053,7 +1050,7 @@
 				<Property Name="Source[0].itemID" Type="Str">{31A7DAA9-6A51-46D9-ABDA-6D526D6570EE}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[1].itemID" Type="Ref">/Poste de travail/Dependencies/extra/Treatment.vi</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/Poste de travail/Treatment.vi</Property>
 				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[1].type" Type="Str">VI</Property>
 				<Property Name="SourceCount" Type="Int">2</Property>
@@ -1093,7 +1090,7 @@
 				<Property Name="Source[0].itemID" Type="Str">{D98C645A-6784-498C-B075-393834A860E1}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[1].itemID" Type="Ref">/Poste de travail/Dependencies/extra/Treatment.vi</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/Poste de travail/Treatment.vi</Property>
 				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[1].type" Type="Str">VI</Property>
 				<Property Name="SourceCount" Type="Int">2</Property>
@@ -1133,7 +1130,7 @@
 				<Property Name="Source[0].itemID" Type="Str">{D98C645A-6784-498C-B075-393834A860E1}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[1].itemID" Type="Ref">/Poste de travail/Dependencies/extra/Treatment.vi</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/Poste de travail/Treatment.vi</Property>
 				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[1].type" Type="Str">VI</Property>
 				<Property Name="SourceCount" Type="Int">2</Property>
@@ -1174,7 +1171,7 @@
 				<Property Name="Source[0].itemID" Type="Str">{31EF868F-A8F1-46A2-998D-DC00B0D67A7D}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[1].itemID" Type="Ref">/Poste de travail/Dependencies/extra/Treatment.vi</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/Poste de travail/Treatment.vi</Property>
 				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[1].type" Type="Str">VI</Property>
 				<Property Name="SourceCount" Type="Int">2</Property>

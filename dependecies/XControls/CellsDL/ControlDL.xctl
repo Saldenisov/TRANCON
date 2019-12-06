@@ -4,6 +4,7 @@
 	<Property Name="NI.Lib.SourceVersion" Type="Int">419463168</Property>
 	<Property Name="NI.Lib.Version" Type="Str">1.0.0.0</Property>
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">false</Property>
+	<Property Name="NI.SortType" Type="Int">3</Property>
 	<Property Name="NI.XClass.Flags" Type="Int">0</Property>
 	<Property Name="NI.XItem.DeclaredLeakProof" Type="Bool">false</Property>
 	<Property Name="NI.XItem.Express" Type="Bool">false</Property>
@@ -16,16 +17,6 @@
 	</Item>
 	<Item Name="DataDL.ctl" Type="Ability VI" URL="../DataDL.ctl">
 		<Property Name="NI.XItem.Name" Type="Str">Data</Property>
-	</Item>
-	<Item Name="DL long Event" Type="Property Folder">
-		<Property Name="NI.LibItem.Prop.Identifier" Type="Str">DL long Event</Property>
-		<Property Name="NI.LibItem.Prop.Localized.LongName" Type="Str">DL long Event</Property>
-		<Item Name="DL long Event Read.vi" Type="Property VI" URL="../DL long Event Read.vi"/>
-	</Item>
-	<Item Name="DL short Event" Type="Property Folder">
-		<Property Name="NI.LibItem.Prop.Identifier" Type="Str">DL short Event</Property>
-		<Property Name="NI.LibItem.Prop.Localized.LongName" Type="Str">DL short Event</Property>
-		<Item Name="DL short Event Read.vi" Type="Property VI" URL="../DL short Event Read.vi"/>
 	</Item>
 	<Item Name="Dl-to-pos.vi" Type="VI" URL="../Dl-to-pos.vi"/>
 	<Item Name="FaceDL.vi" Type="Ability VI" URL="../FaceDL.vi">
@@ -40,11 +31,23 @@
 		<Item Name="Param Read.vi" Type="Property VI" URL="../Param Read.vi"/>
 		<Item Name="Param Write.vi" Type="Property VI" URL="../Param Write.vi"/>
 	</Item>
+	<Item Name="Event" Type="Property Folder">
+		<Property Name="NI.LibItem.Prop.Identifier" Type="Str">Events</Property>
+		<Property Name="NI.LibItem.Prop.Localized.LongName" Type="Str">Event</Property>
+		<Item Name="Event Read.vi" Type="Property VI" URL="../Event Read.vi"/>
+		<Item Name="Event Write.vi" Type="Property VI" URL="../Event Write.vi"/>
+	</Item>
 	<Item Name="pos-to-DL.vi" Type="VI" URL="../pos-to-DL.vi"/>
 	<Item Name="stateDL.ctl" Type="Ability VI" URL="../stateDL.ctl">
 		<Property Name="NI.XItem.Name" Type="Str">State</Property>
 	</Item>
 	<Item Name="UninitDL.vi" Type="Ability VI" URL="../UninitDL.vi">
 		<Property Name="NI.XItem.Name" Type="Str">UnInit</Property>
+	</Item>
+	<Item Name="preset pos" Type="Property Folder">
+		<Property Name="NI.LibItem.Prop.Identifier" Type="Str">preset pos</Property>
+		<Property Name="NI.LibItem.Prop.Localized.LongName" Type="Str">preset pos</Property>
+		<Item Name="preset pos Read.vi" Type="Property VI" URL="../preset pos Read.vi"/>
+		<Item Name="preset pos Write.vi" Type="Property VI" URL="../preset pos Write.vi"/>
 	</Item>
 </XControl>
