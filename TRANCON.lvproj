@@ -905,283 +905,86 @@
 			<Item Name="xxx.ctl" Type="VI" URL="../controls/xxx.ctl"/>
 		</Item>
 		<Item Name="Spécifications de construction" Type="Build">
-			<Item Name="TRANCON-Client5" Type="EXE">
+			<Item Name="TRANCON-Client" Type="EXE">
 				<Property Name="App_copyErrors" Type="Bool">true</Property>
-				<Property Name="App_INI_aliasGUID" Type="Str">{BA020B1A-59B3-4436-A038-49D83591D7CB}</Property>
-				<Property Name="App_INI_GUID" Type="Str">{1747FB0D-50A7-4E68-90E2-2A70DF469D42}</Property>
+				<Property Name="App_INI_aliasGUID" Type="Str">{8755807D-83EB-407E-BB4D-D5C79D061FAE}</Property>
+				<Property Name="App_INI_GUID" Type="Str">{B6527CEB-A95D-4536-AAD9-C8A7D3A86D09}</Property>
 				<Property Name="App_serverConfig.httpPort" Type="Int">8002</Property>
+				<Property Name="App_waitDebugging" Type="Bool">true</Property>
 				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
-				<Property Name="Bld_buildCacheID" Type="Str">{6152336E-93D7-4C9B-89DF-C04313049939}</Property>
-				<Property Name="Bld_buildSpecName" Type="Str">TRANCON-Client5</Property>
+				<Property Name="Bld_buildCacheID" Type="Str">{19E8566E-2130-40B8-B225-508EBFC09851}</Property>
+				<Property Name="Bld_buildSpecName" Type="Str">TRANCON-Client</Property>
 				<Property Name="Bld_excludeInlineSubVIs" Type="Bool">true</Property>
 				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
 				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
-				<Property Name="Bld_localDestDir" Type="Path">../builds/NI_AB_PROJECTNAME/TRANCON-Client5</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../builds/NI_AB_PROJECTNAME/TRANCON-Client</Property>
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
-				<Property Name="Bld_previewCacheID" Type="Str">{9B8FA1E8-A5F2-48CF-A9FC-F200964B79EC}</Property>
-				<Property Name="Bld_version.build" Type="Int">1</Property>
+				<Property Name="Bld_previewCacheID" Type="Str">{7D337851-C87A-4765-9BB1-CD67BF9237A9}</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
-				<Property Name="Destination[0].destName" Type="Str">Client.exe</Property>
-				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/TRANCON-Client5/Client.exe</Property>
+				<Property Name="Destination[0].destName" Type="Str">Application.exe</Property>
+				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/TRANCON-Client/Application.exe</Property>
 				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
 				<Property Name="Destination[0].type" Type="Str">App</Property>
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
-				<Property Name="Destination[1].path" Type="Path">../builds/NI_AB_PROJECTNAME/TRANCON-Client5/data</Property>
+				<Property Name="Destination[1].path" Type="Path">../builds/NI_AB_PROJECTNAME/TRANCON-Client/data</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{4C9479D2-3191-4266-9F6C-9E6257D611B0}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{2A26CFC7-A374-49BF-B8EF-2E436A185294}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
 				<Property Name="Source[1].itemID" Type="Ref">/Poste de travail/TRANCON-Client.vi</Property>
 				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[1].type" Type="Str">VI</Property>
 				<Property Name="SourceCount" Type="Int">2</Property>
-				<Property Name="TgtF_enableDebugging" Type="Bool">true</Property>
-				<Property Name="TgtF_fileDescription" Type="Str">TRANCON-Client5</Property>
-				<Property Name="TgtF_internalName" Type="Str">TRANCON-Client5</Property>
-				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2018 </Property>
-				<Property Name="TgtF_productName" Type="Str">TRANCON-Client5</Property>
-				<Property Name="TgtF_targetfileGUID" Type="Str">{6531E241-3C5E-4146-BF3C-49A5EF9A6BEF}</Property>
-				<Property Name="TgtF_targetfileName" Type="Str">Client.exe</Property>
-			</Item>
-			<Item Name="Treatment" Type="EXE">
-				<Property Name="App_copyErrors" Type="Bool">true</Property>
-				<Property Name="App_INI_aliasGUID" Type="Str">{C5446F0B-D6D7-4EF0-99D4-C84037241344}</Property>
-				<Property Name="App_INI_GUID" Type="Str">{1CE1C177-91C8-4BDA-BF34-68C99223C14B}</Property>
-				<Property Name="App_serverConfig.httpPort" Type="Int">8002</Property>
-				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
-				<Property Name="Bld_buildCacheID" Type="Str">{712FE62D-6C2B-4DC5-93A4-AF34D5B80FE2}</Property>
-				<Property Name="Bld_buildSpecName" Type="Str">Treatment</Property>
-				<Property Name="Bld_excludeInlineSubVIs" Type="Bool">true</Property>
-				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
-				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
-				<Property Name="Bld_localDestDir" Type="Path">../builds/NI_AB_PROJECTNAME/Treatment</Property>
-				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
-				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
-				<Property Name="Bld_previewCacheID" Type="Str">{27735084-101F-4A2F-BE64-ECB0137D2A79}</Property>
-				<Property Name="Bld_version.build" Type="Int">1</Property>
-				<Property Name="Bld_version.major" Type="Int">1</Property>
-				<Property Name="Destination[0].destName" Type="Str">ELYSE_treat.exe</Property>
-				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/Treatment/ELYSE_treat.exe</Property>
-				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
-				<Property Name="Destination[0].type" Type="Str">App</Property>
-				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
-				<Property Name="Destination[1].path" Type="Path">../builds/NI_AB_PROJECTNAME/Treatment/data</Property>
-				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{905082F4-0377-4A9F-8A1C-57907CC2F156}</Property>
-				<Property Name="Source[0].type" Type="Str">Container</Property>
-				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[1].itemID" Type="Ref">/Poste de travail/Treatment.vi</Property>
-				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
-				<Property Name="Source[1].type" Type="Str">VI</Property>
-				<Property Name="SourceCount" Type="Int">2</Property>
-				<Property Name="TgtF_enableDebugging" Type="Bool">true</Property>
-				<Property Name="TgtF_fileDescription" Type="Str">Treatment</Property>
-				<Property Name="TgtF_internalName" Type="Str">Treatment</Property>
-				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2018 </Property>
-				<Property Name="TgtF_productName" Type="Str">Treatment</Property>
-				<Property Name="TgtF_targetfileGUID" Type="Str">{0C177EA0-1AAE-44C6-956C-52FE340D9104}</Property>
-				<Property Name="TgtF_targetfileName" Type="Str">ELYSE_treat.exe</Property>
-			</Item>
-			<Item Name="Treatment2" Type="EXE">
-				<Property Name="App_copyErrors" Type="Bool">true</Property>
-				<Property Name="App_INI_aliasGUID" Type="Str">{8FFDF56F-0090-4BFF-AFA8-92CD64109A89}</Property>
-				<Property Name="App_INI_GUID" Type="Str">{70E87309-A99E-47B0-8019-E1E3AC9676B3}</Property>
-				<Property Name="App_serverConfig.httpPort" Type="Int">8002</Property>
-				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
-				<Property Name="Bld_buildCacheID" Type="Str">{634BC28E-3D9F-4BC4-A797-82CE41D215A2}</Property>
-				<Property Name="Bld_buildSpecName" Type="Str">Treatment2</Property>
-				<Property Name="Bld_excludeInlineSubVIs" Type="Bool">true</Property>
-				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
-				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
-				<Property Name="Bld_localDestDir" Type="Path">../builds/NI_AB_PROJECTNAME/Treatment2</Property>
-				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
-				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
-				<Property Name="Bld_previewCacheID" Type="Str">{6C2CCE46-CDF6-40DF-A7A9-392AB9D5167A}</Property>
-				<Property Name="Bld_version.major" Type="Int">1</Property>
-				<Property Name="Destination[0].destName" Type="Str">Application.exe</Property>
-				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/Treatment2/Application.exe</Property>
-				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
-				<Property Name="Destination[0].type" Type="Str">App</Property>
-				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
-				<Property Name="Destination[1].path" Type="Path">../builds/NI_AB_PROJECTNAME/Treatment2/data</Property>
-				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{31A7DAA9-6A51-46D9-ABDA-6D526D6570EE}</Property>
-				<Property Name="Source[0].type" Type="Str">Container</Property>
-				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[1].itemID" Type="Ref">/Poste de travail/Treatment.vi</Property>
-				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
-				<Property Name="Source[1].type" Type="Str">VI</Property>
-				<Property Name="SourceCount" Type="Int">2</Property>
 				<Property Name="TgtF_companyName" Type="Str">CNRS LCP</Property>
-				<Property Name="TgtF_fileDescription" Type="Str">Treatment2</Property>
-				<Property Name="TgtF_internalName" Type="Str">Treatment2</Property>
+				<Property Name="TgtF_enableDebugging" Type="Bool">true</Property>
+				<Property Name="TgtF_fileDescription" Type="Str">TRANCON-Client</Property>
+				<Property Name="TgtF_internalName" Type="Str">TRANCON-Client</Property>
 				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2019 CNRS LCP</Property>
-				<Property Name="TgtF_productName" Type="Str">Treatment2</Property>
-				<Property Name="TgtF_targetfileGUID" Type="Str">{45AFF23C-1834-45BE-99C8-3461491F98EC}</Property>
+				<Property Name="TgtF_productName" Type="Str">TRANCON-Client</Property>
+				<Property Name="TgtF_targetfileGUID" Type="Str">{89F0C9CC-D05A-41D0-B82B-EAC2E010A6D0}</Property>
 				<Property Name="TgtF_targetfileName" Type="Str">Application.exe</Property>
 				<Property Name="TgtF_versionIndependent" Type="Bool">true</Property>
 			</Item>
-			<Item Name="Treatment3" Type="EXE">
+			<Item Name="TRANCON-Client2" Type="EXE">
 				<Property Name="App_copyErrors" Type="Bool">true</Property>
-				<Property Name="App_INI_aliasGUID" Type="Str">{9E4237C6-3775-42F4-93E4-F9ECDC802BC9}</Property>
-				<Property Name="App_INI_GUID" Type="Str">{A0B4897D-4A9F-46A8-98B8-ADCBFC03FAFE}</Property>
+				<Property Name="App_INI_aliasGUID" Type="Str">{9164B64E-A8A2-4101-B85B-AC9E8B6C4569}</Property>
+				<Property Name="App_INI_GUID" Type="Str">{31FAB988-CEF8-493E-A755-18B3A06D9D3C}</Property>
 				<Property Name="App_serverConfig.httpPort" Type="Int">8002</Property>
 				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
-				<Property Name="Bld_buildCacheID" Type="Str">{B65A6E20-CAC7-4EF6-B78B-2374E58CBCB7}</Property>
-				<Property Name="Bld_buildSpecName" Type="Str">Treatment3</Property>
+				<Property Name="Bld_buildCacheID" Type="Str">{D81D21E9-9576-4BBF-B002-C30020346509}</Property>
+				<Property Name="Bld_buildSpecName" Type="Str">TRANCON-Client2</Property>
 				<Property Name="Bld_excludeInlineSubVIs" Type="Bool">true</Property>
 				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
 				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
-				<Property Name="Bld_localDestDir" Type="Path">../builds/NI_AB_PROJECTNAME/Treatment3</Property>
+				<Property Name="Bld_localDestDir" Type="Path">../builds/NI_AB_PROJECTNAME/TRANCON-Client2</Property>
 				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
 				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
-				<Property Name="Bld_previewCacheID" Type="Str">{E97219D2-0735-4B50-87CA-467B013BAE3E}</Property>
-				<Property Name="Bld_version.build" Type="Int">1</Property>
-				<Property Name="Bld_version.major" Type="Int">1</Property>
-				<Property Name="Destination[0].destName" Type="Str">ELYSE-treatment.exe</Property>
-				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/Treatment3/ELYSE-treatment.exe</Property>
-				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
-				<Property Name="Destination[0].type" Type="Str">App</Property>
-				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
-				<Property Name="Destination[1].path" Type="Path">../builds/NI_AB_PROJECTNAME/Treatment3/data</Property>
-				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Exe_iconItemID" Type="Ref"></Property>
-				<Property Name="Source[0].itemID" Type="Str">{31A7DAA9-6A51-46D9-ABDA-6D526D6570EE}</Property>
-				<Property Name="Source[0].type" Type="Str">Container</Property>
-				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[1].itemID" Type="Ref">/Poste de travail/Treatment.vi</Property>
-				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
-				<Property Name="Source[1].type" Type="Str">VI</Property>
-				<Property Name="SourceCount" Type="Int">2</Property>
-				<Property Name="TgtF_companyName" Type="Str">CNRS LCP</Property>
-				<Property Name="TgtF_enableDebugging" Type="Bool">true</Property>
-				<Property Name="TgtF_fileDescription" Type="Str">Treatment3</Property>
-				<Property Name="TgtF_internalName" Type="Str">Treatment3</Property>
-				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2019 CNRS LCP</Property>
-				<Property Name="TgtF_productName" Type="Str">Treatment3</Property>
-				<Property Name="TgtF_targetfileGUID" Type="Str">{32DAB440-62D6-4790-8F45-553F2F080DE4}</Property>
-				<Property Name="TgtF_targetfileName" Type="Str">ELYSE-treatment.exe</Property>
-				<Property Name="TgtF_versionIndependent" Type="Bool">true</Property>
-			</Item>
-			<Item Name="Treatment4" Type="EXE">
-				<Property Name="App_copyErrors" Type="Bool">true</Property>
-				<Property Name="App_INI_aliasGUID" Type="Str">{A62318C3-FF77-4D6B-A381-522891ACB98A}</Property>
-				<Property Name="App_INI_GUID" Type="Str">{A9593B25-0E62-4FDB-A26A-4CF904786E32}</Property>
-				<Property Name="App_serverConfig.httpPort" Type="Int">8002</Property>
-				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
-				<Property Name="Bld_buildCacheID" Type="Str">{8C88BAC8-EFEB-4ED2-9A8F-8CB62701463A}</Property>
-				<Property Name="Bld_buildSpecName" Type="Str">Treatment4</Property>
-				<Property Name="Bld_excludeInlineSubVIs" Type="Bool">true</Property>
-				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
-				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
-				<Property Name="Bld_localDestDir" Type="Path">../builds/NI_AB_PROJECTNAME/Treatment4</Property>
-				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
-				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
-				<Property Name="Bld_previewCacheID" Type="Str">{457AF9EC-0DBB-4404-BA33-18B946632C42}</Property>
-				<Property Name="Bld_version.major" Type="Int">1</Property>
-				<Property Name="Destination[0].destName" Type="Str">Application.exe</Property>
-				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/Treatment4/Application.exe</Property>
-				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
-				<Property Name="Destination[0].type" Type="Str">App</Property>
-				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
-				<Property Name="Destination[1].path" Type="Path">../builds/NI_AB_PROJECTNAME/Treatment4/data</Property>
-				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{D98C645A-6784-498C-B075-393834A860E1}</Property>
-				<Property Name="Source[0].type" Type="Str">Container</Property>
-				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[1].itemID" Type="Ref">/Poste de travail/Treatment.vi</Property>
-				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
-				<Property Name="Source[1].type" Type="Str">VI</Property>
-				<Property Name="SourceCount" Type="Int">2</Property>
-				<Property Name="TgtF_companyName" Type="Str">CNRS LCP</Property>
-				<Property Name="TgtF_fileDescription" Type="Str">Treatment4</Property>
-				<Property Name="TgtF_internalName" Type="Str">Treatment4</Property>
-				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2019 CNRS LCP</Property>
-				<Property Name="TgtF_productName" Type="Str">Treatment4</Property>
-				<Property Name="TgtF_targetfileGUID" Type="Str">{6FA6BD47-F803-4653-9B26-97D45C9F5D01}</Property>
-				<Property Name="TgtF_targetfileName" Type="Str">Application.exe</Property>
-				<Property Name="TgtF_versionIndependent" Type="Bool">true</Property>
-			</Item>
-			<Item Name="Treatment5" Type="EXE">
-				<Property Name="App_copyErrors" Type="Bool">true</Property>
-				<Property Name="App_INI_aliasGUID" Type="Str">{BCEF10C1-B17D-44EF-840B-B8306955E1FB}</Property>
-				<Property Name="App_INI_GUID" Type="Str">{AF442CD9-3F86-45A5-B071-8002BFD5CF4C}</Property>
-				<Property Name="App_serverConfig.httpPort" Type="Int">8002</Property>
-				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
-				<Property Name="Bld_buildCacheID" Type="Str">{E337AFEF-5FA6-4AF8-BDC3-DC9F00392F33}</Property>
-				<Property Name="Bld_buildSpecName" Type="Str">Treatment5</Property>
-				<Property Name="Bld_excludeInlineSubVIs" Type="Bool">true</Property>
-				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
-				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
-				<Property Name="Bld_localDestDir" Type="Path">../builds/NI_AB_PROJECTNAME/Treatment5</Property>
-				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
-				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
-				<Property Name="Bld_previewCacheID" Type="Str">{267B4DFE-82B2-40DD-BF4D-E91A09F23623}</Property>
+				<Property Name="Bld_previewCacheID" Type="Str">{863AA999-9ABD-4DAA-8217-68C7CC3D2394}</Property>
 				<Property Name="Bld_version.build" Type="Int">1</Property>
 				<Property Name="Bld_version.major" Type="Int">1</Property>
 				<Property Name="Destination[0].destName" Type="Str">Application.exe</Property>
-				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/Treatment5/Application.exe</Property>
+				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/TRANCON-Client2/Application.exe</Property>
 				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
 				<Property Name="Destination[0].type" Type="Str">App</Property>
 				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
-				<Property Name="Destination[1].path" Type="Path">../builds/NI_AB_PROJECTNAME/Treatment5/data</Property>
+				<Property Name="Destination[1].path" Type="Path">../builds/NI_AB_PROJECTNAME/TRANCON-Client2/data</Property>
 				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{D98C645A-6784-498C-B075-393834A860E1}</Property>
+				<Property Name="Source[0].itemID" Type="Str">{2A26CFC7-A374-49BF-B8EF-2E436A185294}</Property>
 				<Property Name="Source[0].type" Type="Str">Container</Property>
 				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[1].itemID" Type="Ref">/Poste de travail/Treatment.vi</Property>
+				<Property Name="Source[1].itemID" Type="Ref">/Poste de travail/TRANCON-Client.vi</Property>
 				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
 				<Property Name="Source[1].type" Type="Str">VI</Property>
 				<Property Name="SourceCount" Type="Int">2</Property>
 				<Property Name="TgtF_companyName" Type="Str">CNRS LCP</Property>
 				<Property Name="TgtF_enableDebugging" Type="Bool">true</Property>
-				<Property Name="TgtF_fileDescription" Type="Str">Treatment5</Property>
-				<Property Name="TgtF_internalName" Type="Str">Treatment5</Property>
+				<Property Name="TgtF_fileDescription" Type="Str">TRANCON-Client2</Property>
+				<Property Name="TgtF_internalName" Type="Str">TRANCON-Client2</Property>
 				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2019 CNRS LCP</Property>
-				<Property Name="TgtF_productName" Type="Str">Treatment5</Property>
-				<Property Name="TgtF_targetfileGUID" Type="Str">{D85DBBED-C753-4B39-95A2-7291BFD74C60}</Property>
+				<Property Name="TgtF_productName" Type="Str">TRANCON-Client2</Property>
+				<Property Name="TgtF_targetfileGUID" Type="Str">{65F29CFB-DB7F-46C5-98DF-AAB91F182EF4}</Property>
 				<Property Name="TgtF_targetfileName" Type="Str">Application.exe</Property>
-				<Property Name="TgtF_versionIndependent" Type="Bool">true</Property>
-			</Item>
-			<Item Name="Treatment6" Type="EXE">
-				<Property Name="App_copyErrors" Type="Bool">true</Property>
-				<Property Name="App_INI_aliasGUID" Type="Str">{07E8AAEC-B03C-4F1D-BDBE-5019C6027484}</Property>
-				<Property Name="App_INI_GUID" Type="Str">{746243EC-3A24-4FEA-B57D-E906617CD3F7}</Property>
-				<Property Name="App_serverConfig.httpPort" Type="Int">8002</Property>
-				<Property Name="Bld_autoIncrement" Type="Bool">true</Property>
-				<Property Name="Bld_buildCacheID" Type="Str">{3B0ECF9C-DE8A-4780-AB98-ADA734451C73}</Property>
-				<Property Name="Bld_buildSpecName" Type="Str">Treatment6</Property>
-				<Property Name="Bld_excludeInlineSubVIs" Type="Bool">true</Property>
-				<Property Name="Bld_excludeLibraryItems" Type="Bool">true</Property>
-				<Property Name="Bld_excludePolymorphicVIs" Type="Bool">true</Property>
-				<Property Name="Bld_localDestDir" Type="Path">../builds/NI_AB_PROJECTNAME/Treatment6</Property>
-				<Property Name="Bld_localDestDirType" Type="Str">relativeToCommon</Property>
-				<Property Name="Bld_modifyLibraryFile" Type="Bool">true</Property>
-				<Property Name="Bld_previewCacheID" Type="Str">{436BE00A-C136-4DFE-832D-6F43D577B224}</Property>
-				<Property Name="Bld_version.build" Type="Int">1</Property>
-				<Property Name="Bld_version.major" Type="Int">1</Property>
-				<Property Name="Destination[0].destName" Type="Str">TREAT-ELYSE.exe</Property>
-				<Property Name="Destination[0].path" Type="Path">../builds/NI_AB_PROJECTNAME/Treatment6/TREAT-ELYSE.exe</Property>
-				<Property Name="Destination[0].preserveHierarchy" Type="Bool">true</Property>
-				<Property Name="Destination[0].type" Type="Str">App</Property>
-				<Property Name="Destination[1].destName" Type="Str">Support Directory</Property>
-				<Property Name="Destination[1].path" Type="Path">../builds/NI_AB_PROJECTNAME/Treatment6/data</Property>
-				<Property Name="DestinationCount" Type="Int">2</Property>
-				<Property Name="Source[0].itemID" Type="Str">{31EF868F-A8F1-46A2-998D-DC00B0D67A7D}</Property>
-				<Property Name="Source[0].type" Type="Str">Container</Property>
-				<Property Name="Source[1].destinationIndex" Type="Int">0</Property>
-				<Property Name="Source[1].itemID" Type="Ref">/Poste de travail/Treatment.vi</Property>
-				<Property Name="Source[1].sourceInclusion" Type="Str">TopLevel</Property>
-				<Property Name="Source[1].type" Type="Str">VI</Property>
-				<Property Name="SourceCount" Type="Int">2</Property>
-				<Property Name="TgtF_enableDebugging" Type="Bool">true</Property>
-				<Property Name="TgtF_fileDescription" Type="Str">Treatment6</Property>
-				<Property Name="TgtF_internalName" Type="Str">Treatment6</Property>
-				<Property Name="TgtF_legalCopyright" Type="Str">Copyright © 2019 </Property>
-				<Property Name="TgtF_productName" Type="Str">Treatment6</Property>
-				<Property Name="TgtF_targetfileGUID" Type="Str">{FC02AF1D-E183-4108-87CC-C5946EABC17F}</Property>
-				<Property Name="TgtF_targetfileName" Type="Str">TREAT-ELYSE.exe</Property>
 				<Property Name="TgtF_versionIndependent" Type="Bool">true</Property>
 			</Item>
 		</Item>
