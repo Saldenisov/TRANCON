@@ -834,7 +834,9 @@
 			<Item Name="Add ECO For LabVIEW.vi" Type="VI" URL="../dependecies/Add ECO For LabVIEW.vi"/>
 			<Item Name="add_group.vi" Type="VI" URL="../dependecies/add_group.vi"/>
 			<Item Name="add_name_explistSD.vi" Type="VI" URL="../dependecies/add_name_explistSD.vi"/>
-			<Item Name="atmcd32d.dll" Type="Document" URL="../DLL/atmcd32d.dll"/>
+			<Item Name="Atmcd32d.dll" Type="Document" URL="Atmcd32d.dll">
+				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
+			</Item>
 			<Item Name="average-1Darray-SD.vi" Type="VI" URL="../dependecies/average-1Darray-SD.vi"/>
 			<Item Name="average-2Darray-SD_double.vi" Type="VI" URL="../dependecies/average-2Darray-SD_double.vi"/>
 			<Item Name="average_with_corrections_expSD.vi" Type="VI" URL="../dependecies/average_with_corrections_expSD.vi"/>
