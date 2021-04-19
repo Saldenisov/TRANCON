@@ -29,7 +29,7 @@
 					<Item Name="CreateEvents_SERVER.vi" Type="VI" URL="../dependecies/SubVIs/CreateEvents_SERVER.vi"/>
 				</Item>
 				<Item Name="CLIENT" Type="Folder">
-					<Item Name="Init.vi" Type="VI" URL="../../AvaSpecX64-DLL_9.4/examples/LabView/LabViewSingleChan/LabViewSingleChan.llb/Init.vi"/>
+					<Item Name="Init.vi" Type="VI" URL="../../../AvaSpec-DLL_9.4/examples/LabView/LabViewSingleChan/LabViewSingleChan.llb/Init.vi"/>
 				</Item>
 				<Item Name="ScaleUp_corrSD.vi" Type="VI" URL="../dependecies/ScaleUp_corrSD.vi"/>
 				<Item Name="Read_data_from_saved_exp.vi" Type="VI" URL="../dependecies/SubVIs/Read_data_from_saved_exp.vi"/>
@@ -258,6 +258,7 @@
 		<Item Name="TRANCON-Client.vi" Type="VI" URL="../TRANCON-Client.vi"/>
 		<Item Name="Treatment.vi" Type="VI" URL="../Treatment.vi"/>
 		<Item Name="follow.vi" Type="VI" URL="../follow.vi"/>
+		<Item Name="MeasureParameters_to_byte_SD.vi" Type="VI" URL="../Classes/Detector/UV-VIS_AVANTES/MeasureParameters_to_byte_SD.vi"/>
 		<Item Name="Dépendances" Type="Dependencies">
 			<Property Name="NI.SortType" Type="Int">0</Property>
 			<Item Name="instr.lib" Type="Folder">
@@ -564,6 +565,7 @@
 				<Item Name="_Get Sound Error From Return Value.vi" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/_Get Sound Error From Return Value.vi"/>
 				<Item Name="Acquire Semaphore.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/semaphor.llb/Acquire Semaphore.vi"/>
 				<Item Name="Add File to Zip.vi" Type="VI" URL="/&lt;vilib&gt;/zip/Add File to Zip.vi"/>
+				<Item Name="AddNamedRendezvousPrefix.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/rendezvs.llb/AddNamedRendezvousPrefix.vi"/>
 				<Item Name="AddNamedSemaphorePrefix.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/semaphor.llb/AddNamedSemaphorePrefix.vi"/>
 				<Item Name="Application Directory.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Application Directory.vi"/>
 				<Item Name="BuildHelpPath.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/BuildHelpPath.vi"/>
@@ -576,6 +578,8 @@
 				<Item Name="compatReadText.vi" Type="VI" URL="/&lt;vilib&gt;/_oldvers/_oldvers.llb/compatReadText.vi"/>
 				<Item Name="Convert property node font to graphics font.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Convert property node font to graphics font.vi"/>
 				<Item Name="Create Directory Recursive.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Create Directory Recursive.vi"/>
+				<Item Name="Create New Rendezvous.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/rendezvs.llb/Create New Rendezvous.vi"/>
+				<Item Name="Create Rendezvous.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/rendezvs.llb/Create Rendezvous.vi"/>
 				<Item Name="Create Semaphore.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/semaphor.llb/Create Semaphore.vi"/>
 				<Item Name="DAQmx Create Channel (AI-Acceleration-4 Wire DC Voltage).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/create/channels.llb/DAQmx Create Channel (AI-Acceleration-4 Wire DC Voltage).vi"/>
 				<Item Name="DAQmx Create Channel (AI-Acceleration-Accelerometer).vi" Type="VI" URL="/&lt;vilib&gt;/DAQmx/create/channels.llb/DAQmx Create Channel (AI-Acceleration-Accelerometer).vi"/>
@@ -782,6 +786,7 @@
 				<Item Name="Get String Text Bounds.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Get String Text Bounds.vi"/>
 				<Item Name="Get Text Rect.vi" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/Get Text Rect.vi"/>
 				<Item Name="GetHelpDir.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/GetHelpDir.vi"/>
+				<Item Name="GetNamedRendezvousPrefix.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/rendezvs.llb/GetNamedRendezvousPrefix.vi"/>
 				<Item Name="GetNamedSemaphorePrefix.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/semaphor.llb/GetNamedSemaphorePrefix.vi"/>
 				<Item Name="GetRTHostConnectedProp.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/GetRTHostConnectedProp.vi"/>
 				<Item Name="Is Path and Not Empty.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Is Path and Not Empty.vi"/>
@@ -799,6 +804,7 @@
 				<Item Name="NI_LVConfig.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/config.llb/NI_LVConfig.lvlib"/>
 				<Item Name="NI_PackedLibraryUtility.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/LVLibp/NI_PackedLibraryUtility.lvlib"/>
 				<Item Name="NI_Unzip.lvlib" Type="Library" URL="/&lt;vilib&gt;/zip/NI_Unzip.lvlib"/>
+				<Item Name="Not A Rendezvous.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/rendezvs.llb/Not A Rendezvous.vi"/>
 				<Item Name="Not A Semaphore.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/semaphor.llb/Not A Semaphore.vi"/>
 				<Item Name="Not Found Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Not Found Dialog.vi"/>
 				<Item Name="Obtain Semaphore Reference.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/semaphor.llb/Obtain Semaphore Reference.vi"/>
@@ -815,7 +821,12 @@
 				<Item Name="Relative Path To Platform Independent String.vi" Type="VI" URL="/&lt;vilib&gt;/AdvancedString/Relative Path To Platform Independent String.vi"/>
 				<Item Name="Release Semaphore.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/semaphor.llb/Release Semaphore.vi"/>
 				<Item Name="Release Semaphore_71.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/semaphor.llb/Release Semaphore_71.vi"/>
+				<Item Name="Release Waiting Procs.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/rendezvs.llb/Release Waiting Procs.vi"/>
 				<Item Name="RemoveNamedSemaphorePrefix.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/semaphor.llb/RemoveNamedSemaphorePrefix.vi"/>
+				<Item Name="Rendezvous Name &amp; Ref DB Action.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/rendezvs.llb/Rendezvous Name &amp; Ref DB Action.ctl"/>
+				<Item Name="Rendezvous Name &amp; Ref DB.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/rendezvs.llb/Rendezvous Name &amp; Ref DB.vi"/>
+				<Item Name="Rendezvous RefNum" Type="VI" URL="/&lt;vilib&gt;/Utility/rendezvs.llb/Rendezvous RefNum"/>
+				<Item Name="RendezvousDataCluster.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/rendezvs.llb/RendezvousDataCluster.ctl"/>
 				<Item Name="Sampling Mode.ctl" Type="VI" URL="/&lt;vilib&gt;/sound2/lvsound2.llb/Sampling Mode.ctl"/>
 				<Item Name="Search and Replace Pattern.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Search and Replace Pattern.vi"/>
 				<Item Name="Semaphore Name &amp; Ref DB Action.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/semaphor.llb/Semaphore Name &amp; Ref DB Action.ctl"/>
@@ -861,6 +872,7 @@
 				<Item Name="Validate Semaphore Size.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/semaphor.llb/Validate Semaphore Size.vi"/>
 				<Item Name="VariantType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/VariantDataType/VariantType.lvlib"/>
 				<Item Name="Version To Dotted String.vi" Type="VI" URL="/&lt;vilib&gt;/_xctls/Version To Dotted String.vi"/>
+				<Item Name="Wait at Rendezvous.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/rendezvs.llb/Wait at Rendezvous.vi"/>
 				<Item Name="Waveform Scale and Offset.vi" Type="VI" URL="/&lt;vilib&gt;/Waveform/WDTOps.llb/Waveform Scale and Offset.vi"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 				<Item Name="Write Delimited Spreadsheet (DBL).vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Write Delimited Spreadsheet (DBL).vi"/>
@@ -876,14 +888,21 @@
 			<Item Name="add_group.vi" Type="VI" URL="../dependecies/add_group.vi"/>
 			<Item Name="add_name_explistSD.vi" Type="VI" URL="../dependecies/add_name_explistSD.vi"/>
 			<Item Name="atmcd32d.dll" Type="Document" URL="../DLL/atmcd32d.dll"/>
+			<Item Name="avaspec.dll" Type="Document" URL="../../../AvaSpec-DLL_9.4/examples/LabView/LabViewSingleChan/avaspec.dll"/>
 			<Item Name="average-1Darray-SD.vi" Type="VI" URL="../dependecies/average-1Darray-SD.vi"/>
 			<Item Name="average-2Darray-SD_double.vi" Type="VI" URL="../dependecies/average-2Darray-SD_double.vi"/>
 			<Item Name="average_with_corrections_expSD.vi" Type="VI" URL="../dependecies/average_with_corrections_expSD.vi"/>
+			<Item Name="AVS_Activate.vi" Type="VI" URL="../../../AvaSpec-DLL_9.4/examples/LabView/LabViewSingleChan/LabViewSingleChan.llb/AVS_Activate.vi"/>
+			<Item Name="AVS_Done.vi" Type="VI" URL="../../../AvaSpec-DLL_9.4/examples/LabView/LabViewSingleChan/LabViewSingleChan.llb/AVS_Done.vi"/>
+			<Item Name="AVS_GetList.vi" Type="VI" URL="../../../AvaSpec-DLL_9.4/examples/LabView/LabViewSingleChan/LabViewSingleChan.llb/AVS_GetList.vi"/>
+			<Item Name="AVS_GetNrOfDevices.vi" Type="VI" URL="../../../AvaSpec-DLL_9.4/examples/LabView/LabViewSingleChan/LabViewSingleChan.llb/AVS_GetNrOfDevices.vi"/>
+			<Item Name="AVS_Init.vi" Type="VI" URL="../../../AvaSpec-DLL_9.4/examples/LabView/LabViewSingleChan/LabViewSingleChan.llb/AVS_Init.vi"/>
 			<Item Name="BG_corrSD.vi" Type="VI" URL="../dependecies/BG_corrSD.vi"/>
 			<Item Name="CellsSDI.ctl" Type="VI" URL="../controls/CellsSDI.ctl"/>
 			<Item Name="CellsSDIII.ctl" Type="VI" URL="../controls/CellsSDIII.ctl"/>
 			<Item Name="clean-kinetics-SD.vi" Type="VI" URL="../dependecies/clean-kinetics-SD.vi"/>
 			<Item Name="closest-1ArraySD.vi" Type="VI" URL="../dependecies/closest-1ArraySD.vi"/>
+			<Item Name="clusterdef.ctl" Type="VI" URL="../../../AvaSpec-DLL_9.4/examples/LabView/LabViewSingleChan/LabViewSingleChan.llb/clusterdef.ctl"/>
 			<Item Name="convertmm-to-ps.vi" Type="VI" URL="../dependecies/ControlsVIs/additional/convertmm-to-ps.vi"/>
 			<Item Name="convertps-to-mm.vi" Type="VI" URL="../dependecies/ControlsVIs/additional/convertps-to-mm.vi"/>
 			<Item Name="Create Drive Symbol List.vi" Type="VI" URL="../dependecies/Multiple File Selection-multiple/multfile.llb/Create Drive Symbol List.vi"/>
@@ -893,11 +912,13 @@
 			<Item Name="create_folder_general-SD.vi" Type="VI" URL="../dependecies/create_folder_general-SD.vi"/>
 			<Item Name="Daqmxtasks.ctl" Type="VI" URL="../controls/Daqmxtasks.ctl"/>
 			<Item Name="Data-to-string.vi" Type="VI" URL="../dependecies/Data-to-string.vi"/>
+			<Item Name="DeviceConfigType_to_Byte_SD.vi" Type="VI" URL="../Classes/Detector/UV-VIS_AVANTES/DeviceConfigType_to_Byte_SD.vi"/>
 			<Item Name="DLlongVerSD.ctl" Type="VI" URL="../controls/DLlongVerSD.ctl"/>
 			<Item Name="Error Code Enum typedef.ctl" Type="VI" URL="../dependecies/Error Code Enum typedef.ctl"/>
 			<Item Name="Error Code Handler.vi" Type="VI" URL="../dependecies/Error Code Handler.vi"/>
 			<Item Name="Error to Warning (STM Multi-Client).vi" Type="VI" URL="/Desktop/diff/Multi Client Server/subVIs/Error to Warning (STM Multi-Client).vi"/>
 			<Item Name="Find-str-in-string-array.vi" Type="VI" URL="../dependecies/Utilities/Arrays/Find-str-in-string-array.vi"/>
+			<Item Name="Find_Spectrometer.vi" Type="VI" URL="../../../AvaSpec-DLL_9.4/examples/LabView/LabViewSingleChan/LabViewSingleChan.llb/Find_Spectrometer.vi"/>
 			<Item Name="globalVarSD.vi" Type="VI" URL="../dependecies/globalVarSD.vi"/>
 			<Item Name="Graph_cursors_minmaxSD.vi" Type="VI" URL="../dependecies/Graph_cursors_minmaxSD.vi"/>
 			<Item Name="HSSpeed_type typedef.ctl" Type="VI" URL="../Classes/Detector/UV-VIS/methods/atmcd32d.llb/HSSpeed_type typedef.ctl"/>
