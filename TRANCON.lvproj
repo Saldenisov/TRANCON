@@ -254,11 +254,14 @@
 			<Item Name="ESLSCDLL.dll" Type="Document" URL="../IRpy-server/ESLSCDLL.dll"/>
 			<Item Name="IRpy.py" Type="Document" URL="../IRpy-server/IRpy.py"/>
 		</Item>
+		<Item Name="aux" Type="Folder">
+			<Item Name="Treatment.vi" Type="VI" URL="../Treatment.vi"/>
+			<Item Name="follow.vi" Type="VI" URL="../follow.vi"/>
+			<Item Name="encrypt DAT to UFS v1_1.vi" Type="VI" URL="../Classes/encrypt DAT to UFS v1_1.vi"/>
+			<Item Name="to_perc.vi" Type="VI" URL="../Classes/Control/Control-Client/to_perc.vi"/>
+		</Item>
 		<Item Name="TRANCON-HARDWARE-SERVER.vi" Type="VI" URL="../TRANCON-HARDWARE-SERVER.vi"/>
 		<Item Name="TRANCON-Client.vi" Type="VI" URL="../TRANCON-Client.vi"/>
-		<Item Name="Treatment.vi" Type="VI" URL="../Treatment.vi"/>
-		<Item Name="follow.vi" Type="VI" URL="../follow.vi"/>
-		<Item Name="MeasureParameters_to_byte_SD.vi" Type="VI" URL="../Classes/Detector/UV-VIS_AVANTES/MeasureParameters_to_byte_SD.vi"/>
 		<Item Name="Dépendances" Type="Dependencies">
 			<Property Name="NI.SortType" Type="Int">0</Property>
 			<Item Name="instr.lib" Type="Folder">
@@ -888,9 +891,15 @@
 			<Item Name="add_group.vi" Type="VI" URL="../dependecies/add_group.vi"/>
 			<Item Name="add_name_explistSD.vi" Type="VI" URL="../dependecies/add_name_explistSD.vi"/>
 			<Item Name="atmcd32d.dll" Type="Document" URL="../DLL/atmcd32d.dll"/>
+			<Item Name="avaspec.dll" Type="Document" URL="../../../AvaSpec-DLL_9.4/examples/LabView/LabViewSingleChan/avaspec.dll"/>
 			<Item Name="average-1Darray-SD.vi" Type="VI" URL="../dependecies/average-1Darray-SD.vi"/>
 			<Item Name="average-2Darray-SD_double.vi" Type="VI" URL="../dependecies/average-2Darray-SD_double.vi"/>
 			<Item Name="average_with_corrections_expSD.vi" Type="VI" URL="../dependecies/average_with_corrections_expSD.vi"/>
+			<Item Name="AVS_Activate.vi" Type="VI" URL="../../../AvaSpec-DLL_9.4/examples/LabView/LabViewSingleChan/LabViewSingleChan.llb/AVS_Activate.vi"/>
+			<Item Name="AVS_Done.vi" Type="VI" URL="../../../AvaSpec-DLL_9.4/examples/LabView/LabViewSingleChan/LabViewSingleChan.llb/AVS_Done.vi"/>
+			<Item Name="AVS_GetList.vi" Type="VI" URL="../../../AvaSpec-DLL_9.4/examples/LabView/LabViewSingleChan/LabViewSingleChan.llb/AVS_GetList.vi"/>
+			<Item Name="AVS_GetNrOfDevices.vi" Type="VI" URL="../../../AvaSpec-DLL_9.4/examples/LabView/LabViewSingleChan/LabViewSingleChan.llb/AVS_GetNrOfDevices.vi"/>
+			<Item Name="AVS_Init.vi" Type="VI" URL="../../../AvaSpec-DLL_9.4/examples/LabView/LabViewSingleChan/LabViewSingleChan.llb/AVS_Init.vi"/>
 			<Item Name="BG_corrSD.vi" Type="VI" URL="../dependecies/BG_corrSD.vi"/>
 			<Item Name="CellsSDI.ctl" Type="VI" URL="../controls/CellsSDI.ctl"/>
 			<Item Name="CellsSDIII.ctl" Type="VI" URL="../controls/CellsSDIII.ctl"/>
@@ -911,6 +920,7 @@
 			<Item Name="Error Code Handler.vi" Type="VI" URL="../dependecies/Error Code Handler.vi"/>
 			<Item Name="Error to Warning (STM Multi-Client).vi" Type="VI" URL="/Desktop/diff/Multi Client Server/subVIs/Error to Warning (STM Multi-Client).vi"/>
 			<Item Name="Find-str-in-string-array.vi" Type="VI" URL="../dependecies/Utilities/Arrays/Find-str-in-string-array.vi"/>
+			<Item Name="Find_Spectrometer.vi" Type="VI" URL="../../../AvaSpec-DLL_9.4/examples/LabView/LabViewSingleChan/LabViewSingleChan.llb/Find_Spectrometer.vi"/>
 			<Item Name="globalVarSD.vi" Type="VI" URL="../dependecies/globalVarSD.vi"/>
 			<Item Name="Graph_cursors_minmaxSD.vi" Type="VI" URL="../dependecies/Graph_cursors_minmaxSD.vi"/>
 			<Item Name="HSSpeed_type typedef.ctl" Type="VI" URL="../Classes/Detector/UV-VIS/methods/atmcd32d.llb/HSSpeed_type typedef.ctl"/>
@@ -924,6 +934,7 @@
 			<Item Name="LStep4.dll" Type="Document" URL="../DLL/LStep4.dll"/>
 			<Item Name="lvanlys.dll" Type="Document" URL="/&lt;resource&gt;/lvanlys.dll"/>
 			<Item Name="lvsound2.dll" Type="Document" URL="/&lt;resource&gt;/lvsound2.dll"/>
+			<Item Name="MeasureParameters_to_byte_SD.vi" Type="VI" URL="../Classes/Detector/UV-VIS_AVANTES/MeasureParameters_to_byte_SD.vi"/>
 			<Item Name="min-max-y-cursors-2D.vi" Type="VI" URL="../dependecies/min-max-y-cursors-2D.vi"/>
 			<Item Name="min-max-y-cursors.vi" Type="VI" URL="../dependecies/min-max-y-cursors.vi"/>
 			<Item Name="Multiple File Selection.vi" Type="VI" URL="../dependecies/Multiple File Selection-multiple/multfile.llb/Multiple File Selection.vi"/>
