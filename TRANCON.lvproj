@@ -112,6 +112,10 @@
 			</Item>
 			<Item Name="archive" Type="Folder">
 				<Item Name="psp_supervision.vi" Type="VI" URL="../dependecies/archive_elyse/psp_supervision.vi"/>
+				<Item Name="form_archive.vi" Type="VI" URL="../dependecies/archive_elyse/form_archive.vi"/>
+				<Item Name="average_archive_data.vi" Type="VI" URL="../dependecies/archive_elyse/average_archive_data.vi"/>
+				<Item Name="get_value_from_archive.vi" Type="VI" URL="../dependecies/archive_elyse/get_value_from_archive.vi"/>
+				<Item Name="set_value_from_archive.vi" Type="VI" URL="../dependecies/archive_elyse/set_value_from_archive.vi"/>
 			</Item>
 			<Item Name="verify_Commands.vi" Type="VI" URL="../dependecies/verify_Commands.vi"/>
 			<Item Name="Commands.vi" Type="VI" URL="../dependecies/Commands.vi"/>
@@ -187,6 +191,7 @@
 				<Item Name="DB_MySQL.lvclass" Type="LVClass" URL="../Classes/DB/DB_MySQL/DB_MySQL.lvclass"/>
 			</Item>
 			<Item Name="Detector" Type="Folder">
+				<Item Name="CCD_camera_tango.lvclass" Type="LVClass" URL="../Classes/Detector/CCD_camera_tango/CCD_camera_tango.lvclass"/>
 				<Item Name="Detector.lvclass" Type="LVClass" URL="../Classes/Detector/Detector.lvclass"/>
 				<Item Name="CCD_camera.lvclass" Type="LVClass" URL="../Classes/Detector/UV-VIS/CCD_camera.lvclass"/>
 				<Item Name="VIS-NIR.lvclass" Type="LVClass" URL="../Classes/Detector/VIS-IR/VIS-NIR.lvclass"/>
@@ -199,6 +204,7 @@
 				<Item Name="DLLS4.lvclass" Type="LVClass" URL="../Classes/Delay Line/DelayLineLS4/DLLS4.lvclass"/>
 				<Item Name="DLOwis.lvclass" Type="LVClass" URL="../Classes/Delay Line/DelayLineOwis/DLOwis.lvclass"/>
 				<Item Name="DLEmulate.lvclass" Type="LVClass" URL="../Classes/Delay Line/DelayLineSimulation/DLEmulate.lvclass"/>
+				<Item Name="OWIS_TANGO.lvclass" Type="LVClass" URL="../Classes/Delay Line/DelayLineOWIS_TANGO/OWIS_TANGO/OWIS_TANGO.lvclass"/>
 			</Item>
 			<Item Name="Oscilloscope" Type="Folder">
 				<Item Name="Oscilloscope.lvclass" Type="LVClass" URL="../Classes/Oscilloscope/Oscilloscope.lvclass"/>
@@ -426,6 +432,7 @@
 		<Item Name="TRANCON-HARDWARE-SERVER.vi" Type="VI" URL="../TRANCON-HARDWARE-SERVER.vi"/>
 		<Item Name="TRANCON-Client.vi" Type="VI" URL="../TRANCON-Client.vi"/>
 		<Item Name="encrypt DAT to UFS v1_1.vi" Type="VI" URL="../../../Users/elyse/OneDrive/Desktop/soft/encrypt DAT to UFS v1_1.vi"/>
+		<Item Name="python-similarity.vi" Type="VI" URL="../test/python-similarity.vi"/>
 		<Item Name="Dépendances" Type="Dependencies">
 			<Property Name="NI.SortType" Type="Int">0</Property>
 			<Item Name="instr.lib" Type="Folder">
@@ -453,6 +460,7 @@
 				<Item Name="Write.vi" Type="VI" URL="/&lt;instrlib&gt;/LeCroy Wave Series/Public/Utility/Write.vi"/>
 			</Item>
 			<Item Name="user.lib" Type="Folder">
+				<Item Name="Array of VData to VCluster__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvdata/lvdata.llb/Array of VData to VCluster__ogtk.vi"/>
 				<Item Name="Array Size(s)__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvdata/lvdata.llb/Array Size(s)__ogtk.vi"/>
 				<Item Name="Build Error Cluster__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/error/error.llb/Build Error Cluster__ogtk.vi"/>
 				<Item Name="Cluster to Array of VData__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvdata/lvdata.llb/Cluster to Array of VData__ogtk.vi"/>
@@ -606,9 +614,11 @@
 				<Item Name="Get Cluster Element Names__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvdata/lvdata.llb/Get Cluster Element Names__ogtk.vi"/>
 				<Item Name="Get Cluster Elements TDs__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvdata/lvdata.llb/Get Cluster Elements TDs__ogtk.vi"/>
 				<Item Name="Get Data Name from TD__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvdata/lvdata.llb/Get Data Name from TD__ogtk.vi"/>
+				<Item Name="Get Data Name__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvdata/lvdata.llb/Get Data Name__ogtk.vi"/>
 				<Item Name="Get Header from TD__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvdata/lvdata.llb/Get Header from TD__ogtk.vi"/>
 				<Item Name="Get Last PString__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvdata/lvdata.llb/Get Last PString__ogtk.vi"/>
 				<Item Name="Get PString__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvdata/lvdata.llb/Get PString__ogtk.vi"/>
+				<Item Name="Get Variant Attributes__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvdata/lvdata.llb/Get Variant Attributes__ogtk.vi"/>
 				<Item Name="Parse String with TDs__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvdata/lvdata.llb/Parse String with TDs__ogtk.vi"/>
 				<Item Name="Remove Duplicates from 1D Array (Boolean)__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/array/array.llb/Remove Duplicates from 1D Array (Boolean)__ogtk.vi"/>
 				<Item Name="Remove Duplicates from 1D Array (CDB)__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/array/array.llb/Remove Duplicates from 1D Array (CDB)__ogtk.vi"/>
@@ -692,6 +702,8 @@
 				<Item Name="Search 1D Array (U64)__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/array/array.llb/Search 1D Array (U64)__ogtk.vi"/>
 				<Item Name="Search 1D Array (Variant)__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/array/array.llb/Search 1D Array (Variant)__ogtk.vi"/>
 				<Item Name="Search Array__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/array/array.llb/Search Array__ogtk.vi"/>
+				<Item Name="Set Cluster Element by Name__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvdata/lvdata.llb/Set Cluster Element by Name__ogtk.vi"/>
+				<Item Name="Set Data Name__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/lvdata/lvdata.llb/Set Data Name__ogtk.vi"/>
 				<Item Name="Sort 1D Array (CDB)__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/array/array.llb/Sort 1D Array (CDB)__ogtk.vi"/>
 				<Item Name="Sort 1D Array (CSG)__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/array/array.llb/Sort 1D Array (CSG)__ogtk.vi"/>
 				<Item Name="Sort 1D Array (CXT)__ogtk.vi" Type="VI" URL="/&lt;userlib&gt;/_OpenG.lib/array/array.llb/Sort 1D Array (CXT)__ogtk.vi"/>
@@ -976,6 +988,7 @@
 				<Item Name="GetRTHostConnectedProp.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/GetRTHostConnectedProp.vi"/>
 				<Item Name="GregorianCal_MonthLengths.vi" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Open Source Project/Epoch Date &amp; Time/GregorianCal_MonthLengths.vi"/>
 				<Item Name="Is Path and Not Empty.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/file.llb/Is Path and Not Empty.vi"/>
+				<Item Name="isDST.vi" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Open Source Project/Epoch Date &amp; Time/isDST.vi"/>
 				<Item Name="isLeapYear (integer).vi" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Open Source Project/Epoch Date &amp; Time/isLeapYear (integer).vi"/>
 				<Item Name="isLeapYear (timestamp).vi" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Open Source Project/Epoch Date &amp; Time/isLeapYear (timestamp).vi"/>
 				<Item Name="ISO Day -- enum.ctl" Type="VI" URL="/&lt;vilib&gt;/LabVIEW Open Source Project/Epoch Date &amp; Time/formatter.iso8601/ISO Day -- enum.ctl"/>
