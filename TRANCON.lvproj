@@ -1,5 +1,8 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
 <Project Type="Project" LVVersion="20008000">
+	<Property Name="varPersistentID:{A6515F80-42EB-4AD1-AE1F-06F24BC1655B}" Type="Ref">/Poste de travail/Dependencies/elyse_variables.lvlib/elyse_counts</Property>
+	<Property Name="varPersistentID:{DDFCEF7E-D884-49CE-8D9C-0BA1B15A142E}" Type="Ref">/Poste de travail/Dependencies/elyse_variables.lvlib/repump_energy</Property>
+	<Property Name="varPersistentID:{F214F56C-948A-4E29-939D-08CDDE2390E1}" Type="Ref">/Poste de travail/Dependencies/IR_TRANCON.lvlib/n_scans_IR</Property>
 	<Item Name="Poste de travail" Type="My Computer">
 		<Property Name="NI.SortType" Type="Int">3</Property>
 		<Property Name="server.app.propertiesEnabled" Type="Bool">true</Property>
@@ -132,6 +135,10 @@
 			<Item Name="Open_IMG_file.vi" Type="VI" URL="../dependecies/Open_IMG_file.vi"/>
 			<Item Name="Get_XY_vectors_IMG.vi" Type="VI" URL="../dependecies/Get_XY_vectors_IMG.vi"/>
 			<Item Name="check for up_down.vi" Type="VI" URL="../dependecies/check for up_down.vi"/>
+			<Item Name="python-similarity.vi" Type="VI" URL="../test/python-similarity.vi"/>
+			<Item Name="write_raw_h5.vi" Type="VI" URL="../Classes/Detector/write_raw_h5.vi"/>
+			<Item Name="IR_TRANCON.lvlib" Type="Library" URL="../IR-det/IR_TRANCON.lvlib"/>
+			<Item Name="elyse_variables.lvlib" Type="Library" URL="../Classes/DAQmxTasks/elyse_variables.lvlib"/>
 		</Item>
 		<Item Name="Classes" Type="Folder">
 			<Item Name="GeneralFunctionality" Type="Folder">
@@ -198,6 +205,7 @@
 				<Item Name="Emulate.lvclass" Type="LVClass" URL="../Classes/Detector/Emulate/Emulate.lvclass"/>
 				<Item Name="UV-VIS_AVANTES.lvclass" Type="LVClass" URL="../Classes/Detector/UV-VIS_AVANTES/UV-VIS_AVANTES.lvclass"/>
 				<Item Name="Avantes_bunch.lvclass" Type="LVClass" URL="../Classes/Detector/DET_BUNCH/Avantes_bunch.lvclass"/>
+				<Item Name="VIS-NIR_STRESING_NEW.lvclass" Type="LVClass" URL="../VIS-NIR_STRESING_NEW/VIS-NIR_STRESING_NEW.lvclass"/>
 			</Item>
 			<Item Name="DelayLine" Type="Folder">
 				<Item Name="DelayLine.lvclass" Type="LVClass" URL="../Classes/Delay Line/DelayLine.lvclass"/>
@@ -266,174 +274,18 @@
 		</Item>
 		<Item Name="aux" Type="Folder">
 			<Item Name="Treatment.vi" Type="VI" URL="../Treatment.vi"/>
-			<Item Name="follow.vi" Type="VI" URL="../follow.vi"/>
+			<Item Name="follow.vi" Type="VI" URL="../dependecies/follow.vi"/>
 			<Item Name="encrypt DAT to UFS v1_1.vi" Type="VI" URL="../Classes/encrypt DAT to UFS v1_1.vi"/>
 			<Item Name="to_perc.vi" Type="VI" URL="../Classes/Control/Control-Client/to_perc.vi"/>
-		</Item>
-		<Item Name="tango_vi" Type="Folder">
-			<Item Name="tango.lvlib" Type="Library" URL="../tango-binding-3.0.0-for-labview-2014-windows-x64/vis/tango_vi.llb/tango.lvlib"/>
-			<Item Name="_DeviceProperty.ctl" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DeviceProperty.ctl"/>
-			<Item Name="_DServerClientRequest.ctl" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerClientRequest.ctl"/>
-			<Item Name="_DServerClientRequestData.ctl" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerClientRequestData.ctl"/>
-			<Item Name="_DServerClientRequestType.ctl" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerClientRequestType.ctl"/>
-			<Item Name="_DServerDevicePropertyToBoolean.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerDevicePropertyToBoolean.vi"/>
-			<Item Name="_DServerDevicePropertyToDouble.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerDevicePropertyToDouble.vi"/>
-			<Item Name="_DServerDevicePropertyToDoubleArray.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerDevicePropertyToDoubleArray.vi"/>
-			<Item Name="_DServerDevicePropertyToFloat.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerDevicePropertyToFloat.vi"/>
-			<Item Name="_DServerDevicePropertyToFloatArray.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerDevicePropertyToFloatArray.vi"/>
-			<Item Name="_DServerDevicePropertyToLong.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerDevicePropertyToLong.vi"/>
-			<Item Name="_DServerDevicePropertyToLongArray.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerDevicePropertyToLongArray.vi"/>
-			<Item Name="_DServerDevicePropertyToShort.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerDevicePropertyToShort.vi"/>
-			<Item Name="_DServerDevicePropertyToShortArray.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerDevicePropertyToShortArray.vi"/>
-			<Item Name="_DServerDevicePropertyToString.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerDevicePropertyToString.vi"/>
-			<Item Name="_DServerDevicePropertyToStringArray.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerDevicePropertyToStringArray.vi"/>
-			<Item Name="_DServerDevicePropertyToULong.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerDevicePropertyToULong.vi"/>
-			<Item Name="_DServerDevicePropertyToULongArray.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerDevicePropertyToULongArray.vi"/>
-			<Item Name="_DServerDevicePropertyToUShort.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerDevicePropertyToUShort.vi"/>
-			<Item Name="_DServerDevicePropertyToUShortArray.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerDevicePropertyToUShortArray.vi"/>
-			<Item Name="_DServerEvent.ctl" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerEvent.ctl"/>
-			<Item Name="_DServerEventCreate.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerEventCreate.vi"/>
-			<Item Name="_DServerGetRawDeviceProperty.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerGetRawDeviceProperty.vi"/>
-			<Item Name="_DServerReplyToExecuteCommand.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerReplyToExecuteCommand.vi"/>
-			<Item Name="_DServerReplyToReadAttribute.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerReplyToReadAttribute.vi"/>
-			<Item Name="_DServerRequestDataFromDevBoolean.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerRequestDataFromDevBoolean.vi"/>
-			<Item Name="_DServerRequestDataFromDevBooleanArray.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerRequestDataFromDevBooleanArray.vi"/>
-			<Item Name="_DServerRequestDataFromDevCharArray.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerRequestDataFromDevCharArray.vi"/>
-			<Item Name="_DServerRequestDataFromDevDouble.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerRequestDataFromDevDouble.vi"/>
-			<Item Name="_DServerRequestDataFromDevDoubleArray.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerRequestDataFromDevDoubleArray.vi"/>
-			<Item Name="_DServerRequestDataFromDevDoubleStringArray.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerRequestDataFromDevDoubleStringArray.vi"/>
-			<Item Name="_DServerRequestDataFromDevEnum.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerRequestDataFromDevEnum.vi"/>
-			<Item Name="_DServerRequestDataFromDevFloat.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerRequestDataFromDevFloat.vi"/>
-			<Item Name="_DServerRequestDataFromDevFloatArray.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerRequestDataFromDevFloatArray.vi"/>
-			<Item Name="_DServerRequestDataFromDevLong.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerRequestDataFromDevLong.vi"/>
-			<Item Name="_DServerRequestDataFromDevLong64.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerRequestDataFromDevLong64.vi"/>
-			<Item Name="_DServerRequestDataFromDevLong64Array.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerRequestDataFromDevLong64Array.vi"/>
-			<Item Name="_DServerRequestDataFromDevLongArray.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerRequestDataFromDevLongArray.vi"/>
-			<Item Name="_DServerRequestDataFromDevLongStringArray.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerRequestDataFromDevLongStringArray.vi"/>
-			<Item Name="_DServerRequestDataFromDevShort.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerRequestDataFromDevShort.vi"/>
-			<Item Name="_DServerRequestDataFromDevShortArray.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerRequestDataFromDevShortArray.vi"/>
-			<Item Name="_DServerRequestDataFromDevState.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerRequestDataFromDevState.vi"/>
-			<Item Name="_DServerRequestDataFromDevString.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerRequestDataFromDevString.vi"/>
-			<Item Name="_DServerRequestDataFromDevStringArray.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerRequestDataFromDevStringArray.vi"/>
-			<Item Name="_DServerRequestDataFromDevULong.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerRequestDataFromDevULong.vi"/>
-			<Item Name="_DServerRequestDataFromDevULong64.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerRequestDataFromDevULong64.vi"/>
-			<Item Name="_DServerRequestDataFromDevULong64Array.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerRequestDataFromDevULong64Array.vi"/>
-			<Item Name="_DServerRequestDataFromDevULongArray.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerRequestDataFromDevULongArray.vi"/>
-			<Item Name="_DServerRequestDataFromDevUShort.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerRequestDataFromDevUShort.vi"/>
-			<Item Name="_DServerRequestDataFromDevUShortArray.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerRequestDataFromDevUShortArray.vi"/>
-			<Item Name="_DServerRequestDataToBooleanImage.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerRequestDataToBooleanImage.vi"/>
-			<Item Name="_DServerRequestDataToBooleanScalar.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerRequestDataToBooleanScalar.vi"/>
-			<Item Name="_DServerRequestDataToBooleanSpectrum.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerRequestDataToBooleanSpectrum.vi"/>
-			<Item Name="_DServerRequestDataToDevBoolean.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerRequestDataToDevBoolean.vi"/>
-			<Item Name="_DServerRequestDataToDevBooleanArray.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerRequestDataToDevBooleanArray.vi"/>
-			<Item Name="_DServerRequestDataToDevCharArray.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerRequestDataToDevCharArray.vi"/>
-			<Item Name="_DServerRequestDataToDevDouble.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerRequestDataToDevDouble.vi"/>
-			<Item Name="_DServerRequestDataToDevDoubleArray.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerRequestDataToDevDoubleArray.vi"/>
-			<Item Name="_DServerRequestDataToDevDoubleStringArray.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerRequestDataToDevDoubleStringArray.vi"/>
-			<Item Name="_DServerRequestDataToDevEnum.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerRequestDataToDevEnum.vi"/>
-			<Item Name="_DServerRequestDataToDevFloat.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerRequestDataToDevFloat.vi"/>
-			<Item Name="_DServerRequestDataToDevFloatArray.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerRequestDataToDevFloatArray.vi"/>
-			<Item Name="_DServerRequestDataToDevLong.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerRequestDataToDevLong.vi"/>
-			<Item Name="_DServerRequestDataToDevLong64.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerRequestDataToDevLong64.vi"/>
-			<Item Name="_DServerRequestDataToDevLong64Array.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerRequestDataToDevLong64Array.vi"/>
-			<Item Name="_DServerRequestDataToDevLongArray.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerRequestDataToDevLongArray.vi"/>
-			<Item Name="_DServerRequestDataToDevLongStringArray.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerRequestDataToDevLongStringArray.vi"/>
-			<Item Name="_DServerRequestDataToDevShort.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerRequestDataToDevShort.vi"/>
-			<Item Name="_DServerRequestDataToDevShortArray.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerRequestDataToDevShortArray.vi"/>
-			<Item Name="_DServerRequestDataToDevState.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerRequestDataToDevState.vi"/>
-			<Item Name="_DServerRequestDataToDevStateArray.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerRequestDataToDevStateArray.vi"/>
-			<Item Name="_DServerRequestDataToDevString.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerRequestDataToDevString.vi"/>
-			<Item Name="_DServerRequestDataToDevStringArray.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerRequestDataToDevStringArray.vi"/>
-			<Item Name="_DServerRequestDataToDevULong.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerRequestDataToDevULong.vi"/>
-			<Item Name="_DServerRequestDataToDevULong64.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerRequestDataToDevULong64.vi"/>
-			<Item Name="_DServerRequestDataToDevULong64Array.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerRequestDataToDevULong64Array.vi"/>
-			<Item Name="_DServerRequestDataToDevULongArray.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerRequestDataToDevULongArray.vi"/>
-			<Item Name="_DServerRequestDataToDevUShort.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerRequestDataToDevUShort.vi"/>
-			<Item Name="_DServerRequestDataToDevUShortArray.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerRequestDataToDevUShortArray.vi"/>
-			<Item Name="_DServerRequestDataToDoubleImage.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerRequestDataToDoubleImage.vi"/>
-			<Item Name="_DServerRequestDataToDoubleScalar.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerRequestDataToDoubleScalar.vi"/>
-			<Item Name="_DServerRequestDataToDoubleSpectrum.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerRequestDataToDoubleSpectrum.vi"/>
-			<Item Name="_DServerRequestDataToEnumScalar.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerRequestDataToEnumScalar.vi"/>
-			<Item Name="_DServerRequestDataToFloatImage.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerRequestDataToFloatImage.vi"/>
-			<Item Name="_DServerRequestDataToFloatScalar.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerRequestDataToFloatScalar.vi"/>
-			<Item Name="_DServerRequestDataToFloatSpectrum.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerRequestDataToFloatSpectrum.vi"/>
-			<Item Name="_DServerRequestDataToLong64Image.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerRequestDataToLong64Image.vi"/>
-			<Item Name="_DServerRequestDataToLong64Scalar.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerRequestDataToLong64Scalar.vi"/>
-			<Item Name="_DServerRequestDataToLong64Spectrum.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerRequestDataToLong64Spectrum.vi"/>
-			<Item Name="_DServerRequestDataToLongImage.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerRequestDataToLongImage.vi"/>
-			<Item Name="_DServerRequestDataToLongScalar.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerRequestDataToLongScalar.vi"/>
-			<Item Name="_DServerRequestDataToLongSpectrum.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerRequestDataToLongSpectrum.vi"/>
-			<Item Name="_DServerRequestDataToShortImage.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerRequestDataToShortImage.vi"/>
-			<Item Name="_DServerRequestDataToShortScalar.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerRequestDataToShortScalar.vi"/>
-			<Item Name="_DServerRequestDataToShortSpectrum.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerRequestDataToShortSpectrum.vi"/>
-			<Item Name="_DServerRequestDataToStateImage.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerRequestDataToStateImage.vi"/>
-			<Item Name="_DServerRequestDataToStateScalar.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerRequestDataToStateScalar.vi"/>
-			<Item Name="_DServerRequestDataToStateSpectrum.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerRequestDataToStateSpectrum.vi"/>
-			<Item Name="_DServerRequestDataToStringImage.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerRequestDataToStringImage.vi"/>
-			<Item Name="_DServerRequestDataToStringScalar.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerRequestDataToStringScalar.vi"/>
-			<Item Name="_DServerRequestDataToStringSpectrum.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerRequestDataToStringSpectrum.vi"/>
-			<Item Name="_DServerRequestDataToUCharImage.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerRequestDataToUCharImage.vi"/>
-			<Item Name="_DServerRequestDataToUCharScalar.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerRequestDataToUCharScalar.vi"/>
-			<Item Name="_DServerRequestDataToUCharSpectrum.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerRequestDataToUCharSpectrum.vi"/>
-			<Item Name="_DServerRequestDataToULong64Image.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerRequestDataToULong64Image.vi"/>
-			<Item Name="_DServerRequestDataToULong64Scalar.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerRequestDataToULong64Scalar.vi"/>
-			<Item Name="_DServerRequestDataToULong64Spectrum.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerRequestDataToULong64Spectrum.vi"/>
-			<Item Name="_DServerRequestDataToULongImage.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerRequestDataToULongImage.vi"/>
-			<Item Name="_DServerRequestDataToULongScalar.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerRequestDataToULongScalar.vi"/>
-			<Item Name="_DServerRequestDataToULongSpectrum.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerRequestDataToULongSpectrum.vi"/>
-			<Item Name="_DServerRequestDataToUShortImage.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerRequestDataToUShortImage.vi"/>
-			<Item Name="_DServerRequestDataToUShortScalar.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerRequestDataToUShortScalar.vi"/>
-			<Item Name="_DServerRequestDataToUShortSpectrum.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerRequestDataToUShortSpectrum.vi"/>
-			<Item Name="_DServerRequestToString.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerRequestToString.vi"/>
-			<Item Name="_DServerRequestTypeToString.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerRequestTypeToString.vi"/>
-			<Item Name="_DServerSetBooleanImageAttributeValue.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerSetBooleanImageAttributeValue.vi"/>
-			<Item Name="_DServerSetBooleanScalarAttributeValue.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerSetBooleanScalarAttributeValue.vi"/>
-			<Item Name="_DServerSetBooleanSpectrumAttributeValue.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerSetBooleanSpectrumAttributeValue.vi"/>
-			<Item Name="_DServerSetDoubleImageAttributeValue.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerSetDoubleImageAttributeValue.vi"/>
-			<Item Name="_DServerSetDoubleScalarAttributeValue.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerSetDoubleScalarAttributeValue.vi"/>
-			<Item Name="_DServerSetDoubleSpectrumAttributeValue.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerSetDoubleSpectrumAttributeValue.vi"/>
-			<Item Name="_DServerSetEnumScalarAttributeValue.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerSetEnumScalarAttributeValue.vi"/>
-			<Item Name="_DServerSetFloatImageAttributeValue.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerSetFloatImageAttributeValue.vi"/>
-			<Item Name="_DServerSetFloatScalarAttributeValue.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerSetFloatScalarAttributeValue.vi"/>
-			<Item Name="_DServerSetFloatSpectrumAttributeValue.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerSetFloatSpectrumAttributeValue.vi"/>
-			<Item Name="_DServerSetLong64ImageAttributeValue.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerSetLong64ImageAttributeValue.vi"/>
-			<Item Name="_DServerSetLong64ScalarAttributeValue.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerSetLong64ScalarAttributeValue.vi"/>
-			<Item Name="_DServerSetLong64SpectrumAttributeValue.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerSetLong64SpectrumAttributeValue.vi"/>
-			<Item Name="_DServerSetLongImageAttributeValue.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerSetLongImageAttributeValue.vi"/>
-			<Item Name="_DServerSetLongScalarAttributeValue.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerSetLongScalarAttributeValue.vi"/>
-			<Item Name="_DServerSetLongSpectrumAttributeValue.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerSetLongSpectrumAttributeValue.vi"/>
-			<Item Name="_DServerSetShortImageAttributeValue.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerSetShortImageAttributeValue.vi"/>
-			<Item Name="_DServerSetShortScalarAttributeValue.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerSetShortScalarAttributeValue.vi"/>
-			<Item Name="_DServerSetShortSpectrumAttributeValue.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerSetShortSpectrumAttributeValue.vi"/>
-			<Item Name="_DServerSetStateImageAttributeValue.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerSetStateImageAttributeValue.vi"/>
-			<Item Name="_DServerSetStateScalarAttributeValue.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerSetStateScalarAttributeValue.vi"/>
-			<Item Name="_DServerSetStateSpectrumAttributeValue.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerSetStateSpectrumAttributeValue.vi"/>
-			<Item Name="_DServerSetStringImageAttributeValue.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerSetStringImageAttributeValue.vi"/>
-			<Item Name="_DServerSetStringScalarAttributeValue.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerSetStringScalarAttributeValue.vi"/>
-			<Item Name="_DServerSetStringSpectrumAttributeValue.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerSetStringSpectrumAttributeValue.vi"/>
-			<Item Name="_DServerSetUCharImageAttributeValue.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerSetUCharImageAttributeValue.vi"/>
-			<Item Name="_DServerSetUCharScalarAttributeValue.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerSetUCharScalarAttributeValue.vi"/>
-			<Item Name="_DServerSetUCharSpectrumAttributeValue.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerSetUCharSpectrumAttributeValue.vi"/>
-			<Item Name="_DServerSetULong64ImageAttributeValue.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerSetULong64ImageAttributeValue.vi"/>
-			<Item Name="_DServerSetULong64ScalarAttributeValue.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerSetULong64ScalarAttributeValue.vi"/>
-			<Item Name="_DServerSetULong64SpectrumAttributeValue.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerSetULong64SpectrumAttributeValue.vi"/>
-			<Item Name="_DServerSetULongImageAttributeValue.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerSetULongImageAttributeValue.vi"/>
-			<Item Name="_DServerSetULongScalarAttributeValue.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerSetULongScalarAttributeValue.vi"/>
-			<Item Name="_DServerSetULongSpectrumAttributeValue.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerSetULongSpectrumAttributeValue.vi"/>
-			<Item Name="_DServerSetUShortImageAttributeValue.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerSetUShortImageAttributeValue.vi"/>
-			<Item Name="_DServerSetUShortScalarAttributeValue.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerSetUShortScalarAttributeValue.vi"/>
-			<Item Name="_DServerSetUShortSpectrumAttributeValue.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerSetUShortSpectrumAttributeValue.vi"/>
-			<Item Name="_GenericDataBuffer.ctl" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_GenericDataBuffer.ctl"/>
-			<Item Name="SubscribeEvent.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/SubscribeEvent.vi"/>
-		</Item>
-		<Item Name="Tango-Controls" Type="Folder">
-			<Item Name="test.vi" Type="VI" URL="../../../Users/Elyse/Desktop/tango-binding-3.0.0-for-labview-2015-windows-x86/test.vi"/>
+			<Item Name="test..vi" Type="VI" URL="../Classes/Detector/test..vi"/>
+			<Item Name="test.vi" Type="VI" URL="../Classes/Detector/test.vi"/>
+			<Item Name="time_measure.vi" Type="VI" URL="../dependecies/time_measure.vi"/>
 		</Item>
 		<Item Name="TRANCON-HARDWARE-SERVER.vi" Type="VI" URL="../TRANCON-HARDWARE-SERVER.vi"/>
 		<Item Name="TRANCON-Client.vi" Type="VI" URL="../TRANCON-Client.vi"/>
-		<Item Name="encrypt DAT to UFS v1_1.vi" Type="VI" URL="../../../Users/elyse/OneDrive/Desktop/soft/encrypt DAT to UFS v1_1.vi"/>
-		<Item Name="python-similarity.vi" Type="VI" URL="../test/python-similarity.vi"/>
-		<Item Name="write_raw_h5.vi" Type="VI" URL="../Classes/Detector/write_raw_h5.vi"/>
+		<Item Name="repump.ctl" Type="VI" URL="../controls/repump.ctl"/>
+		<Item Name="def_repump_value.ctl" Type="VI" URL="../Classes/Oscilloscope/def_repump_value.ctl"/>
+		<Item Name="def_repump_values_array.ctl" Type="VI" URL="../Classes/Detector/def_repump_values_array.ctl"/>
 		<Item Name="Dépendances" Type="Dependencies">
 			<Property Name="NI.SortType" Type="Int">0</Property>
 			<Item Name="instr.lib" Type="Folder">
@@ -1107,6 +959,10 @@
 				<Item Name="XControlSupport.lvlib" Type="Library" URL="/&lt;vilib&gt;/_xctls/XControlSupport.lvlib"/>
 				<Item Name="zeromq.lvlib" Type="Library" URL="/&lt;vilib&gt;/addons/zeromq/zeromq.lvlib"/>
 			</Item>
+			<Item Name="_Argin.vi" Type="VI" URL="../tango-binding-3.0.0-for-labview-2014-windows-x64/vis/tango_vi.llb/_Argin.vi"/>
+			<Item Name="_AvInsertFromSimpleValue.vi" Type="VI" URL="../tango-binding-3.0.0-for-labview-2014-windows-x64/vis/tango_vi.llb/_AvInsertFromSimpleValue.vi"/>
+			<Item Name="_CommandInOut.vi" Type="VI" URL="../tango-binding-3.0.0-for-labview-2014-windows-x64/vis/tango_vi.llb/_CommandInOut.vi"/>
+			<Item Name="_DataType.ctl" Type="VI" URL="../tango-binding-3.0.0-for-labview-2014-windows-x64/vis/tango_vi.llb/_DataType.ctl"/>
 			<Item Name="_DeviceProperty.ctl" Type="VI" URL="../tango-binding-3.0.0-for-labview-2014-windows-x64/vis/tango_vi.llb/_DeviceProperty.ctl"/>
 			<Item Name="_DeviceProperty.ctl" Type="VI" URL="../tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DeviceProperty.ctl"/>
 			<Item Name="_DServerClientRequest.ctl" Type="VI" URL="../tango-binding-3.0.0-for-labview-2014-windows-x64/vis/tango_vi.llb/_DServerClientRequest.ctl"/>
@@ -1401,6 +1257,9 @@
 			<Item Name="_DServerSetUShortSpectrumAttributeValue.vi" Type="VI" URL="../tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_DServerSetUShortSpectrumAttributeValue.vi"/>
 			<Item Name="_GenericDataBuffer.ctl" Type="VI" URL="../tango-binding-3.0.0-for-labview-2014-windows-x64/vis/tango_vi.llb/_GenericDataBuffer.ctl"/>
 			<Item Name="_GenericDataBuffer.ctl" Type="VI" URL="../tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/_GenericDataBuffer.ctl"/>
+			<Item Name="_ReadAttributes.vi" Type="VI" URL="../tango-binding-3.0.0-for-labview-2014-windows-x64/vis/tango_vi.llb/_ReadAttributes.vi"/>
+			<Item Name="_TangoExceptionToLabviewError.vi" Type="VI" URL="../tango-binding-3.0.0-for-labview-2014-windows-x64/vis/tango_vi.llb/_TangoExceptionToLabviewError.vi"/>
+			<Item Name="_TangoExecuteCommand.vi" Type="VI" URL="../tango-binding-3.0.0-for-labview-2014-windows-x64/vis/tango_vi.llb/_TangoExecuteCommand.vi"/>
 			<Item Name="AcquisitionMode_mode typedef.ctl" Type="VI" URL="../dependecies/AcquisitionMode_mode typedef.ctl"/>
 			<Item Name="Add ECO For LabVIEW.vi" Type="VI" URL="../dependecies/Add ECO For LabVIEW.vi"/>
 			<Item Name="add_group.vi" Type="VI" URL="../dependecies/add_group.vi"/>
@@ -1408,6 +1267,7 @@
 			<Item Name="all_magnets_type_def.ctl" Type="VI" URL="../dependecies/archive_elyse/all_magnets_type_def.ctl"/>
 			<Item Name="archive.ctl" Type="VI" URL="../dependecies/archive_elyse/archive.ctl"/>
 			<Item Name="atmcd32d.dll" Type="Document" URL="../DLL/atmcd32d.dll"/>
+			<Item Name="av.vi" Type="VI" URL="../tango-binding-3.0.0-for-labview-2014-windows-x64/vis/tango_vi.llb/av.vi"/>
 			<Item Name="average-1Darray-SD.vi" Type="VI" URL="../dependecies/average-1Darray-SD.vi"/>
 			<Item Name="average-2Darray-SD_double.vi" Type="VI" URL="../dependecies/average-2Darray-SD_double.vi"/>
 			<Item Name="average_with_corrections_expSD.vi" Type="VI" URL="../dependecies/average_with_corrections_expSD.vi"/>
@@ -1432,6 +1292,61 @@
 			<Item Name="Error to Warning (STM Multi-Client).vi" Type="VI" URL="/Desktop/diff/Multi Client Server/subVIs/Error to Warning (STM Multi-Client).vi"/>
 			<Item Name="execute_tango_archive.vi" Type="VI" URL="../dependecies/archive_elyse/execute_tango_archive.vi"/>
 			<Item Name="Find-str-in-string-array.vi" Type="VI" URL="../dependecies/Utilities/Arrays/Find-str-in-string-array.vi"/>
+			<Item Name="fromBooleanImage.vi" Type="VI" URL="../tango-binding-3.0.0-for-labview-2014-windows-x64/vis/tango_vi.llb/fromBooleanImage.vi"/>
+			<Item Name="fromBooleanScalar.vi" Type="VI" URL="../tango-binding-3.0.0-for-labview-2014-windows-x64/vis/tango_vi.llb/fromBooleanScalar.vi"/>
+			<Item Name="fromBooleanSpectrum.vi" Type="VI" URL="../tango-binding-3.0.0-for-labview-2014-windows-x64/vis/tango_vi.llb/fromBooleanSpectrum.vi"/>
+			<Item Name="fromDevBoolean.vi" Type="VI" URL="../tango-binding-3.0.0-for-labview-2014-windows-x64/vis/tango_vi.llb/fromDevBoolean.vi"/>
+			<Item Name="fromDevDouble.vi" Type="VI" URL="../tango-binding-3.0.0-for-labview-2014-windows-x64/vis/tango_vi.llb/fromDevDouble.vi"/>
+			<Item Name="fromDevEnum.vi" Type="VI" URL="../tango-binding-3.0.0-for-labview-2014-windows-x64/vis/tango_vi.llb/fromDevEnum.vi"/>
+			<Item Name="fromDevFloat.vi" Type="VI" URL="../tango-binding-3.0.0-for-labview-2014-windows-x64/vis/tango_vi.llb/fromDevFloat.vi"/>
+			<Item Name="fromDevLong.vi" Type="VI" URL="../tango-binding-3.0.0-for-labview-2014-windows-x64/vis/tango_vi.llb/fromDevLong.vi"/>
+			<Item Name="fromDevShort.vi" Type="VI" URL="../tango-binding-3.0.0-for-labview-2014-windows-x64/vis/tango_vi.llb/fromDevShort.vi"/>
+			<Item Name="fromDevString.vi" Type="VI" URL="../tango-binding-3.0.0-for-labview-2014-windows-x64/vis/tango_vi.llb/fromDevString.vi"/>
+			<Item Name="fromDevULong.vi" Type="VI" URL="../tango-binding-3.0.0-for-labview-2014-windows-x64/vis/tango_vi.llb/fromDevULong.vi"/>
+			<Item Name="fromDevUShort.vi" Type="VI" URL="../tango-binding-3.0.0-for-labview-2014-windows-x64/vis/tango_vi.llb/fromDevUShort.vi"/>
+			<Item Name="fromDevVarCharArray.vi" Type="VI" URL="../tango-binding-3.0.0-for-labview-2014-windows-x64/vis/tango_vi.llb/fromDevVarCharArray.vi"/>
+			<Item Name="fromDevVarDoubleArray.vi" Type="VI" URL="../tango-binding-3.0.0-for-labview-2014-windows-x64/vis/tango_vi.llb/fromDevVarDoubleArray.vi"/>
+			<Item Name="fromDevVarDoubleStringArray.vi" Type="VI" URL="../tango-binding-3.0.0-for-labview-2014-windows-x64/vis/tango_vi.llb/fromDevVarDoubleStringArray.vi"/>
+			<Item Name="fromDevVarFloatArray.vi" Type="VI" URL="../tango-binding-3.0.0-for-labview-2014-windows-x64/vis/tango_vi.llb/fromDevVarFloatArray.vi"/>
+			<Item Name="fromDevVarLongArray.vi" Type="VI" URL="../tango-binding-3.0.0-for-labview-2014-windows-x64/vis/tango_vi.llb/fromDevVarLongArray.vi"/>
+			<Item Name="fromDevVarLongStringArray.vi" Type="VI" URL="../tango-binding-3.0.0-for-labview-2014-windows-x64/vis/tango_vi.llb/fromDevVarLongStringArray.vi"/>
+			<Item Name="fromDevVarShortArray.vi" Type="VI" URL="../tango-binding-3.0.0-for-labview-2014-windows-x64/vis/tango_vi.llb/fromDevVarShortArray.vi"/>
+			<Item Name="fromDevVarStringArray.vi" Type="VI" URL="../tango-binding-3.0.0-for-labview-2014-windows-x64/vis/tango_vi.llb/fromDevVarStringArray.vi"/>
+			<Item Name="fromDevVarULongArray.vi" Type="VI" URL="../tango-binding-3.0.0-for-labview-2014-windows-x64/vis/tango_vi.llb/fromDevVarULongArray.vi"/>
+			<Item Name="fromDevVarUShortArray.vi" Type="VI" URL="../tango-binding-3.0.0-for-labview-2014-windows-x64/vis/tango_vi.llb/fromDevVarUShortArray.vi"/>
+			<Item Name="fromDoubleImage.vi" Type="VI" URL="../tango-binding-3.0.0-for-labview-2014-windows-x64/vis/tango_vi.llb/fromDoubleImage.vi"/>
+			<Item Name="fromDoubleScalar.vi" Type="VI" URL="../tango-binding-3.0.0-for-labview-2014-windows-x64/vis/tango_vi.llb/fromDoubleScalar.vi"/>
+			<Item Name="fromDoubleSpectrum.vi" Type="VI" URL="../tango-binding-3.0.0-for-labview-2014-windows-x64/vis/tango_vi.llb/fromDoubleSpectrum.vi"/>
+			<Item Name="fromFloatImage.vi" Type="VI" URL="../tango-binding-3.0.0-for-labview-2014-windows-x64/vis/tango_vi.llb/fromFloatImage.vi"/>
+			<Item Name="fromFloatScalar.vi" Type="VI" URL="../tango-binding-3.0.0-for-labview-2014-windows-x64/vis/tango_vi.llb/fromFloatScalar.vi"/>
+			<Item Name="fromFloatSpectrum.vi" Type="VI" URL="../tango-binding-3.0.0-for-labview-2014-windows-x64/vis/tango_vi.llb/fromFloatSpectrum.vi"/>
+			<Item Name="fromLong64Image.vi" Type="VI" URL="../tango-binding-3.0.0-for-labview-2014-windows-x64/vis/tango_vi.llb/fromLong64Image.vi"/>
+			<Item Name="fromLong64Scalar.vi" Type="VI" URL="../tango-binding-3.0.0-for-labview-2014-windows-x64/vis/tango_vi.llb/fromLong64Scalar.vi"/>
+			<Item Name="fromLong64Spectrum.vi" Type="VI" URL="../tango-binding-3.0.0-for-labview-2014-windows-x64/vis/tango_vi.llb/fromLong64Spectrum.vi"/>
+			<Item Name="fromLongImage.vi" Type="VI" URL="../tango-binding-3.0.0-for-labview-2014-windows-x64/vis/tango_vi.llb/fromLongImage.vi"/>
+			<Item Name="fromLongScalar.vi" Type="VI" URL="../tango-binding-3.0.0-for-labview-2014-windows-x64/vis/tango_vi.llb/fromLongScalar.vi"/>
+			<Item Name="fromLongSpectrum.vi" Type="VI" URL="../tango-binding-3.0.0-for-labview-2014-windows-x64/vis/tango_vi.llb/fromLongSpectrum.vi"/>
+			<Item Name="fromShortImage.vi" Type="VI" URL="../tango-binding-3.0.0-for-labview-2014-windows-x64/vis/tango_vi.llb/fromShortImage.vi"/>
+			<Item Name="fromShortScalar.vi" Type="VI" URL="../tango-binding-3.0.0-for-labview-2014-windows-x64/vis/tango_vi.llb/fromShortScalar.vi"/>
+			<Item Name="fromShortSpectrum.vi" Type="VI" URL="../tango-binding-3.0.0-for-labview-2014-windows-x64/vis/tango_vi.llb/fromShortSpectrum.vi"/>
+			<Item Name="fromStateImage.vi" Type="VI" URL="../tango-binding-3.0.0-for-labview-2014-windows-x64/vis/tango_vi.llb/fromStateImage.vi"/>
+			<Item Name="fromStateScalar.vi" Type="VI" URL="../tango-binding-3.0.0-for-labview-2014-windows-x64/vis/tango_vi.llb/fromStateScalar.vi"/>
+			<Item Name="fromStateSpectrum.vi" Type="VI" URL="../tango-binding-3.0.0-for-labview-2014-windows-x64/vis/tango_vi.llb/fromStateSpectrum.vi"/>
+			<Item Name="fromStringImage.vi" Type="VI" URL="../tango-binding-3.0.0-for-labview-2014-windows-x64/vis/tango_vi.llb/fromStringImage.vi"/>
+			<Item Name="fromStringScalar.vi" Type="VI" URL="../tango-binding-3.0.0-for-labview-2014-windows-x64/vis/tango_vi.llb/fromStringScalar.vi"/>
+			<Item Name="fromStringSpectrum.vi" Type="VI" URL="../tango-binding-3.0.0-for-labview-2014-windows-x64/vis/tango_vi.llb/fromStringSpectrum.vi"/>
+			<Item Name="fromUCharImage.vi" Type="VI" URL="../tango-binding-3.0.0-for-labview-2014-windows-x64/vis/tango_vi.llb/fromUCharImage.vi"/>
+			<Item Name="fromUCharScalar.vi" Type="VI" URL="../tango-binding-3.0.0-for-labview-2014-windows-x64/vis/tango_vi.llb/fromUCharScalar.vi"/>
+			<Item Name="fromUCharSpectrum.vi" Type="VI" URL="../tango-binding-3.0.0-for-labview-2014-windows-x64/vis/tango_vi.llb/fromUCharSpectrum.vi"/>
+			<Item Name="fromULong64Image.vi" Type="VI" URL="../tango-binding-3.0.0-for-labview-2014-windows-x64/vis/tango_vi.llb/fromULong64Image.vi"/>
+			<Item Name="fromULong64Scalar.vi" Type="VI" URL="../tango-binding-3.0.0-for-labview-2014-windows-x64/vis/tango_vi.llb/fromULong64Scalar.vi"/>
+			<Item Name="fromULong64Spectrum.vi" Type="VI" URL="../tango-binding-3.0.0-for-labview-2014-windows-x64/vis/tango_vi.llb/fromULong64Spectrum.vi"/>
+			<Item Name="fromULongImage.vi" Type="VI" URL="../tango-binding-3.0.0-for-labview-2014-windows-x64/vis/tango_vi.llb/fromULongImage.vi"/>
+			<Item Name="fromULongScalar.vi" Type="VI" URL="../tango-binding-3.0.0-for-labview-2014-windows-x64/vis/tango_vi.llb/fromULongScalar.vi"/>
+			<Item Name="fromULongSpectrum.vi" Type="VI" URL="../tango-binding-3.0.0-for-labview-2014-windows-x64/vis/tango_vi.llb/fromULongSpectrum.vi"/>
+			<Item Name="fromUShortImage.vi" Type="VI" URL="../tango-binding-3.0.0-for-labview-2014-windows-x64/vis/tango_vi.llb/fromUShortImage.vi"/>
+			<Item Name="fromUShortScalar.vi" Type="VI" URL="../tango-binding-3.0.0-for-labview-2014-windows-x64/vis/tango_vi.llb/fromUShortScalar.vi"/>
+			<Item Name="fromUShortSpectrum.vi" Type="VI" URL="../tango-binding-3.0.0-for-labview-2014-windows-x64/vis/tango_vi.llb/fromUShortSpectrum.vi"/>
 			<Item Name="globalVarSD.vi" Type="VI" URL="../dependecies/globalVarSD.vi"/>
 			<Item Name="Graph_cursors_minmaxSD.vi" Type="VI" URL="../dependecies/Graph_cursors_minmaxSD.vi"/>
 			<Item Name="HF_type_def.ctl" Type="VI" URL="../dependecies/archive_elyse/HF_type_def.ctl"/>
@@ -1469,13 +1384,14 @@
 			<Item Name="PS90_GetReadError.vi" Type="VI" URL="../Classes/Delay Line/DelayLineOwis/functions/PS90_GetReadError.vi"/>
 			<Item Name="PS90_LogFile.vi" Type="VI" URL="../Classes/Delay Line/DelayLineOwis/functions/PS90_LogFile.vi"/>
 			<Item Name="PS90_SimpleConnect.vi" Type="VI" URL="../Classes/Delay Line/DelayLineOwis/functions/PS90_SimpleConnect.vi"/>
-			<Item Name="Read Status Active_NonActive_.vi" Type="VI" URL="../Classes/Oscilloscope/Read Status Active_NonActive_.vi"/>
+			<Item Name="psp_zeromq_send.vi" Type="VI" URL="../dependecies/psp_zeromq_send.vi"/>
 			<Item Name="ReadMode_mode typedef.ctl" Type="VI" URL="../Classes/Detector/UV-VIS/methods/atmcd32d.llb/ReadMode_mode typedef.ctl"/>
 			<Item Name="remove-dev-pointsSD.vi" Type="VI" URL="../dependecies/remove-dev-pointsSD.vi"/>
 			<Item Name="replace_in_stringSD.vi" Type="VI" URL="../dependecies/replace_in_stringSD.vi"/>
 			<Item Name="Reposition Legend.vi" Type="VI" URL="../dependecies/Reposition Legend.vi"/>
 			<Item Name="sync-archive.vi" Type="VI" URL="../dependecies/archive_elyse/Archive/sync-archive.vi"/>
 			<Item Name="sync_type_def.ctl" Type="VI" URL="../dependecies/archive_elyse/sync_type_def.ctl"/>
+			<Item Name="tango.lvlib" Type="Library" URL="../tango-binding-3.0.0-for-labview-2014-windows-x64/vis/tango_vi.llb/tango.lvlib"/>
 			<Item Name="tango.lvlib" Type="Library" URL="../tango-binding-3.0.0-for-labview-2015-windows-x86/vis/tango_vi.llb/tango.lvlib"/>
 			<Item Name="tango_binding.dll" Type="Document" URL="tango_binding.dll">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
