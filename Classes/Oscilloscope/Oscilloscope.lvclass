@@ -200,10 +200,10 @@
 	<Item Name="OscilloscopeVI.vi" Type="VI" URL="../OscilloscopeVI.vi">
 		<Property Name="NI.ClassItem.ConnectorPane" Type="Bin">)!#!!!!!!!)!"1!&amp;!!!-!%!!!@````]!!!!"!!%!!!%&amp;!!!!#A!-1#%'=X2B&gt;(6T!!!,1!-!"'.P:'5!!""!-0````]'=W^V=G.F!!!71&amp;!!!Q!!!!%!!AFF=H*P=C"P&gt;81!"!!!!":!5!!$!!!!!1!##'6S=G^S)'FO!!!%!&amp;-!'%"Q!")!!1!'$%.P&lt;H2S&lt;WR2&gt;76V:1!!.E"Q!"Y!!"954X.D;7RM&lt;X.D&lt;X"F,GRW9WRB=X-!!"20=W.J&lt;'RP=W.P='5O&lt;(:D&lt;'&amp;T=Q!!6!$Q!!Q!!Q!%!!1!"!!%!!1!"!!%!!5!"!!(!!A$!!"Y!!!*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!I!!!!!!!!!#A!!!!I!!!!!!1!*!!!!!!</Property>
 		<Property Name="NI.ClassItem.ExecutionSystem" Type="Int">-1</Property>
-		<Property Name="NI.ClassItem.Flags" Type="Int">1074004224</Property>
+		<Property Name="NI.ClassItem.Flags" Type="Int">262400</Property>
 		<Property Name="NI.ClassItem.IsStaticMethod" Type="Bool">true</Property>
 		<Property Name="NI.ClassItem.MethodScope" Type="UInt">1</Property>
 		<Property Name="NI.ClassItem.Priority" Type="Int">1</Property>
-		<Property Name="NI.ClassItem.State" Type="Int">1107821072</Property>
+		<Property Name="NI.ClassItem.State" Type="Int">1074536976</Property>
 	</Item>
 </LVClass>
